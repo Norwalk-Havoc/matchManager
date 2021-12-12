@@ -1,0 +1,22 @@
+{
+    "2": {
+        "id": null,
+        "order": 2,
+        "state": null,
+        "round": null,
+        "player1": null,
+        "player2": null,
+        "player1_id": null,
+        "player1_greenroom": 0,
+        "player1_prereq": null,
+        "player2_id": null,
+        "player2_prereq": null,
+        "player2_greenroom": 0,
+        "winner": null,
+        "loser": null,
+        "updated_at": false,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0
+    }
+}

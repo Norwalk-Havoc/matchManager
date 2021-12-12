@@ -1,0 +1,320 @@
+/* @override 
+	http://50day.dynalias.org/matchManager/onScreen.css
+	http://local.50day.io/matchManager/onScreen.css
+	https://local.50day.io/matchManager/onScreen.css */
+
+
+
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-Black.otf');
+  font-weight: 800;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-BlackItalic.otf');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-Bold.otf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-BoldItalic.otf');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-ExtraBold.otf');
+  font-weight: 750;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-ExtraBoldItalic.otf');
+  font-weight: 750;
+  font-style: italic;
+
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-Medium.otf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-MediumItalic.otf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: Billy;
+  src: url('assets/Billy-Bold.otf');
+  font-weight: 400;
+}
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #000000;
+	overflow: hidden;
+}
+.sample {
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+	top: 0;
+	z-index: -9;
+}
+
+
+
+/* Match Bar Details */
+.matchBar {
+	font: italic 42px/55px Conduit;
+	width: 1920px;
+	height: 300px;
+	max-width: 1920px;
+	max-height: 240;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	border-bottom: 3px solid #00d8f8;
+	position: relative;
+}
+.matchBar div {
+	display: inline-block;
+}
+
+.matchBar video {
+	position: absolute;
+	z-index: -1;
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+
+.matchBar .rightBotName {
+	display: inline-block;
+	float: left;
+	max-width: 1115px;
+	width: 1115px;
+	text-transform: capitalize;
+	text-align: right;
+	padding-right: 40px;
+	padding-left: 25px;
+	height: 240px;
+	min-height: 240px;
+	background-color: rgba(5, 162, 253, 0.86);
+	overflow: hidden;
+	max-height: 240px;
+	line-height: 240px;
+	font-size: 140px;
+	color: #ffffff;
+	text-shadow: 0 0 20px #787878;
+	font-variant: small-caps;
+}
+.matchBar .leftBotImage {
+	float: left;
+	height: 60px;
+	background: url(assets/UnknownBotMagenta.jpg) center rgb(255, 111, 254);
+	background-size: cover;
+	width: 92px;
+	display: none;
+	border-left: 5px solid rgb(255, 111, 254);
+
+}
+.matchBar .matchClock {
+	text-align: left;
+	font-weight: 750;
+	font-size: 200;
+	background-color: rgba(15, 19, 92, 0.92);
+	height: 240px;
+	min-height: 240px;
+	width: 700;
+	line-height: 280px;
+	color: #ffffff;
+	padding-left: 40px;
+	float: left;
+	max-height: 240px;
+}
+.matchBar .rightBotImage {
+	display: none !important;
+	float: right;
+	height: 60px;
+	background: url(assets/UnknownBotCyan.jpg) center rgb(91, 194, 255);
+	background-size: cover;
+	width: 92px;
+	display: inline-block;
+	transform:scaleX(-1);
+	border-right-style: none;
+	border-left: 5px solid rgb(91, 194, 255);
+}
+
+.matchBar .leftBotName {
+	display: none;
+	float: right;
+	width: 350px;
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 15px;
+	background-color: rgba(5, 162, 253, 0.86);
+	min-height: 55px;
+	overflow: hidden;
+	max-height: 55px;
+	max-width: 350px;
+}
+.leftWin {
+	width: 220px;
+	height: 220px;
+	background: url(assets/medal.svg) center;
+	background-size: cover;
+	margin-left: 18px;
+	position: absolute;
+	left: 1440px;
+	top: 6px;
+}
+.rightWin {
+	width: 220px;
+	height: 220px;
+	background: url(assets/medal.svg) center;
+	background-size: cover;
+	margin-left: 18px;
+	position: absolute;
+	left: 220px;
+	top: 6px;
+}
+
+
+
+/* Match Bar Details */
+.matchDetails {
+	background-color:rgba(15, 19, 92, 0.92);
+	font: 90px/140px Conduit;
+	width: 1920px;
+	height: 110px;
+	max-width: 1920px;
+	max-height: 110px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #ffffff;
+}
+.matchDetails div {
+	display: inline-block;
+}
+.matchDetails .matchNumber {
+	float: left;
+	padding-left: 20px;
+	text-align: left;
+}
+.matchDetails .matchNumber:before {
+		content: "Match: ";
+	
+}
+.matchDetails .round:before {
+		content: "Round ";
+}
+.matchDetails .weightClass {
+	float: right;
+	margin-right: 20px;
+	font-weight: 750;
+	min-width: 150px;
+	max-width: 150px;
+	text-align: right;
+}
+
+
+.countDown {
+	display:  none;
+	font-family: Conduit;
+    color: #ffffff;
+}
+.countDownTime{
+	font: bold 300px Conduit;;
+	color: #ffffff;
+	margin: 300px auto auto;
+	text-align: center;
+}
+
+.leftBotCountdown {
+	float: left;
+	font-size: 108px;
+	margin-left: 100px;
+	margin-right: 25px;
+	margin-top: 25px;
+	padding: 25px;
+	background: linear-gradient(90deg, rgba(255,0,245,1) 0%, rgba(111,0,255,1) 100%);
+	min-width: 600px;
+	max-width: 600px;
+	overflow: hidden;
+	min-height: 250px;
+	border-radius: 30px;
+	display: none;
+	align-items: center;
+    justify-content: center;
+	position: fixed;
+}
+.rightBotCountdown {
+	float: right;
+	font-size: 108px;
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-right: 100px;
+	padding: 25px;
+	background: linear-gradient(90deg, rgba(111,0,255,1) 0%, rgba(0,202,255,1) 100%);
+	min-width: 600px;
+	max-width: 600px;
+	overflow: hidden;
+	min-height: 250px;
+	max-height: 250px;
+	border-radius: 30px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	right: 0;
+}
+.centerBotName {
+	margin: auto;
+	text-align: center;
+}
+.matchMeta {
+	font-size: 60px;
+	text-align: center;
+	margin: auto;
+	padding: 15px 15px 1px;
+	background: linear-gradient(90deg, rgba(255,0,245,1) 0%, rgba(0,198,255,1) 100%);
+	border-radius: 30px;
+	max-width: 1400px;
+	min-width: 1400px;
+}
+.ready:after {
+   content: "READY TO FIGHT!";
+   font-size: 45px;
+   position: absolute;
+   top: 90px;
+   text-transform: uppercase;
+   font-weight: bold;
+   right: 42px;
+}

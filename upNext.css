@@ -1,0 +1,454 @@
+/* @override 
+	http://50day.dynalias.org/matchManager/onScreen.css
+	http://50day.dynalias.org/matchManager/upNext.css */
+
+
+
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-Black.otf');
+  font-weight: 800;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-BlackItalic.otf');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-Bold.otf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-BoldItalic.otf');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-ExtraBold.otf');
+  font-weight: 750;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-ExtraBoldItalic.otf');
+  font-weight: 750;
+  font-style: italic;
+
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-Medium.otf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-MediumItalic.otf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: Billy;
+  src: url('assets/Billy-Bold.otf');
+  font-weight: 400;
+}
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #000000;
+	color: #ffffff;
+	font-family: Conduit;
+
+}
+
+.sample {
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+	top: 0;
+	z-index: -9;
+}
+
+
+
+.matchContainerBG {
+	position: fixed;
+	bottom: 1px;
+	height: 300px;
+	width: 100%;
+	background-image: url(assets/MatchGroupSimple.png);
+	background-size: cover;
+	z-index: 1;
+}
+
+.matchContainer {
+	position: fixed;
+	bottom: 1px;
+	height: 300px;
+	width: 100%;
+	background-image: url(assets/MatchGroupSimple.png);
+	background-size: cover;
+}
+
+.groupLabel {
+	width: 100%;
+	position: fixed;
+	bottom: 10px;
+	text-align: left;
+	font-size: 34px;
+	text-transform: none;
+	padding-left: 65px;
+}
+.right {
+	text-align: right;
+	padding-left: 0;
+	right: 65px;
+}
+.matchGroup {
+	transform: rotate(-90deg);
+	position: relative;
+	top: 119px;
+	width: 200px;
+	height: 0;
+}
+.match {
+	height: 60px;
+	min-height: 60px;
+	width: 199px;
+	transform: rotate(40deg);
+	margin-bottom: 40px;
+}
+.matchNumber {
+	transform: rotate(90deg);
+	display: block;
+	background-color: hsl(0, 0%, 30%);
+	text-align: center;
+	width: 53px;
+	position: relative;
+	top: 41px;
+	right: 19px;
+	height: 22px;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 24px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.37);
+}
+
+
+
+
+.competitor {
+	background-color: #6a6a6a;
+	font-size: 18px;
+	line-height: 28px;
+	width: 160px;
+	height: 24px;
+	margin-top: 4px;
+	padding-left: 6px;
+	
+	clip-path: 
+    polygon(
+      0% 0%,     /* top left */
+      95% 0%,     /* top left */
+      100% 40%,    /* top right */
+      100% 0%,   /* top right */
+      100% 100%,  /* bottom right */
+      100% 100%,  /* bottom right */
+      0% 100%,   /* bottom left */
+      0 100%      /* bottom left */
+    );
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	margin-left: 20px;
+	overflow: hidden;
+}
+.magenta {
+	background-color: #8D1F70;
+	background: linear-gradient(90deg, rgba(255,0,245,1) 0%, rgba(111,0,255,1) 100%);
+
+	border-color: hsl(299, 100%, 61%);;
+}
+.cyan {
+	background-color: hsl(201, 79%, 23%);
+	background: linear-gradient(90deg, rgba(0,202,255,1) 0%, rgba(111,0,255,1) 100%);
+
+	border-color: hsl(201, 100%, 57%)
+}
+.timeLeft {
+	padding-left: 7px;
+	padding-right: 10px;
+}
+
+.match-ready {
+	background: linear-gradient(90deg, rgba(255,0,245,1) 0%, rgba(0,198,255,1) 100%);
+
+}
+.bg-success{
+	background: linear-gradient(90deg, rgba(255,0,245,1) 0%, rgba(0,198,255,1) 100%) !important;
+}
+
+@keyframes color {
+  0% {
+    background-color: hsl(0, 0%, 40%);
+  }
+  50% {
+    background-color: #2d8bff;
+  }
+  100 {
+    background-color: hsl(0, 0%, 40%);
+  }
+}
+
+.loading {
+  background-color: hsl(0, 0%, 40%);
+  animation-name: color;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/*.vs:before {
+	content: "VS";
+	position: absolute;
+	bottom: 18px;
+	left: 65px;
+	z-index: 10;
+	font-weight: bold;
+	background-color: #ffffff;
+}*/
+.myMatch {
+	font-size: 21px;
+	
+}
+.botName {
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-bottom: 3px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-radius: 5px;
+}
+.myBot {
+	text-decoration: underline;
+}
+.metaNumber, .metaRound {
+	padding: 5px 5px 5px 10px;
+	border-bottom-style: solid;
+	border-bottom-width: 0px;
+	text-align: left;
+	margin-left: 0;
+	background-color: #4c4c4c;
+	background: linear-gradient(90deg, rgba(62,66,71,1) 14%, rgba(33,51,102,1) 100%);
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+.myMagenta  {
+	background-color: #8D1F70;
+	background: linear-gradient(270deg, rgba(255,0,245,1) 0%, rgba(111,0,255,1) 100%);
+
+	border-color: hsl(299, 100%, 61%);;
+}
+.myCyan {
+	background-color: hsl(201, 79%, 23%);
+	background: linear-gradient(-90deg, rgba(0,202,255,1) 0%, rgba(111,0,255,1) 100%);
+
+	border-color: hsl(201, 100%, 57%)
+}
+.myIcon {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: left;
+	margin-left: 0;
+	width: 100%;
+	min-height: 41px;
+	margin-bottom: 5px;
+    padding: 9px 5px 5px;
+	text-align: center;
+	font-size: 23px;
+	border-radius: 5px;
+}
+
+.botBgMagenta {
+	background: url(assets/UnknownBotMagenta.jpg) center rgb(255, 111, 254);
+	background-size: cover;
+
+}
+
+.botBgCyan {
+	background: url(assets/UnknownBotCyan.jpg) center rgb(255, 111, 254);
+	background-size: cover;
+}
+
+.botW {
+	background: radial-gradient(circle, rgba(12,121,0,1) 0%, rgba(28,170,28,1) 100%);
+	border-radius: 5px;
+}
+.botL {
+	
+}
+.nextFight {
+	border-bottom: 2px solid #6f00fe;
+	
+}
+
+.botImage {
+	background: url(assets/UnknownBotMagenta.jpg) center rgb(255, 111, 254);
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0 !important;
+}
+.photo-icon {
+	background-color: #ea0000;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+}
+
+.weightDivider {
+	margin: 0 10px 3px;
+	font-size: 32px;
+	padding-top: 18px;
+	border-bottom-style: solid;
+	line-height: 19px;
+}
+
+#botList {
+    display: flex;
+    flex-direction: column;
+	justify-content: flex-start;
+	align-content: flex-start;
+    flex-wrap: wrap;
+	height: 100vh;
+	width: 100%;
+
+}
+#botList a {
+	color: #ffffff;
+}
+
+.aBotBlock {
+	margin: 10px 10px 4px;
+
+}
+.aBot {
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	background-color: #414141;
+	border-radius: 10px 10px 0 0 ;
+	width: 360px;
+	overflow: hidden;
+}
+.aBotNext {
+	display:  flex;
+	justify-content: space-between;
+	height: 20px;
+	background-color: #2e2e2e;
+	border-radius: 0 0 10px 10px;
+	overflow: hidden;
+}
+.aBotNextMatch {
+	width: 56px;
+	max-width: 56px;
+	text-align: center;
+	font-weight: 800;
+	background-color: #34516b;
+}
+.aBotNextCompetitor {
+	padding-left: 11px;
+	overflow: hidden;
+	overflow: hidden;
+	flex-grow: 8;
+}
+
+.aBotWeight {
+	
+	font-weight: 800;
+	font-size: 30px;
+	padding-top: 6px;
+	background-color: #132440;
+	max-width: 56px;
+	text-align: center;
+	width: 56px;
+	color: #ffffff;
+}
+.aBotWeight span {
+	font-weight: 300;
+	font-size: 14px;
+}
+.aBotName {
+	font-size: 32px;
+	padding-top: 4px;
+	padding-left: 11px;
+	overflow: hidden;
+	flex-grow: 8;
+	max-width: 260px;
+}
+.aBotReady {
+	display:  flex;
+	flex-direction: column;+
+	font-weight: 500;
+	font-size: 30px;
+	width: 45px;
+	text-align: center;
+	background-color: #d81a1a;
+	line-height: 15px;
+	padding-top: 17px;
+}
+.aBotReady span {
+	font-size: 10px;
+}
+.aBotNextCompetitorTime {
+	display:  flex;
+	flex-direction: column;
+	font-weight: 500;
+	width: 45px;
+	text-align: center;
+	background-color: #be6868;
+}
+
+
+
+/* @group Effectors */
+
+
+.noCompetitor {
+	display: none;
+}
+.readyNow {
+	background-color: #1ec317;
+}
+.aBotFinished {
+	text-align: center;
+	width: 100%;
+}
+.finished {
+	color: #c9c9c9;
+}
+.finished .aBot .aBotWeight {
+	display: none;
+}
+.finished .aBot .aBotReady {
+	display: none;
+}
+.greenroom {
+	background-color: #04660f;
+}
+
+
+/* @end */

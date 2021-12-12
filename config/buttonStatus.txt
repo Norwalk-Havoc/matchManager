@@ -1,0 +1,38 @@
+{
+    "e00fce68c5b70e1acd26ebfa": {
+        "cage": 1,
+        "player": 2,
+        "ready": 0,
+        "tap": 0
+    },
+    "e00fce683e4ebc9618bfa144": {
+        "cage": 3,
+        "player": 1,
+        "ready": 0,
+        "tap": 0
+    },
+    "e00fce68db5dacb558237a75": {
+        "cage": 2,
+        "player": 1,
+        "ready": 0,
+        "tap": 0
+    },
+    "e00fce68d8fb3c2ae228c92a": {
+        "cage": 1,
+        "player": 1,
+        "ready": 0,
+        "tap": 0
+    },
+    "e00fce68b31b0738b2c0fced": {
+        "cage": 3,
+        "player": 2,
+        "ready": 0,
+        "tap": 0
+    },
+    "e00fce6878cdd7d830c00fad": {
+        "cage": 2,
+        "player": 2,
+        "ready": 0,
+        "tap": 0
+    }
+}

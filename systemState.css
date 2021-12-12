@@ -1,0 +1,35 @@
+/* @override 
+	https://local.50day.io/matchManager/systemState.css */
+
+.col-7.input-group, #button-addon2, .btn-outline-primary , .startMatch {
+	display:none;
+}
+
+.form-control {
+	color: #ffffff;
+	background-color: #000000;
+	font-size: 22px;
+}
+.blue-bg {
+	background-color: #018fb0;
+}
+.red-bg {
+	background-color: #dc00c8;
+}
+.badge-pill::before {
+	content: "Cage ";
+}
+.lower-message {
+	display: none;
+}
+.lower-message-text {
+	color: #ffffff !important;
+	background-color: #000000;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+.col-md.border {
+	background-color: #111111;
+
+}
