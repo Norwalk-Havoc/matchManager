@@ -1,0 +1,2 @@
+RewriteEngine on
+ErrorDocument 404 https://local.50day.io/matchManager/assets/UnknownBot.png

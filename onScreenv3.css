@@ -1,0 +1,290 @@
+/* @override 
+	http://50day.dynalias.org/matchManager/onScreen.css
+	http://local.50day.io/matchManager/onScreen.css
+	https://local.50day.io/matchManager/onScreen.css
+	https://local.50day.io/matchManager/onScreenv3.css */
+
+
+
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-Black.otf');
+  font-weight: 800;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-BlackItalic.otf');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-Bold.otf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-BoldItalic.otf');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-ExtraBold.otf');
+  font-weight: 750;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-ExtraBoldItalic.otf');
+  font-weight: 750;
+  font-style: italic;
+
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-Medium.otf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-MediumItalic.otf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: Billy;
+  src: url('assets/Billy-Bold.otf');
+  font-weight: 400;
+}
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #fff;
+}
+.sample {
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+	top: 0;
+	z-index: -9;
+}
+.container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 1920px;
+	height: 1080px;
+	background-color: #000000;
+}
+
+
+/* Match Bar Details */
+.matchBar {
+	font: 38px/55px Conduit;
+	width: 1100px;
+	height: 50px;
+	max-width: 1100px;
+	max-height: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	border-bottom: 4px solid #ccc;
+	position: relative;
+	margin-top: 18px;
+	background: rgb(0,93,240);
+background: linear-gradient(90deg, rgba(0,93,240,1) 0%, rgba(14,74,168,1) 40%, rgba(30,30,30,1) 45%, rgba(30,30,30,1) 55%, rgba(168,1,125,1) 60%, rgba(204,0,107,1) 100%);
+border-top: 4px solid #ccc;
+}
+.matchBar div {
+	display: inline-block;
+}
+
+.matchBar video {
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	display: none;
+}
+
+
+.matchBar .leftBotName {
+	display: inline-block;
+	float: left;
+	margin-left: 40px;
+}
+.matchBar .leftBotImage {
+	float: left;
+	display: none;
+}
+.matchBar .matchClock {
+	font:  italic 42px/55px Conduit;
+	font-weight: 750;
+	color: #ffffff;
+	position: fixed;
+	left: 861px;
+	width: 200px;
+	text-align: center;
+}
+.matchBar .rightBotImage {
+	float: right;
+	display: none;
+}
+
+.matchBar .rightBotName {
+	display: inline-block;
+	float: right;
+	margin-right: 50px;
+}
+.leftWin {
+	width: 40px;
+	height: 40px;
+	background: url(assets/medal.svg) center;
+	background-size: cover;
+	float: right;
+	margin-left: 18px;
+	margin-top: 3px;
+	position: fixed;
+	left: 770px;
+}
+.rightWin {
+	width: 40px;
+	height: 40px;
+	background: url(assets/medal.svg) center;
+	background-size: cover;
+	float: left;
+	margin-right: 18px;
+	margin-top: 3px;
+	position: fixed;
+	left: 1090px;
+}
+
+
+
+/* Match Bar Details */
+.matchDetails {
+	background-color: rgba(65, 65, 65, 0.92);
+	font: 20px/30px Conduit;
+	width: 720px;
+	height: 24px;
+	max-width: 720px;
+	max-height: 24px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #ffffff;
+	border-bottom: 4px solid #ccc;
+}
+.matchDetails div {
+	display: inline-block;
+}
+.matchDetails .matchNumber {
+	float: left;
+	padding-left: 20px;
+		width: 150px;
+	text-align: left;
+}
+.matchDetails .matchNumber:before {
+		content: "Match: ";
+	
+}
+.matchDetails .round:before {
+		content: "Round ";
+}
+.matchDetails .weightClass {
+	float: right;
+	margin-right: 20px;
+	font-weight: 750;
+	width: 150px;
+	min-width: 150px;
+	max-width: 150px;
+	text-align: right;
+}
+
+
+.countDown {
+	font-family: Conduit;
+    color: #ffffff;
+}
+.countDownTime{
+	font: italic 300px Conduit;
+	font-weight: 750;
+	color: #ffffff;
+	margin: 300px auto auto;
+	text-align: center;
+}
+
+.leftBotCountdown {
+	float: left;
+	font-size: 108px;
+	margin-left: 100px;
+	margin-right: 25px;
+	margin-top: 25px;
+	padding: 25px;
+	background: linear-gradient(90deg, rgba(255,0,245,1) 0%, rgba(111,0,255,1) 100%);
+	min-width: 600px;
+	max-width: 600px;
+	overflow: hidden;
+	min-height: 250px;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	position: fixed;
+}
+.rightBotCountdown {
+	float: right;
+	font-size: 108px;
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-right: 100px;
+	padding: 25px;
+	background: linear-gradient(90deg, rgba(111,0,255,1) 0%, rgba(0,202,255,1) 100%);
+	min-width: 600px;
+	max-width: 600px;
+	overflow: hidden;
+	min-height: 250px;
+	max-height: 250px;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	right: 0;
+	
+}
+.centerBotName {
+	margin: auto;
+	text-align: center;
+}
+.matchMeta {
+	font: 38px/55px Conduit;
+	width: 1100px;
+	height: 50px;
+	max-width: 1100px;
+	max-height: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	border-bottom: 4px solid #ccc;
+	position: fixed;
+	margin-top: 18px;
+	background: rgb(0,93,240);
+	background: linear-gradient(90deg, rgba(0,93,240,1) 0%, rgba(14,74,168,1), rgba(168,1,125,1) 60%, rgba(204,0,107,1) 100%);
+	border-top: 4px solid #ccc;
+	top: 970px;
+	left: 410px;
+}
+.ready {
+	text-shadow: 0 0 15px #272727;
+	color: #ffffff;
+}

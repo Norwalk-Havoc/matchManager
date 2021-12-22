@@ -2,14 +2,13 @@
 error_reporting(E_ALL ^ E_NOTICE);
 require_once('buttonFunctions.php');
 
-//CHALLONGE INFO GOES HERE!
-$username = "";
-$apiKey = "";
+require_once('config.php');
 
 define("MATCH_READY", 1380);
 define("MATCH_TIME", 180);
 define("MATCH_COUNTDOWN", 10);
 define("ENCORE_TIME", 30);
+define("MAX_SCORE", 5);
 
 
 if (isset($_REQUEST['mode'])){ //We are running a command from the URL
@@ -156,6 +155,24 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 			addToGreenroom($playerID);
 		}
 
+	} else if ($mode == 'judgeLoadStage'){
+		judgeLoadStage($_GET['stage']);
+
+	} else if ($mode == 'judgeMatchData'){
+		echo json_encode(getJudgeMatchData());
+
+	} else if ($mode == 'getJudgeDisplayData'){
+		echo json_encode(getJudgeJSON());
+
+	} else if ($mode == 'judgeScoreUpload'){
+		$scores['id'] = $_GET['judgeID'];
+		$scores['agression'] = $_GET['LAgression'];
+		$scores['control'] = $_GET['LControl'];
+		$scores['dammage'] = $_GET['LDammage'];
+		if ($scores['id'] != 0){
+			submitJudgeScores($scores);
+		}
+
 	} else if ($mode == 'picUpload'){
 		$id = $_POST['bot_id'];
 		$tournament = $_POST['tournament'];
@@ -199,6 +216,8 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 		  }
 		}
 
+	} else if ($mode == 'cageForBryan'){
+		cagesForBryan();
 	}
 	
 
@@ -260,7 +279,7 @@ function matchToCage($cage,$tournament, $match){
 function getCageText($cage){
 	if (file_exists('./config/cage'.$cage.'.json')){
 		$outCage = json_decode(file_get_contents('./config/cage'.$cage.'.json'), TRUE);
-		if ($outCage['matchActive'] && $outCage['stopTime'] < time() ){
+		if ($outCage['matchActive'] && $outCage['stopTime'] < time() - 5 ){
 			$outCage['matchActive'] = FALSE;
 		} 
 		
@@ -271,6 +290,105 @@ function getCageText($cage){
 	}
 }
 
+//This is a custom function that uploads data to custom enpoints on singular.live
+function cagesForBryan(){
+	
+	
+	
+	$cage1 = getCageText(1);
+	$player1 = $cage1['player1'];
+	$player2 = $cage1['player2'];
+	$player1_id = $cage1['player1_id'];
+	$player2_id = $cage1['player2_id'];
+	
+	$round = $cage['round'];
+	if ($round > 0){
+		$round = "Winners Bracket Round $round";
+	} else {
+		$round = "Losers Bracket Round $round";
+	}
+	
+	$out['payload'] = array(      
+	  "RoundName" => $round,
+      "Bot1Name" => $player1,
+      "Bot1Id" => $player1_id,
+      "Bot1Note" => "Driver: Bryan Drake",
+      "Bot2Name" => $player2,
+      "Bot2Id" =>$player2_id,
+      "Bot2Note" => "Driver: Also Bryan Drake"
+	);
+	$json = json_encode($out);
+	//Oh yeah its that awful
+	echo "<pre> Calling Cage 1 \n";
+	echo `curl --location --request PUT 'https://app.singular.live/apiv1/datanodes/0LD50d8KcQLkwQAFSs1AGs/data' \
+--header 'Content-Type: application/json' \
+--data-raw '$json'`;
+
+	$cage2 = getCageText(2);
+	$player1 = $cage2['player1'];
+	$player2 = $cage2['player2'];
+	$player1_id = $cage2['player1_id'];
+	$player2_id = $cage2['player2_id'];
+	
+	$round = $cage['round'];
+	if ($round > 0){
+		$round = "Winners Bracket Round $round";
+	} else {
+		$round = "Losers Bracket Round $round";
+	}
+	
+	$out['payload'] = array(      
+	  "RoundName" => $round,
+      "Bot1Name" => $player1,
+      "Bot1Id" => $player1_id,
+      "Bot1Note" => "",
+      "Bot2Name" => $player2,
+      "Bot2Id" =>$player2_id,
+      "Bot2Note" => ""
+	);
+	$json = json_encode($out);
+	//Oh yeah its that awful
+	echo "\nCalling Cage 2 \n";
+	echo `curl --location --request PUT 'https://app.singular.live/apiv1/datanodes/634xCoADGxwz3Zdxb1M8oA/data' \
+--header 'Content-Type: application/json' \
+--data-raw '$json'`;
+
+
+	$cage3 = getCageText(3);
+	$player1 = $cage3['player1'];
+	$player2 = $cage3['player2'];
+	$player1_id = $cage3['player1_id'];
+	$player2_id = $cage3['player2_id'];
+	
+	$round = $cage['round'];
+	if ($round > 0){
+		$round = "Winners Bracket Round $round";
+	} else {
+		$round = "Losers Bracket Round $round";
+	}
+	
+	$out['payload'] = array(      
+	  "RoundName" => $round,
+      "Bot1Name" => $player1,
+      "Bot1Id" => $player1_id,
+      "Bot1Note" => "Driver: Bryan Drake",
+      "Bot2Name" => $player2,
+      "Bot2Id" =>$player2_id,
+      "Bot2Note" => "Driver: Also Bryan Drake"
+	);
+	$json = json_encode($out);
+	//Oh yeah its that awful
+	echo "\nCalling Cage 3 \n";
+	echo `curl --location --request PUT 'https://app.singular.live/apiv1/datanodes/0hIp2BFwZqfcDfyAwEcKlA/data' \
+--header 'Content-Type: application/json' \
+--data-raw '$json'`;
+
+
+	
+  
+	
+} 
+
 
 function clearCageText($cage){
 	
@@ -279,6 +397,125 @@ function clearCageText($cage){
 
 function setCageText($cage, $cageArray){
 	file_put_contents('./config/cage'.$cage.'.json',json_encode($cageArray));
+}
+
+// THIS WILL NOT WORK IF THERE ARE MULTIPLE UNDERWAY MATCHES!!!
+function getJudgeMatchData(){
+	$tournaments = getChallongeTournaments();
+	$ourMatch = -1;
+	
+	if (count($tournaments) != 0){		
+		foreach ($tournaments as $tournamentName => $tournament){
+			$tournamentNameNice = str_replace("-"," ", $tournamentName);
+			$matches = getMatches($tournament);
+			ksort($matches);
+			foreach($matches as $match){
+			  if($match['underway'] == '1'){
+				  $ourMatch = $match;
+				  break;
+			  }
+			}
+			if ($ourMatch != -1){
+				break;
+			}
+		}
+	}
+	//No Matches are underway
+	if ($ourMatch == -1){
+		$outArray = array("player1" => "-", "player2" => "-", "round" => 0, "tournament" => "none", "id" => 0);
+	} else {
+		$outArray = $ourMatch;
+		$outArray['tournament'] = $tournamentNameNice;
+	}
+	return $outArray;
+}
+
+//This only works when the current match you are submitting scores for is underway!
+
+function getJudgeScores(){
+	if (file_exists('./config/judgeScores.json')){
+		$out = json_decode(file_get_contents('./config/judgeScores.json'), TRUE);
+		return($out);
+	}
+	else {
+		return(array());
+	}
+}
+
+function getJudgeJSON(){
+	$match = getJudgeMatchData();
+	if($match['id'] == 0){
+		return;
+	}
+	$judgedMatches = getJudgeScores();
+	$matchId = $match['id'];
+	
+	if (isset($judgedMatches[$match['id']])){
+		$judgedMatch = $judgedMatches[ $matchId ];
+	} else {
+		$judgedMatch = $match;
+	}
+	return $judgedMatch;
+}
+
+function setJudgeScores($scores){
+	file_put_contents('./config/judgeScores.json',json_encode($scores, JSON_PRETTY_PRINT));
+}
+
+function judgeLoadStage($stage){
+	$stage = intval($stage); //Saftey!
+	$match = getJudgeMatchData();
+	if($match['id'] == 0){
+		return;
+	}
+	$judgedMatches = getJudgeScores();
+	$matchId = $match['id'];
+	
+	if (isset($judgedMatches[$match['id']])){
+		$judgedMatch = $judgedMatches[ $matchId ];
+	} else {
+		$judgedMatch = $match;
+		$judgedMatch['loadStage'] = 0; //Lets not show our cards till we tell the system to do that.
+	}
+	$judgedMatch['loadStage'] = $stage;
+	$judgedMatches[$match['id']] = $judgedMatch;
+	setJudgeScores($judgedMatches);
+};
+
+function submitJudgeScores($scores){
+	$match = getJudgeMatchData();
+	if($match['id'] == 0){
+		return;
+	}
+	$judgedMatches = getJudgeScores();
+	$matchId = $match['id'];
+	
+	if (isset($judgedMatches[$match['id']])){
+		$judgedMatch = $judgedMatches[ $matchId ];
+	} else {
+		$judgedMatch = $match;
+		$judgedMatch['loadStage'] = 0; //Lets not show our cards till we tell the system to do that.
+	}
+	
+	$player1['aggression'] = 0 + $scores['agression'];
+	$player1['damage'] = 0 + $scores['dammage'];
+	$player1['control'] = 0 + $scores['control'];
+	$player2['aggression'] = MAX_SCORE - $scores['agression'];
+	$player2['damage'] = MAX_SCORE - $scores['dammage'];
+	$player2['control'] = MAX_SCORE - $scores['control'];
+	if ($player1['aggression'] + $player1['damage'] + $player1['control'] > $player2['aggression'] + $player2['damage'] + $player2['control'] ) {
+		$player1['winner'] = 'player1';
+		$player2['winner'] = 'player1';
+	} else {
+		$player1['winner'] = 'player2';
+		$player2['winner'] = 'player2';
+	}
+
+	
+	$judgedMatch['judge_scores']['player1'][$scores['id']] = $player1;
+	$judgedMatch['judge_scores']['player2'][$scores['id']] = $player2;
+	$judgedMatches[$match['id']] = $judgedMatch;
+	setJudgeScores($judgedMatches);
 }
 
 

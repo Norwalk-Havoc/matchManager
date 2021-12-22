@@ -1,0 +1,352 @@
+/* @override 
+	http://50day.dynalias.org/matchManager/onScreen.css
+	http://local.50day.io/matchManager/onScreen.css
+	https://local.50day.io/matchManager/onScreen.css */
+
+
+
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-Black.otf');
+  font-weight: 800;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-BlackItalic.otf');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-Bold.otf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-BoldItalic.otf');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-ExtraBold.otf');
+  font-weight: 750;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-ExtraBoldItalic.otf');
+  font-weight: 750;
+  font-style: italic;
+
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-Medium.otf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: Conduit;
+  src: url('assets/ITC - ConduitITCPro-MediumItalic.otf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: Billy;
+  src: url('assets/Billy-Bold.otf');
+  font-weight: 400;
+}
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #000000;
+}
+.sample {
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+	top: 0;
+	z-index: -9;
+}
+
+
+
+/* Match Bar Details */
+.matchBar {
+	font: italic 42px/55px Conduit;
+	width: 1100px;
+	height: 60px;
+	max-width: 1100px;
+	max-height: 60px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	clip-path: 
+    polygon(
+      0% 40%,     /* top left */
+      2.5% 0%,     /* top left */
+      100% 0%,    /* top right */
+      100% 0%,   /* top right */
+      100% 60%,  /* bottom right */
+      97.5% 100%,  /* bottom right */
+      0% 100%,   /* bottom left */
+      0 100%      /* bottom left */
+    );
+	border-bottom: 3px solid #00d8f8;
+	position: relative;
+	margin-top: 18px;
+}
+.matchBar div {
+	display: inline-block;
+}
+
+.matchBar video {
+	position: absolute;
+	z-index: -1;
+	left: 0;
+}
+
+
+.matchBar .leftBotName {
+	display: inline-block;
+	float: left;
+	max-width: 350px;
+	width: 350px;
+	text-transform: capitalize;
+	text-align: right;
+	padding-top: 5px;
+	padding-right: 15px;
+	height: 55px;
+	min-height: 55px;
+	background-color: rgba(209, 0, 213, 0.8);
+	overflow: hidden;
+	max-height: 55px;
+}
+.matchBar .leftBotImage {
+	float: left;
+	height: 60px;
+	background: rgba(209, 0, 213, 0.8);
+	background-position: center;
+	background-size: cover;
+	width: 97px;
+	display: inline-block;
+
+}
+.matchBar .matchClock {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-weight: 750;
+	font-size: 48px;
+	background-color: rgba(15, 19, 92, 0.92);
+	height: 60px;
+	min-height: 60px;
+	width: 176px;
+	line-height: 68px;
+	color: #ffffff;
+}
+.matchBar .rightBotImage {
+	float: right;
+	height: 60px;
+	background: center rgba(0, 137, 217, 0.86);
+	background-size: cover;
+	width: 97px;
+	display: inline-block;
+	transform:scaleX(-1);
+	border-right-style: none;
+	display: inline-block;
+}
+
+.matchBar .rightBotName {
+	display: inline-block;
+	float: right;
+	width: 350px;
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 15px;
+	background-color: rgba(0, 137, 217, 0.86);
+	min-height: 55px;
+	overflow: hidden;
+	max-height: 55px;
+	max-width: 350px;
+	
+}
+.leftWin {
+	width: 48px;
+	height: 48px;
+	background: url(assets/medal.svg) center;
+	background-size: cover;
+	float: left;
+	margin-left: 18px;
+}
+.rightWin {
+	width: 48px;
+	height: 48px; 
+	background: url(assets/medal.svg) center;
+	background-size: cover;
+	float: right;
+	margin-right: 18px;
+}
+
+
+
+/* Match Bar Details */
+.matchDetails {
+	background-color:rgba(15, 19, 92, 0.92);
+	font: 20px/30px Conduit;
+	width: 720px;
+	height: 24px;
+	max-width: 720px;
+	max-height: 24px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #ffffff;
+	clip-path: 
+    polygon(
+      0% 100%,     /* top left */
+      2% 0%,     /* top left */
+      100% 0%,    /* top right */
+      100% 0%,   /* top right */
+      100% 0%,  /* bottom right */
+      98% 100%,  /* bottom right */
+      0% 100%,   /* bottom left */
+      0 100%      /* bottom left */
+    );
+}
+.matchDetails div {
+	display: inline-block;
+}
+.matchDetails .matchNumber {
+	float: left;
+	padding-left: 20px;
+		width: 150px;
+	text-align: left;
+}
+.matchDetails .matchNumber:before {
+		content: "Match: ";
+	
+}
+.matchDetails .round:before {
+		content: "Round ";
+}
+.matchDetails .weightClass {
+	float: right;
+	margin-right: 20px;
+	font-weight: 750;
+	width: 150px;
+	min-width: 150px;
+	max-width: 150px;
+	text-align: right;
+}
+
+
+.countDown {
+	font-family: Conduit;
+    color: #ffffff;
+}
+.countDownTime{
+	font: bold 300px Conduit;;
+	color: #ffffff;
+	margin: 300px auto auto;
+	text-align: center;
+}
+
+.leftBotCountdown {
+	float: left;
+	font-size: 108px;
+	margin-left: 100px;
+	margin-right: 25px;
+	margin-top: 25px;
+	padding: 25px;
+	background: linear-gradient(90deg, rgba(255,0,245,1) 0%, rgb(100, 0, 126) 100%);
+	min-width: 600px;
+	max-width: 600px;
+	overflow: hidden;
+	min-height: 250px;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	position: fixed;
+	 box-shadow:-8px -8px 0 magenta, 8px 8px 0 cyan;
+}
+.rightBotCountdown {
+	float: right;
+	font-size: 108px;
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-right: 100px;
+	padding: 25px;
+	background: linear-gradient(90deg, rgb(66, 1, 150) 0%, rgba(0,202,255,1) 100%);
+	min-width: 600px;
+	max-width: 600px;
+	overflow: hidden;
+	min-height: 250px;
+	max-height: 250px;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	right: 0;
+	box-shadow:-8px -8px 0 cyan, 8px 8px 0 magenta;
+}
+.centerBotName {
+	margin: auto;
+	text-align: center;
+}
+.centerBotImageLeft {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 400px;
+	height: 300px;
+	display: block;
+	position: fixed;
+	top: 670px;
+	left: 20px;
+	border-radius: 4px;
+	border: 5px solid #fa00f1;
+	background-color: #e400fa;
+}
+
+.centerBotImageRight {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 400px;
+	height: 300px;
+	display: block;
+	position: fixed;
+	top: 670px;
+	border-radius: 4px;
+	border: 5px solid #06b3f3;
+	right: 20px;
+	background-color: #00c7fd;
+}
+
+.matchMeta {
+	font-size: 60px;
+	text-align: center;
+	margin: auto;
+	padding: 15px 15px 1px;
+	background: linear-gradient(90deg, rgba(255,0,245,1) 0%, rgba(0,198,255,1) 100%);
+	border-radius: 4px;
+	max-width: 1400px;
+	min-width: 1400px;
+	box-shadow: -8px 8px 0 cyan, 8px -8px 0 magenta;
+}
+.ready {
+	text-shadow: 0 0 15px #272727;
+	color: #ffffff;
+}

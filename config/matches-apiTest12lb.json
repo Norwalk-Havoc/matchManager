@@ -1,4 +1,15 @@
-{"":{"id":250981246,"order":null,"state":"pending","round":2,"player1":null,"player2":null,"player1_id":null,"player1_prereq":250981245,"player2_id":null,"player2_prereq":250981245,"winner":null,"loser":null,"updated_at":1631976666,"underway":0,"player1_lastFought":null,"player2_lastFought":null}}
+{
+    "2": {
+        "id": 250981244,
+        "order": 2,
+        "state": "open",
+        "round": 1,
+        "player1": "MilkTank",
+        "player2": "Expelliarmus",
+        "player1_id": 155006867,
+        "player1_greenroom": 0,
+        "player1_prereq": null,
+        "player2_id": 155006868,
         "player2_prereq": null,
         "player2_greenroom": 0,
         "winner": null,
