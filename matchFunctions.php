@@ -6,9 +6,9 @@ require_once('config.php');
 
 define("MATCH_READY", 1380);
 define("MATCH_TIME", 180);
-define("MATCH_COUNTDOWN", 10);
+define("MATCH_COUNTDOWN", 0);
 define("ENCORE_TIME", 30);
-define("MAX_SCORE", 5);
+define("MAX_SCORE", 6);
 
 
 if (isset($_REQUEST['mode'])){ //We are running a command from the URL
@@ -18,9 +18,6 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 		unset($_GET['mode']);
 			
 	}
-	
-	
-
 	
 	if ($mode == "challongeURL"){
 		setChallongeTournaments($_POST); //LOL YUP I JUST DID THAT. Sorry Security 
@@ -51,7 +48,8 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 		$jsonOut['html'] = populateCageFields(1,false);
 		$jsonOut['html'] .= populateCageFields(2, false);
 		$jsonOut['html'] .= populateCageFields(3, false);
-		// $jsonOut['html'] .= populateCageFields(4, false);
+	    $jsonOut['html'] .= populateCageFields(4, false);
+		$jsonOut['html'] .= populateCageFields(5, false);
 		$jsonOut['hash'] = md5($jsonOut['html']);
 		echo json_encode($jsonOut,JSON_HEX_TAG);
 		
@@ -60,6 +58,16 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 		$outCage = getCageText($cage);
 		$outCage = array_merge($outCage, $_POST); //Yup we did that. Check your form names son!
 		setCageText($cage, $outCage);
+		
+		//nMatches Tech Debt here
+		$prod = getProductionState();
+		if ($prod['bank']['X'] == $cage){
+			singular("resetX");
+			shell_exec('curl "http://192.168.10.10:8000/press/bank/10/7"'); //Update Match Variables inside Companion
+		} else if ($prod['bank']['Y'] == $cage){
+			singular("resetY");
+			shell_exec('curl "http://192.168.10.10:8000/press/bank/10/7"'); //Update Match Variables inside Companion
+		}
 		
 	} else if ($mode == 'winner'){
 		//This code is also part of parse event!
@@ -87,6 +95,16 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 			stopMatch($cage);
 		}
 		
+		//nMatches Tech Debt here
+		$prod = getProductionState();
+		if ($prod['bank']['X'] == $cage){
+			singular("resetX");
+			shell_exec('curl "http://192.168.10.10:8000/press/bank/10/7"'); //Update Match Variables inside Companion
+		} else if ($prod['bank']['Y'] == $cage){
+			singular("resetY");
+			shell_exec('curl "http://192.168.10.10:8000/press/bank/10/7"'); //Update Match Variables inside Companion
+		}
+		
 	} else if ($mode == 'startMatch'){
 		$cage = $_GET['cage'];
 		$outCage = getCageText($cage);
@@ -96,11 +114,35 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 		$outCage['matchActive'] = TRUE;
 		$outCage['matchPaused'] = FALSE;
 		$outCage['encore'] = FALSE;
+		$outCage['state_text'] = "Match Active";
 		removeFromGreenroom($outCage['player1_id']);
 		removeFromGreenroom($outCage['player2_id']);
 		
 		setCageText($cage, $outCage);
 		setUnderway($outCage['tournament'], $outCage['id']);
+		//nMatches Tech Debt here
+		//Is this a cage we are working on? 
+		$prod = getProductionState();
+		if ($prod['bank']['X'] == $cage){
+			singular("startX");
+			$bank = 'X';
+			
+		} else if ($prod['bank']['Y'] == $cage){
+			singular("startY");
+			$bank = 'Y';
+			
+		}
+
+	
+		if ($bank == ''){
+			$bank = 'Unknown';
+		}
+		$matchLog = getMatchLog();
+		$matchLog['listOnly'][$bank][$outCage['order']] = $outCage['filePath'];
+		$matchLog['verbose'][$outCage['filePath']] = $outCage;
+		setMathcLog($matchLog);
+		
+		
 		
 	} else if ($mode == 'stopMatch'){
 		$cage = $_GET['cage'];
@@ -120,9 +162,35 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 		$outCage = getCageText($cage);
 		if($outCage['matchPaused'] == FALSE){
 			$outCage['matchPaused'] = time();
+			$outCage['state_text'] = "Paused";
+			
+			setCageText($cage, $outCage);
+			
+			//nMatches Tech Debt here
+			//Is this a cage we are working on? 
+			$prod = getProductionState();
+			if ($prod['bank']['X'] == $cage){
+				singular("pauseX");
+			} else if ($prod['bank']['Y'] == $cage){
+				singular("pauseY");
+			}
+			
+			
 		} else {
 			$outCage['stopTime'] += time() - $outCage['matchPaused'];
 			$outCage['matchPaused'] = FALSE;
+			$outCage['state_text'] = "Match Active";
+			
+			setCageText($cage, $outCage);
+			
+			//nMatches Tech Debt here
+			//Is this a cage we are working on? 
+			$prod = getProductionState();
+			if ($prod['bank']['X'] == $cage){
+				singular("unpauseX");
+			} else if ($prod['bank']['Y'] == $cage){
+				singular("unpauseY");
+			}
 		}
 		setCageText($cage, $outCage);
 	} else if ($mode == 'cageJson'){
@@ -141,6 +209,11 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 		$outJson['md5'] = md5($outJson['html']);
 		echo json_encode($outJson);
 
+	} else if ($mode == 'photoBooth'){
+		$outJson['html'] = allBots("photoBooth");
+		$outJson['md5'] = md5($outJson['html']);
+		echo json_encode($outJson);
+
 	} else if ($mode == 'greenroomMode'){
 		$outJson['html'] = allBots("greenroom");
 		$outJson['md5'] = md5($outJson['html']);
@@ -148,21 +221,28 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 
 	} else if ($mode == 'greenroomToggle'){
 		$playerID = $_GET['playerID'];
+		
+		$room = intval($_GET['room']);
+		if ($room == 0){
+			$room = 1;
+		}
+		
+		
 		$greenRoom = readGreenroom();
-		if (isset($greenRoom[$playerID])){
+		if (isset($greenRoom[$playerID]) && $greenRoom[$playerID] == $room){
 			removeFromGreenroom($playerID);
 		} else {
-			addToGreenroom($playerID);
+			addToGreenroom($playerID, $room);
 		}
 
 	} else if ($mode == 'judgeLoadStage'){
-		judgeLoadStage($_GET['stage']);
+		judgeLoadStage($_GET['stage'], $_GET['bank']);
 
 	} else if ($mode == 'judgeMatchData'){
-		echo json_encode(getJudgeMatchData());
+		echo json_encode(getJudgeMatchData($_GET['bank']));
 
 	} else if ($mode == 'getJudgeDisplayData'){
-		echo json_encode(getJudgeJSON());
+		echo json_encode(getJudgeJSON($_GET['bank']));
 
 	} else if ($mode == 'judgeScoreUpload'){
 		$scores['id'] = $_GET['judgeID'];
@@ -170,13 +250,41 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 		$scores['control'] = $_GET['LControl'];
 		$scores['dammage'] = $_GET['LDammage'];
 		if ($scores['id'] != 0){
-			submitJudgeScores($scores);
+			submitJudgeScores($scores, $_GET['bank']);
 		}
+		singular("judgesX");
 
-	} else if ($mode == 'picUpload'){
+	} else if ($mode == 'setProductionState'){
+		$state = getProductionState();
+		
+		$setBank = substr($_GET['bank'],0,1); // One character for safety!
+		$state['bank'][$setBank] = $_GET['cage'];
+		
+
+		
+		
+		
+		setProductionState($state);
+		singular("reset".$setBank);
+		echo "Ok - $setBank";
+
+
+	} else if ($mode == 'setCageState'){
+		$cage = $_GET['cage'];
+		$outCage = getCageText($cage);
+		$outCage['state_text'] = $_GET['state'];
+		setCageText($cage, $outCage);
+     } else if ($mode == 'getCageState'){
+		$cage = $_GET['cage'];
+		$outCage = getCageText($cage);
+		echo $outCage['state_text'];
+     }
+	
+	
+	 else if ($mode == 'picUpload'){
 		$id = $_POST['bot_id'];
 		$tournament = $_POST['tournament'];
-		$imageString = $_POST['imageString'];
+		$imageString = preg_replace("/[^a-zA-Z0-9]+/", "", $_POST['imageString']); 
 		$target_dir = "./robots/";
 		$target_file = $target_dir . $imageString . ".jpg";
 		$uploadOk = 1;
@@ -207,18 +315,119 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 			if (file_exists($target_file)){
 				unlink($target_file);
 			}
-		  if (move_uploaded_file($_FILES["botPicture"]["tmp_name"], $target_file)) {
-			  $targetFileTime = str_replace('.jpg', '-'.time().'.jpg', $target_file);
-			  copy($target_file, $targetFileTime);
-		    echo '<html><head><meta http-equiv="refresh" content="0; URL=myBot.php?bot_id='.$id.'&bracket='.$tournament.'" /></head><body><h1>Success</h1></body></html>';
-		  } else {
-		    echo "Sorry, there was an error uploading your file ".$_FILES["botPicture"]["tmp_name"]."as ". $target_file;
-		  }
+			  if (move_uploaded_file($_FILES["botPicture"]["tmp_name"], $target_file)) {
+				  $targetFileTime = str_replace('.jpg', '-'.time().'.jpg', $target_file);
+				  copy($target_file, $targetFileTime);
+				  shell_exec("removebg --api-key $removeBGKey --reprocess-existing --extra-api-option 'crop=true' --size hd $target_file");
+				  shell_exec("convert -resize '300' ".$target_dir.$imageString."-removebg.png /var/www/html/matchManager/robots-thumb/".$imageString.".png");
+				  
+				  if ($id == ''){
+	  			    echo '<html><head><meta http-equiv="refresh" content="2; URL=photoBooth.php" /></head><body><h1>Success</h1></body></html>';
+				  	
+				  } else {
+			    	  echo '<html><head><meta http-equiv="refresh" content="2; URL=myBot.php?bot_id='.$id.'&bracket='.$tournament.'" /></head><body><h1>Success</h1></body></html>';
+					}
+			  } else {
+			    echo "Sorry, there was an error uploading your file ".$_FILES["botPicture"]["tmp_name"]."as ". $target_file;
+			  }
 		}
 
-	} else if ($mode == 'cageForBryan'){
-		cagesForBryan();
+	} else if ($mode == 'singular'){
+		singular($_GET['smode']);
+	} else if ($mode == 'dataNibble'){ //This allows companion to populate variables one at a time!
+		$cage = $_GET['cage'];
+		$index = $_GET['index'];
+		$cage = getCageText($cage);
+		if ($index == "fightString"){
+			echo $cage['player1']." vs ".$cage['player2'];
+			exit;
+		}
+		echo $cage[$index];
+	} else if ($mode == 'hdFile'){
+		$bank = $_GET['bank'];
+		$shift = $_GET['shift'];
+		$matchLog = getMatchLog();
+		$prod = getProductionState();
+		$index = $prod['playback'][$bank];
+		$index += $shift;
+		if ($index < 0){
+			$index = 0;
+		} else if ($index > count($matchLog['listOnly'][$bank])){
+			$index = count($matchLog['listOnly'][$bank]) - 1;
+		}
+		
+		if (isset($_GET['index'])){
+			$index = $_GET['index'];
+		}
+		
+		$prod['playback'][$bank] = $index;
+		setProductionState($prod);
+		
+		$matchLog = getMatchLog();	
+		$path = array_slice($matchLog['listOnly'][$bank],$index,1);
+
+
+		echo current($path);
+		
+		
+	} else if ($mode == 'tapOut'){
+		$cage = $_GET['cage'];
+		$player = $_GET['player'];
+		$prod = getProductionState();
+		if ($cage == $prod['bank']['X'] ){
+			$thisCage = getCageText($cage);
+			if ($thisCage['matchActive']){
+				if ($player == 1){
+					shell_exec('curl "http://192.168.10.10:8000/press/bank/22/15"'); //TapOut	
+				} else if ($player == 2){
+					shell_exec('curl "http://192.168.10.10:8000/press/bank/22/11"'); //TapOut	
+				}
+				if ($cage == 1){
+					shell_exec('curl "http://192.168.10.10:8000/press/bank/40/9"');
+				}
+				else if ($cage == 2){
+					shell_exec('curl "http://192.168.10.10:8000/press/bank/40/10"');
+				}
+				else if ($cage == 3){
+					shell_exec('curl "http://192.168.10.10:8000/press/bank/40/11"');
+				}
+				else if ($cage == 4){
+					shell_exec('curl "http://192.168.10.10:8000/press/bank/40/12"');
+				}
+				else if ($cage == 5){
+					shell_exec('curl "http://192.168.10.10:8000/press/bank/40/113"');
+				}
+			}	
+		}
+		else if ($cage == $prod['bank']['Y'] ){
+			$thisCage = getCageText($cage);
+			if ($thisCage['matchActive']){
+				if ($player == 1){
+					shell_exec('curl "http://192.168.10.10:8000/press/bank/23/15"'); //TapOut	
+				} else if ($player == 2){
+					shell_exec('curl "http://192.168.10.10:8000/press/bank/23/11"'); //TapOut	
+				}
+				if ($cage == 1){
+					shell_exec('curl "http://192.168.10.10:8000/press/bank/40/9"');
+				}
+				else if ($cage == 2){
+					shell_exec('curl "http://192.168.10.10:8000/press/bank/40/10"');
+				}
+				else if ($cage == 3){
+					shell_exec('curl "http://192.168.10.10:8000/press/bank/40/11"');
+				}
+				else if ($cage == 4){
+					shell_exec('curl "http://192.168.10.10:8000/press/bank/40/12"');
+				}
+				else if ($cage == 5){
+					shell_exec('curl "http://192.168.10.10:8000/press/bank/40/113"');
+				}
+			}	
+		}
+		
+		
 	}
+	
 	
 
 	
@@ -231,13 +440,39 @@ function stopMatch($cage){
 	$outCage['matchActive'] = FALSE;
 	$outCage['matchPaused'] = FALSE;
 	$outCage['encore'] = FALSE;
+	$outCage['state_text'] = "Match Completed";
 	setCageText($cage, $outCage);
 	clearUnderway($outCage['tournament'], $outCage['id']);
-	setButton($cage, 1, 0, 0, FALSE);
-	setButton($cage, 2, 0, 0, FALSE);
+
+	//nMatches Tech Debt here
+	$prod = getProductionState();
+	$bank = 'Unknown';
+	if ($prod['bank']['X'] == $cage){
+		singular("stopX");
+		$bank = 'X';
+	} else if ($prod['bank']['Y'] == $cage){
+		singular("stopY");
+		$bank = 'Y';
+	}
+	$reason = $_GET['winReason'];
+	$outCage['winReason'] = $reason;
 	
+	$matchLog = getMatchLog();
+	$matchLog['listOnly'][$bank][$outCage['order']] = $outCage['filePath'];
+	$matchLog['verbose'][$outCage['filePath']] = $outCage;
+	setMathcLog($matchLog);
 }
 
+
+function getGilRoundString($weightClass, $round){
+	$gilRounds = json_decode(file_get_contents('./config/gilRounds.json'), true);
+	//This makes me cry inside. This file should be better formatted to allow for lookup in N timespace vs N^3
+	foreach($gilRounds as $roundArray){
+		if ($roundArray['weight_class'] == $weightClass && $roundArray['round'] == $round){
+			return ($roundArray['label']);
+		}
+	}
+}
 
 
 function matchToCage($cage,$tournament, $match){
@@ -249,16 +484,17 @@ function matchToCage($cage,$tournament, $match){
 	$match['tournament'] = $tournaments[$tournament];
 	$match['tournamentKey'] = $tournament;
 	$match['weightClass'] = str_replace("-", " ", str_replace("-Bracket","",$tournament));
-	$match['player1image'] = str_replace(" ","",strtolower($match['player1']));
-	$match['player2image'] = str_replace(" ","",strtolower($match['player2']));
+	$match['player1image'] = preg_replace("/[^a-zA-Z0-9]+/", "", str_replace(" ","",strtolower($match['player1'])));
+	$match['player2image'] = preg_replace("/[^a-zA-Z0-9]+/", "", str_replace(" ","",strtolower($match['player2'])));
 	$match['matchTime'] = MATCH_TIME;
 	$match['messageOverride'] = '';
 	$match['lowerMessage'] = 'Match: '.$match['order'].' - ';
-	if ($match['round'] > 0){
-		$match['lowerMessage'] .= "Winners Bracket Round ".$match['round'];
-	} else {
-		$match['lowerMessage'] .= "Losers Bracket Round ".($match['round'] * -1);
-	}
+	// if ($match['round'] > 0){
+	// 	$match['lowerMessage'] .= "Undefeated Bracket Round ".$match['round'];
+	// } else {
+	// 	$match['lowerMessage'] .= "Elimination Bracket Round ".($match['round'] * -1);
+	// }
+	$match['lowerMessage'] = getGilRoundString($match['weightClass'], $match['round']);
 	$match['lowerMessage'] .= ' - '.$match['weightClass'];
 	
 	$outCage['startTime'] = 0;
@@ -267,12 +503,17 @@ function matchToCage($cage,$tournament, $match){
 	$outCage['matchActive'] = FALSE;
 	$outCage['matchPaused'] = FALSE;
 	$outCage['encore'] = FALSE;
+	$outCage['filePath'] = $match['weightClass']."-".$match['order']."--".$match['player1image']."-vs-".$match['player2image'];
+	$outCage['state_text'] = "Assigned";
 	
 	
 	$outCage = array_merge($outCage, $match);
 	setCageText($cage, $outCage);
-	setButton($cage, 1, 0, 0, FALSE);
-	setButton($cage, 2, 0, 0, FALSE);
+	error_log("This is happenging");
+	shell_exec('curl "http://192.168.10.10:8000/press/bank/10/7"'); //Update Match Variables inside Companion
+	$prod = getProductionState();
+	
+
 }
 
 
@@ -291,101 +532,361 @@ function getCageText($cage){
 }
 
 //This is a custom function that uploads data to custom enpoints on singular.live
-function cagesForBryan(){
+//This currently only supports 2 matches at once and will need a rewite to process nMatches in sequence
+function singular($singularMode){
+	 $xAPI = "32lfxwYBWi5vYOJn3aWnmu";
+	 $yAPI = "4NwCk5DdRbefEozQfCsSjZ";
 	
 	
+	$prod = getProductionState();
 	
-	$cage1 = getCageText(1);
-	$player1 = $cage1['player1'];
-	$player2 = $cage1['player2'];
-	$player1_id = $cage1['player1_id'];
-	$player2_id = $cage1['player2_id'];
-	
-	$round = $cage['round'];
-	if ($round > 0){
-		$round = "Winners Bracket Round $round";
-	} else {
-		$round = "Losers Bracket Round $round";
+	if ($singularMode == "stopX"){
+		$XCage = $prod['bank']['X'];
+		$cage1 = getCageText($XCage);
+
+		
+		$out['compositionName'] = "Score Bug";
+		$out['controlNode']['payload'] = array(      
+			"clockControl" => array("command" => "pause"),
+			"showClock" => FALSE
+		);
+		$json = json_encode($out, JSON_PRETTY_PRINT);
+		//Oh yeah its that awful
+		echo "<pre> Calling Cage $XCage \n";
+		echo $json . "\n\n\n";
+		echo `curl --location --request PUT 'https://app.singular.live/apiv1/control/$xAPI' \
+	--header 'Content-Type: application/json' \
+	--data-raw ['$json']`;
+	}
+	else if ($singularMode == "pauseX"){
+		$XCage = $prod['bank']['X'];
+		$cage1 = getCageText($XCage);
+
+		
+		$out['compositionName'] = "Score Bug";
+		$out['controlNode']['payload'] = array(      
+			"clockControl" => array("command" => "pause"),
+			"showClock" => FALSE,
+			"exceptionText" => "PAUSED"
+		);
+		$json = json_encode($out, JSON_PRETTY_PRINT);
+		//Oh yeah its that awful
+		echo "<pre> Calling Cage $XCage \n";
+		echo $json . "\n\n\n";
+		echo `curl --location --request PUT 'https://app.singular.live/apiv1/control/$xAPI' \
+	--header 'Content-Type: application/json' \
+	--data-raw ['$json']`;
+	}
+	else if ($singularMode == "unpauseX"){
+		$XCage = $prod['bank']['X'];
+		$cage1 = getCageText($XCage);
+
+		
+		$out['compositionName'] = "Score Bug";
+		$out['controlNode']['payload'] = array(      
+			// "clockControl" => array("command" => "play"),
+			"clockTarget" => $cage1['stopTime'] * 1000,
+			"showClock" => TRUE,
+			"exceptionText" => ""
+		);
+		$json = json_encode($out, JSON_PRETTY_PRINT);
+		//Oh yeah its that awful
+		echo "<pre> Calling Cage $XCage \n";
+		echo $json . "\n\n\n";
+		echo `curl --location --request PUT 'https://app.singular.live/apiv1/control/$xAPI' \
+	--header 'Content-Type: application/json' \
+	--data-raw ['$json']`;
+	}	
+	else if ($singularMode == "startX"){
+		$XCage = $prod['bank']['X'];
+		$cage1 = getCageText($XCage);
+
+		$out['compositionName'] = "Score Bug";
+		$out['controlNode']['payload'] = array(      
+			// "clockControl" => array("command" => "reset"),
+			"clockTarget" => $cage1['stopTime'] * 1000,
+			"exceptionText" => "",
+			"showClock" => TRUE
+		);
+		$json = json_encode($out, JSON_PRETTY_PRINT);
+		echo "<pre> Calling Cage $XCage \n";
+		echo $json . "\n\n\n";
+		echo `curl --location --request PUT 'https://app.singular.live/apiv1/control/$xAPI' \
+	--header 'Content-Type: application/json' \
+	--data-raw ['$json']`;
+
+		
+		$out['compositionName'] = "Score Bug";
+		$out['controlNode']['payload'] = array(      
+			"clockControl" => array("command" => "start"),
+
+			
+			"exceptionText" => ""
+		);
+		$json = json_encode($out, JSON_PRETTY_PRINT);
+		//Oh yeah its that awful
+		echo "<pre> Calling Cage $XCage \n";
+		echo $json . "\n\n\n";
+		echo `curl --location --request PUT 'https://app.singular.live/apiv1/control/$xAPI' \
+	--header 'Content-Type: application/json' \
+	--data-raw ['$json']`;
 	}
 	
-	$out['payload'] = array(      
-	  "RoundName" => $round,
-      "Bot1Name" => $player1,
-      "Bot1Id" => $player1_id,
-      "Bot1Note" => "Driver: Bryan Drake",
-      "Bot2Name" => $player2,
-      "Bot2Id" =>$player2_id,
-      "Bot2Note" => "Driver: Also Bryan Drake"
-	);
-	$json = json_encode($out);
-	//Oh yeah its that awful
-	echo "<pre> Calling Cage 1 \n";
-	echo `curl --location --request PUT 'https://app.singular.live/apiv1/datanodes/0LD50d8KcQLkwQAFSs1AGs/data' \
---header 'Content-Type: application/json' \
---data-raw '$json'`;
+	if ($singularMode == "resetX"){
+		$XCage = $prod['bank']['X'];
+		$cage1 = getCageText($XCage);
+		$player2 = $cage1['player1'];
+		$player1 = $cage1['player2'];
+		$descript = $cage1['lowerMessage'];
+		if ($cage1['messageOverride'] != ''){
+			$descript = $cage1['messageOverride'];
+		}
+	    $winner = $cage1['winner'];
+		if ($winner == $player1){
+			$winner = 1;
+		} else if ($winner == $player2){
+			$winner = 2;
+		}
+		else {
+			$winner = 0;
+		}
+		
+		$out['compositionName'] = "Score Bug";
+		$out['controlNode']['payload'] = array(      
+			"headerText" => $descript,
+			"bot1Name" => $player1,
+			"bot2Name" => $player2,
+			"exceptionText" => "",
+			"setWinner" => $winner
 
-	$cage2 = getCageText(2);
-	$player1 = $cage2['player1'];
-	$player2 = $cage2['player2'];
-	$player1_id = $cage2['player1_id'];
-	$player2_id = $cage2['player2_id'];
+		);
+		if ($winner != 0){
+			$out['controlNode']['payload']['clockControl']['command'] = "reset";
+		}
+		
+		if ($XCage['matchActive'] == FALSE){
+			$out['controlNode']['payload']['clockWarning'] = FALSE;
+		}
+		
+		$json = json_encode($out, JSON_PRETTY_PRINT);
+		//Oh yeah its that awful
+		echo "<pre> Calling Cage $XCage \n";
+		echo $json . "\n\n\n";
+		echo `curl --location --request PUT 'https://app.singular.live/apiv1/control/$xAPI' \
+	--header 'Content-Type: application/json' \
+	--data-raw ['$json']`;
+
+		//Update Vestaboard!
+		$outString = "Up Now Cage ".$XCage." ".$cage1['weightClass']." ".preg_replace("/[^a-zA-Z0-9]+/", "", $cage1['player1'])." vs ".preg_replace("/[^a-zA-Z0-9]+/", "", $cage1['player2']);
+		shell_exec('curl -X POST -H "Content-Type: application/json" -d \'{"value1":"'.$outString.'"}\' https://maker.ifttt.com/trigger/MatchUpdate/with/key/cqz29bXA_bC2eOkhRNfiSk');
 	
-	$round = $cage['round'];
-	if ($round > 0){
-		$round = "Winners Bracket Round $round";
-	} else {
-		$round = "Losers Bracket Round $round";
 	}
-	
-	$out['payload'] = array(      
-	  "RoundName" => $round,
-      "Bot1Name" => $player1,
-      "Bot1Id" => $player1_id,
-      "Bot1Note" => "",
-      "Bot2Name" => $player2,
-      "Bot2Id" =>$player2_id,
-      "Bot2Note" => ""
-	);
-	$json = json_encode($out);
-	//Oh yeah its that awful
-	echo "\nCalling Cage 2 \n";
-	echo `curl --location --request PUT 'https://app.singular.live/apiv1/datanodes/634xCoADGxwz3Zdxb1M8oA/data' \
---header 'Content-Type: application/json' \
---data-raw '$json'`;
+	else if ($singularMode == "stopY"){
+		$XCage = $prod['bank']['Y'];
+		$cage1 = getCageText($XCage);
 
-
-	$cage3 = getCageText(3);
-	$player1 = $cage3['player1'];
-	$player2 = $cage3['player2'];
-	$player1_id = $cage3['player1_id'];
-	$player2_id = $cage3['player2_id'];
-	
-	$round = $cage['round'];
-	if ($round > 0){
-		$round = "Winners Bracket Round $round";
-	} else {
-		$round = "Losers Bracket Round $round";
+		
+		$out['compositionName'] = "Score Bug";
+		$out['controlNode']['payload'] = array(      
+			"clockControl" => array("command" => "pause"),
+			"showClock" => FALSE
+		);
+		$json = json_encode($out, JSON_PRETTY_PRINT);
+		//Oh yeah its that awful
+		echo "<pre> Calling Cage $XCage \n";
+		echo $json . "\n\n\n";
+		echo `curl --location --request PUT 'https://app.singular.live/apiv1/control/$yAPI' \
+	--header 'Content-Type: application/json' \
+	--data-raw ['$json']`;
 	}
-	
-	$out['payload'] = array(      
-	  "RoundName" => $round,
-      "Bot1Name" => $player1,
-      "Bot1Id" => $player1_id,
-      "Bot1Note" => "Driver: Bryan Drake",
-      "Bot2Name" => $player2,
-      "Bot2Id" =>$player2_id,
-      "Bot2Note" => "Driver: Also Bryan Drake"
-	);
-	$json = json_encode($out);
-	//Oh yeah its that awful
-	echo "\nCalling Cage 3 \n";
-	echo `curl --location --request PUT 'https://app.singular.live/apiv1/datanodes/0hIp2BFwZqfcDfyAwEcKlA/data' \
---header 'Content-Type: application/json' \
---data-raw '$json'`;
+	else if ($singularMode == "pauseY"){
+		$XCage = $prod['bank']['Y'];
+		$cage1 = getCageText($XCage);
 
+		
+		$out['compositionName'] = "Score Bug";
+		$out['controlNode']['payload'] = array(      
+			// "clockControl" => array("command" => "pause"),
+			"showClock" => FALSE,
+			"exceptionText" => "PAUSED"
+		);
+		$json = json_encode($out, JSON_PRETTY_PRINT);
+		//Oh yeah its that awful
+		echo "<pre> Calling Cage $XCage \n";
+		echo $json . "\n\n\n";
+		echo `curl --location --request PUT 'https://app.singular.live/apiv1/control/$yAPI' \
+	--header 'Content-Type: application/json' \
+	--data-raw ['$json']`;
+	}
+	else if ($singularMode == "unpauseY"){
+		$XCage = $prod['bank']['Y'];
+		$cage1 = getCageText($XCage);
 
+		
+		$out['compositionName'] = "Score Bug";
+		$out['controlNode']['payload'] = array(      
+			"clockControl" => array("command" => "play"),
+			"clockTarget" => $cage1['stopTime'] * 1000,
+			"showClock" => TRUE,
+			"exceptionText" => ""
+		);
+		$json = json_encode($out, JSON_PRETTY_PRINT);
+		//Oh yeah its that awful
+		echo "<pre> Calling Cage $XCage \n";
+		echo $json . "\n\n\n";
+		echo `curl --location --request PUT 'https://app.singular.live/apiv1/control/$yAPI' \
+	--header 'Content-Type: application/json' \
+	--data-raw ['$json']`;
+	} 
+	else if ($singularMode == "startY"){
+		$XCage = $prod['bank']['Y'];
+		$cage1 = getCageText($XCage);
+
+		$out['compositionName'] = "Score Bug";
+		$out['controlNode']['payload'] = array(      
+			// "clockControl" => array("command" => "reset"),
+			"clockTarget" => $cage1['stopTime'] * 1000,
+			"exceptionText" => "",
+			"showClock" => TRUE
+		);
+		$json = json_encode($out, JSON_PRETTY_PRINT);
+		echo "<pre> Calling Cage $XCage \n";
+		echo $json . "\n\n\n";
+		echo `curl --location --request PUT 'https://app.singular.live/apiv1/control/$yAPI' \
+	--header 'Content-Type: application/json' \
+	--data-raw ['$json']`;
+
+		
+		$out['compositionName'] = "Score Bug";
+		$out['controlNode']['payload'] = array(      
+			"clockControl" => array("command" => "start"),
+			"exceptionText" => ""
+		);
+		$json = json_encode($out, JSON_PRETTY_PRINT);
+		//Oh yeah its that awful
+		echo "<pre> Calling Cage $XCage \n";
+		echo $json . "\n\n\n";
+		echo `curl --location --request PUT 'https://app.singular.live/apiv1/control/$yAPI' \
+	--header 'Content-Type: application/json' \
+	--data-raw ['$json']`;
+	}	
 	
-  
+	else if ($singularMode == "resetY"){
+		$XCage = $prod['bank']['Y'];
+		$cage1 = getCageText($XCage);
+		$player2 = $cage1['player1'];
+		$player1 = $cage1['player2'];
+		$descript = $cage1['lowerMessage'];
+		if ($cage1['messageOverride'] != ''){
+			$descript = $cage1['messageOverride'];
+		}
+		$winner = $cage1['winner'];
+		
+		if ($winner == $player1){
+			$winner = 1;
+		} else if ($winner == $player2){
+			$winner = 2;
+		}
+		else {
+			$winner = 0;
+		}
+		$out['compositionName'] = "Score Bug";
+		$out['controlNode']['payload'] = array(      
+			"headerText" => $descript,
+			"bot1Name" => $player1,
+			"bot2Name" => $player2,
+			"exceptionText" => "",
+			"setWinner" => $winner
+
+		);
+		
+		if ($winner != 0){
+			$out['controlNode']['payload']['clockControl']['command'] = "reset";
+		}
+		if ($XCage['matchActive'] == FALSE){
+			$out['controlNode']['payload']['clockWarning'] = FALSE;
+		}
+		
+		
+		$json = json_encode($out, JSON_PRETTY_PRINT);
+		//Oh yeah its that awful
+		echo "<pre> Calling Cage $XCage \n";
+		echo $json . "\n\n\n";
+		echo `curl --location --request PUT 'https://app.singular.live/apiv1/control/$yAPI' \
+	--header 'Content-Type: application/json' \
+	--data-raw ['$json']`;
+	} else if ($singularMode == "judgesX"){
+		$judge1id = 4; 
+		$judge2id = 5;
+		$judge3id = 6;
+		
+		
+		$XCage = $prod['bank']['X'];
+		$cage1 = getCageText($XCage);
+		$player2 = $cage1['player1'];
+		$player1 = $cage1['player2'];
+		$descript = $cage1['lowerMessage'];
+		$judge = getJudgeJSON("X");
+		
+		$judge3_winner = $cage1[$judge['judge_scores']['player1'][$judge3id]['winner']]." ";
+		$judge3_aggression = $judge['judge_scores'][$judge['judge_scores']['player1'][$judge3id]['winner']][$judge3id]['aggression']." ";
+		$judge3_control = $judge['judge_scores'][$judge['judge_scores']['player1'][$judge3id]['winner']][$judge3id]['control']." ";
+		$judge3_damage = $judge['judge_scores'][$judge['judge_scores']['player1'][$judge3id]['winner']][$judge3id]['damage']." ";
+		
+		$judge2_winner = $cage1[$judge['judge_scores']['player1'][$judge2id]['winner']]." ";
+		$judge2_aggression = $judge['judge_scores'][$judge['judge_scores']['player1'][$judge2id]['winner']][$judge2id]['aggression']." ";
+		$judge2_control = $judge['judge_scores'][$judge['judge_scores']['player1'][$judge2id]['winner']][$judge2id]['control']." ";
+		$judge2_damage = $judge['judge_scores'][$judge['judge_scores']['player1'][$judge2id]['winner']][$judge2id]['damage']." ";
+		
+		$judge1_winner = $cage1[$judge['judge_scores']['player1'][$judge1id]['winner']]." ";
+		$judge1_aggression = $judge['judge_scores'][$judge['judge_scores']['player1'][$judge1id]['winner']][$judge1id]['aggression']." ";
+		$judge1_control = $judge['judge_scores'][$judge['judge_scores']['player1'][$judge1id]['winner']][$judge1id]['control']." ";
+		$judge1_damage = $judge['judge_scores'][$judge['judge_scores']['player1'][$judge1id]['winner']][$judge1id]['damage']." ";
+		
+		
+	
+		
+		
+		
+		$out['payload'] = array(      
+			"title" => "$player1 vs $player2",
+			"subtitle" => $descript,
+
+			"judge3_winner" => $judge3_winner,
+			"judge3_aggression" => $judge3_aggression,
+			"judge3_control" => $judge3_control,
+			"judge3_damage" => $judge3_damage,
+			
+			"judge2_winner" => $judge2_winner,
+			"judge2_aggression" => $judge2_aggression,
+			"judge2_control" => $judge2_control,
+			"judge2_damage" => $judge2_damage,
+			
+			"judge1_winner" => $judge1_winner,
+			"judge1_aggression" => $judge1_aggression,
+			"judge1_control" => $judge1_control,
+			"judge1_damage" => $judge1_damage
+			
+
+		);
+		
+		if ($winner != 0){
+			$out['controlNode']['payload']['clockControl']['command'] = "reset";
+		}
+		if ($XCage['matchActive'] == FALSE){
+			$out['controlNode']['payload']['clockWarning'] = FALSE;
+		}
+		
+		
+		$json = json_encode($out, JSON_PRETTY_PRINT);
+		//Oh yeah its that awful
+		echo "<pre> Calling Cage $XCage \n";
+		echo $json . "\n\n\n";
+		echo `curl --location --request PUT 'https://app.singular.live/apiv1/datanodes/0VAL9jz22jL001sx4ssYlu/data' \
+	--header 'Content-Type: application/json' \
+	--data-raw '$json'`;
+	}
+
 	
 } 
 
@@ -397,37 +898,43 @@ function clearCageText($cage){
 
 function setCageText($cage, $cageArray){
 	file_put_contents('./config/cage'.$cage.'.json',json_encode($cageArray));
+	
 }
 
-// THIS WILL NOT WORK IF THERE ARE MULTIPLE UNDERWAY MATCHES!!!
-function getJudgeMatchData(){
+// This needs a Bank to be set
+function getJudgeMatchData($bank){
 	$tournaments = getChallongeTournaments();
 	$ourMatch = -1;
 	
-	if (count($tournaments) != 0){		
-		foreach ($tournaments as $tournamentName => $tournament){
-			$tournamentNameNice = str_replace("-"," ", $tournamentName);
-			$matches = getMatches($tournament);
-			ksort($matches);
-			foreach($matches as $match){
-			  if($match['underway'] == '1'){
-				  $ourMatch = $match;
-				  break;
-			  }
-			}
-			if ($ourMatch != -1){
-				break;
-			}
-		}
-	}
-	//No Matches are underway
-	if ($ourMatch == -1){
-		$outArray = array("player1" => "-", "player2" => "-", "round" => 0, "tournament" => "none", "id" => 0);
-	} else {
-		$outArray = $ourMatch;
-		$outArray['tournament'] = $tournamentNameNice;
-	}
-	return $outArray;
+	// if (count($tournaments) != 0){
+// 		foreach ($tournaments as $tournamentName => $tournament){
+// 			$tournamentNameNice = str_replace("-"," ", $tournamentName);
+// 			$matches = getMatches($tournament);
+// 			ksort($matches);
+// 			foreach($matches as $match){
+// 			  if($match['underway'] == '1'){
+// 				  $ourMatch = $match;
+// 				  break;
+// 			  }
+// 			}
+// 			if ($ourMatch != -1){
+// 				break;
+// 			}
+// 		}
+// 	}
+// 	//No Matches are underway
+// 	if ($ourMatch == -1){
+// 		$outArray = array("player1" => "-", "player2" => "-", "round" => 0, "tournament" => "none", "id" => 0);
+// 	} else {
+// 		$outArray = $ourMatch;
+// 		$outArray['tournament'] = $tournamentNameNice;
+// 	}
+
+	$prod = getProductionState();
+	$XCage = $prod['bank']['X'];
+	$cage1 = getCageText($XCage);
+
+	return $cage1;
 }
 
 //This only works when the current match you are submitting scores for is underway!
@@ -442,8 +949,8 @@ function getJudgeScores(){
 	}
 }
 
-function getJudgeJSON(){
-	$match = getJudgeMatchData();
+function getJudgeJSON($bank){
+	$match = getJudgeMatchData($bank);
 	if($match['id'] == 0){
 		return;
 	}
@@ -462,9 +969,9 @@ function setJudgeScores($scores){
 	file_put_contents('./config/judgeScores.json',json_encode($scores, JSON_PRETTY_PRINT));
 }
 
-function judgeLoadStage($stage){
+function judgeLoadStage($stage, $bank){
 	$stage = intval($stage); //Saftey!
-	$match = getJudgeMatchData();
+	$match = getJudgeMatchData($bank);
 	if($match['id'] == 0){
 		return;
 	}
@@ -482,8 +989,8 @@ function judgeLoadStage($stage){
 	setJudgeScores($judgedMatches);
 };
 
-function submitJudgeScores($scores){
-	$match = getJudgeMatchData();
+function submitJudgeScores($scores, $bank){
+	$match = getJudgeMatchData($bank);
 	if($match['id'] == 0){
 		return;
 	}
@@ -500,7 +1007,7 @@ function submitJudgeScores($scores){
 	$player1['aggression'] = 0 + $scores['agression'];
 	$player1['damage'] = 0 + $scores['dammage'];
 	$player1['control'] = 0 + $scores['control'];
-	$player2['aggression'] = MAX_SCORE - $scores['agression'];
+	$player2['aggression'] = (MAX_SCORE - 1) - $scores['agression'];
 	$player2['damage'] = MAX_SCORE - $scores['dammage'];
 	$player2['control'] = MAX_SCORE - $scores['control'];
 	if ($player1['aggression'] + $player1['damage'] + $player1['control'] > $player2['aggression'] + $player2['damage'] + $player2['control'] ) {
@@ -596,10 +1103,10 @@ function botDetails($tournament, $bot_id, $bracket){
 	  }
 	  
 	  if ($currentRound > 0){
-		  $roundString = "Winners - Round $currentRound";
+		  $roundString = "Undefeated - Round $currentRound";
 	  } else {
 		  $currentRound = $currentRound * -1;
-		  $roundString = "Losers - Round $currentRound";
+		  $roundString = "Elimination - Round $currentRound";
 	  }
 	  
 	  if ($matchesRemaining < 10){
@@ -663,7 +1170,8 @@ function botDetails($tournament, $bot_id, $bracket){
 		  }
 	  }
 	 
-	  $playerImage = str_replace(" ","",strtolower($playerName));
+	 $playerImage = preg_replace("/[^a-zA-Z0-9]+/", "", str_replace(" ","",strtolower($playerName)));
+	  
 	  	
 	$out = '<div class ="row mt-3">
 			<h1 class="h2 col-9">'.$playerName.'</h1>
@@ -683,16 +1191,16 @@ function botDetails($tournament, $bot_id, $bracket){
 				<div class="myCyan botName text-right" >'.$match['player2'].'</div>
 			</div>
 			<div class="col-1 px-0">
-				<div class="myIcon botBgMagenta" style="background-image:url(\'robots/'.str_replace(" ","",strtolower($match['player1'])).'.jpg\')"></div>
-				<div class="myIcon botBgCyan" style="background-image:url(\'robots/'.str_replace(" ","",strtolower($match['player2'])).'.jpg\')"></div>
+				<div class="myIcon botBgMagenta" style="background-image:url(\'getBotPic.php?bot='.str_replace(" ","",strtolower($match['player1'])).'\')"></div>
+				<div class="myIcon botBgCyan" style="background-image:url(\'getBotPic.php?bot='.str_replace(" ","",strtolower($match['player2'])).'\')"></div>
 			</div>
 
 		</div>
 		
 		
-		<div class="row pb-2 ">
-			<div class="botImage px-4 py-0 d-flex text-right flex-row-reverse" style="background-image:url(\'robots/'.$playerImage.'.jpg\')">
-				<a href="newPic.php?bot_id='.$bot_id.'&imageString='.$playerImage.'&tournament='.$bracket.'" class="mt-auto btn btn-primary ">Update Picture</a>
+		<div class="row pb-2" >
+			<div class="botImage px-4 py-0 d-flex text-right flex-row-reverse" style="background-image:url(\'getBotPic.php?bot='.$playerImage.'\')">
+				<a style="display:none" href="newPic.php?bot_id='.$bot_id.'&imageString='.$playerImage.'&tournament='.$bracket.'" class="mt-auto btn btn-primary ">Update Picture</a>
 			</div>
 		</div>
 	
@@ -735,11 +1243,36 @@ function populateCageFields($cage, $echo=true){
 		$paused = 'btn-outline-secondary';
 	}
 	
+	$cageLabel = $cage;
+	if ($cageText['order'] > 0 ){
+		$state = getProductionState();
+		$liveMode = "";
+		if ($state['bank']['X'] == $cage){
+			$liveMode = " MAIN";
+		}
+		if ($state['bank']['Y'] == $cage){
+			$liveMode = " OCHO";
+		}
+		
+		$cageLabel .= "<span style='font-weight:100'> ".$cageText['weightClass']." - ".$cageText['order']." ".$liveMode."</span>";
+	} else {
+		$state = getProductionState();
+		$liveMode = "";
+		if ($state['bank']['X'] == $cage){
+			$liveMode = " MAIN";
+		}
+		if ($state['bank']['Y'] == $cage){
+			$liveMode = " OCHO";
+		}
+		$cageLabel .= "<span style='font-weight:100'> ".$liveMode."</span>";
+	}
+	
 	
 	$outText = '
-		<div class="col-md border rounded m-2 py-1" ">
+		<div class="col border rounded m-1 py-1 cageBlock">
 			<form id="cage'.$cage.'form" name="cage'.$cage.'form">
-			<h3 class="mb-4 mt-2"><span class="badge badge-pill '.$cageCSS.'">'.$cage.'</span> <button type="button" class="btn btn-outline-primary float-right" style="transition: none !important;" id="updateCage-'.$cage.'" onClick="updateCage('.$cage.')">Push Update</button></h3>
+			<h3 class="mb-4 mt-2"><span class="badge badge-pill cageTitle '.$cageCSS.'">'.$cageLabel.'</span> <button type="button" class="btn btn-outline-primary float-right" style="transition: none !important;" id="updateCage-'.$cage.'" onClick="updateCage('.$cage.')">Push Update</button></h3>
+				<div class="cageState alert alert-dark text-center lead ">'.$cageText['state_text'].'&nbsp;</div>
 				<input type="hidden" name="cage" value="'.$cage.'">
 				<input type="hidden" name="mode" value="manualCageUpdate">
 				<div class="input-group mb-3">
@@ -768,7 +1301,7 @@ function populateCageFields($cage, $echo=true){
 				  </div>
 				  <input type="text" class="form-control lower-message-text" group="cage"  cage="'.$cage.'" name="messageOverride" placeholder="'.$cageText['lowerMessage'].'" value="'.$cageText['messageOverride'].'">
 				</div>
-				<div class="input-group mb-3">
+				<div class="input-group mb-3 matchTime">
 				  <div class="input-group-prepend">
 				    <span class="input-group-text" group="cage" cage="'.$cage.'" name="matchTime">Match Time</span>
 				  </div>
@@ -780,7 +1313,7 @@ function populateCageFields($cage, $echo=true){
 			  <div class="float-left inline-block">
 					<button class="btn btn-outline-secondary" type="button" id="button-addon2" onClick="cageCommand('.$cage.',\'clearMatch\', this)" style="transition: none !important;">Clear</button>
 			  </div>
-				<div class="input-group col-8 mb-3 float-right">
+				<div class="input-group col-9 mb-3 float-right">
 
 				  <div class="input-group-preppend">
 						<button class="btn btn-outline-info" type="button" id="button-addon2" onClick="cageCommand('.$cage.',\'encore\', this)" style="transition: none !important;">Encore</button>
@@ -789,7 +1322,7 @@ function populateCageFields($cage, $echo=true){
 						<button class="btn '.$paused.'" type="button" id="button-addon2" style="transition: none !important;" onClick="cageCommand('.$cage.',\'pause\', this)">Pause</button>
 				  </div>
 				  <div class="input-group-append">
-						<button class="btn btn-outline-danger stopMatch" type="button" id="button-addon2" cage="'.$cage.'" onClick="cageCommand('.$cage.',\'stopMatch\', this)" style="transition: none !important;">End Match</button>
+						<button class="btn btn-outline-danger stopMatch" type="button" id="button-addon2" cage="'.$cage.'" onClick="cageCommand('.$cage.',\'stopMatch\', this)" style="transition: none !important;">End</button>
 				  </div>
 				</div>
 				</form>
@@ -828,6 +1361,39 @@ function setChallongeTournaments($tournaments){
 		getMatches($value, TRUE);
 	}
 }
+
+
+function getProductionState(){
+	
+	if (file_exists('./config/productionState.json')){
+		return(json_decode(file_get_contents('config/productionState.json'), TRUE));
+	}
+	else {
+		return(array());
+	}
+}
+function setProductionState($productionState){
+	$productionState['updateTime'] = time();
+	file_put_contents('./config/productionState.json',json_encode($productionState));
+
+}
+
+function getMatchLog(){
+	$dateCode = date("m-Y");
+	if (file_exists('./config/matchLog-'.$dateCode.'.json')){
+		return(json_decode(file_get_contents('./config/matchLog-'.$dateCode.'.json'), TRUE));
+	}
+	else {
+		return(array());
+	}
+}
+function setMathcLog($matchLog){
+	$dateCode = date("m-Y");
+	$matchLog['updateTime'] = time();
+	file_put_contents('./config/matchLog-'.$dateCode.'.json',json_encode($matchLog));
+
+}
+
 
 function doCurl ($url, $code = 200, $post = FALSE, $put = FALSE){
 	$handle = curl_init();
@@ -963,13 +1529,13 @@ function getMatches($tournament, $forceRefresh = FALSE) {
 		$greenroom = readGreenroom();
 		if (isset($greenroom[$match['match']['player1_id']])){
 			//Player is in greenroom
-			$player1greenroom = 1;
+			$player1greenroom = $greenroom[$match['match']['player1_id']];
 		} else {
 			$player1greenroom = 0;
 		}
 		if (isset($greenroom[$match['match']['player2_id']])){
 			//Player is in greenroom
-			$player2greenroom = 1;
+			$player2greenroom = $greenroom[$match['match']['player2_id']];
 		} else {
 			$player2greenroom = 0;
 		}
@@ -1039,9 +1605,9 @@ function emptyGreenroom(){
 }
 
 
-function addToGreenroom($playerID){
+function addToGreenroom($playerID, $room = 1){
 	$greenroom = readGreenroom();
-	$greenroom[$playerID] = 1;
+	$greenroom[$playerID] = $room;
 	writeGreenroom($greenroom);
 }
 
@@ -1085,13 +1651,13 @@ function printAvailableMatches($json = false){
 						  $underway = '';
 					  }
 					  
-					  if ($player1_greenroom == 1){
-						  $player1greenroom = 'greenroom';
+					  if ($player1_greenroom > 0){
+						  $player1greenroom = 'greenroom'.$player1_greenroom;
 					  } else {
 					  	  $player1greenroom = '';
 					  }
-					  if ($player2_greenroom == 1){
-						  $player2greenroom = 'greenroom';
+					  if ($player2_greenroom > 0){
+						  $player2greenroom = 'greenroom'.$player2_greenroom;
 					  } else {
 					      $player2greenroom = '';
 					  }
@@ -1154,16 +1720,19 @@ function printAvailableMatches($json = false){
 					  if ($round > 0){
 						  $round = "W".$round;
 					  } else {
-						  $round = "L".($round * -1);
+						  $round = "E".($round * -1);
 					  }
 					  
+				  	  $playerImage1 = preg_replace("/[^a-zA-Z0-9]+/", "", str_replace(" ","",strtolower($player1)));
+					  $playerImage2 = preg_replace("/[^a-zA-Z0-9]+/", "", str_replace(" ","",strtolower($player2)));
+				  
 				  
 					  $outString .= '<tr class="'.$underway.' possibleMatches  " style="vertical-align: middle">
 				  <td scope="row" class="'.$match_ready.' '.$bothGreenroom.'" ><label class="btn btn-outline-secondary rounded-pill" style="width:100%; text-align: left; text-weight: bold;"><input type="radio" name="matchSelect" value="'.$tournamentName.'~'.$order.'" id="radio-'.$tournamentName.'~'.$order.'" >
 			      <b>'.$order.'</b></label></td>
 				  <td style="vertical-align: middle">'.$round.'</td>
-			      <td style="vertical-align: middle" class="'.$player1greenroom.'">'.$player1_readyString.$player1.'</td>
-			      <td style="vertical-align: middle" class="'.$player2greenroom.'">'.$player2_readyString.$player2.'</td>
+			      <td style="vertical-align: middle" class="'.$player1greenroom.'"><img class=" mr-1 " style="height: 32px" src="getBotPic.php?thumb=1&bot='.$playerImage1.'">'.$player1_readyString.$player1.'</td>
+			      <td style="vertical-align: middle" class="'.$player2greenroom.'"><img class=" mr-1 " style="height: 32px" src="getBotPic.php?thumb=1&bot='.$playerImage2.'">'.$player2_readyString.$player2.'</td>
 			    </tr>';
 				
 				
@@ -1211,7 +1780,7 @@ function printTheNext10($json = false){
 			  ksort($matches);
 			  $count = 0;
 			  foreach($matches as $match){
-				  if($match['state'] == 'open' && $count < 10){
+				  if($match['state'] == 'open' && $count < 20){
 					  $count++;
 					  $oneOpen = true;
 					  extract($match); //Gross!
@@ -1222,19 +1791,20 @@ function printTheNext10($json = false){
 						  $underway = '';
 					  }
 					  
-					  if ($player1_greenroom == 1){
-						  $player1greenroom = 'bg-success';
+
+					  if ($player1_greenroom > 0){
+						  $player1greenroom = 'greenroom'.$player1_greenroom;
 					  } else {
 					  	  $player1greenroom = '';
 					  }
-					  if ($player2_greenroom == 1){
-						  $player2greenroom = 'bg-success';
+					  if ($player2_greenroom > 0){
+						  $player2greenroom = 'greenroom'.$player2_greenroom;
 					  } else {
 					      $player2greenroom = '';
 					  }
 					  
 					  if ($player1_greenroom == 1 && $player2_greenroom == 1){
-						  $bothGreenroom = "bg-success";
+						  $bothGreenroom = "greenroomBoth";
 					  } else {
 					  	 $bothGreenroom = '';
 					  }
@@ -1292,7 +1862,7 @@ function printTheNext10($json = false){
 					  if ($round > 0){
 						  $round = "W".$round;
 					  } else {
-						  $round = "L".($round * -1);
+						  $round = "E".($round * -1);
 					  }
 					  
 				  
@@ -1415,13 +1985,13 @@ function printUpNext($tournament, $thisRound = 0){
 						  $underway = '';
 					  }
 					  
-					  if ($player1_greenroom == 1){
-						  $player1greenroom = 'greenroom';
+					  if ($player1_greenroom > 0){
+						  $player1greenroom = 'greenroom'.$player1_greenroom;
 					  } else {
 					  	  $player1greenroom = '';
 					  }
-					  if ($player2_greenroom == 1){
-						  $player2greenroom = 'greenroom';
+					  if ($player2_greenroom > 0){
+						  $player2greenroom = 'greenroom'.$player2_greenroom;
 					  } else {
 					      $player2greenroom = '';
 					  }
@@ -1508,7 +2078,7 @@ function printUpNext($tournament, $thisRound = 0){
 					  if ($round > 0){
 						  $round = "W".$round;
 					  } else {
-						  $round = "L".($round * -1);
+						  $round = "E".($round * -1);
 					  }
 					  
 					  
@@ -1531,9 +2101,9 @@ function printUpNext($tournament, $thisRound = 0){
 			  
 			  if ($thisRound < 0){
 				  $outRound = $thisRound * -1;
-				  $roundString = "Losers Bracket: Round $outRound";
+				  $roundString = "Elimination Bracket: Round $outRound";
 			  } else {
-			  	$roundString = "Winners Bracket: Round $thisRound";
+			  	$roundString = "Undefeated Bracket: Round $thisRound";
 			  }
 			  
 			  echo '<div class="groupLabel">Upcoming matches in the '.$roundString.'</div>';
@@ -1633,7 +2203,7 @@ function allBots($outMode = "allBots"){
 				$readyAt = $player['meta']['lastFought'] + MATCH_READY;
 				$readySeconds = $readyAt - time();
 				if (isset($greenroom[$id])){
-					$inGreenroom = 'greenroom';
+					$inGreenroom = 'greenroom'.$greenroom[$id];
 				} else {
 					$inGreenroom = '';
 				}
@@ -1665,7 +2235,7 @@ function allBots($outMode = "allBots"){
 					if ($player['next']['iam'] == 1){
 						$competitor = $player['next']['player2'];
 						if (isset($greenroom[$player['next']['player2_id']])){
-							$competitorGreenroom = "greenroom";
+							$competitorGreenroom = "greenroom".$greenroom[$player['next']['player2_id']];
 						} else {
 							$competitorGreenroom = "";
 						}
@@ -1673,7 +2243,7 @@ function allBots($outMode = "allBots"){
 					} else {
 						$competitor = $player['next']['player1'];
 						if (isset($greenroom[$player['next']['player1_id']])){
-							$competitorGreenroom = "greenroom";
+							$competitorGreenroom = "greenroom".$greenroom[$player['next']['player1_id']];
 						} else {
 							$competitorGreenroom = "";
 						}
@@ -1718,10 +2288,17 @@ function allBots($outMode = "allBots"){
 				}
 				
 				if ($outMode == "allBots"){
+				 	$playerImage = preg_replace("/[^a-zA-Z0-9]+/", "", str_replace(" ","",strtolower($player['meta']['name'])));
 					$out .= '<div class="aBotBlock '.$botClass.'">
 							<div class="aBot ">
 								<div class="aBotWeight">'.$player['next']['order'].'</div>
-								<div class="aBotName '.$inGreenroom.'" onClick="greenroomToggle('.$id.')"><a class="'.$botClass.' " href="myBot.php?bot_id='.$id.'&bracket='.$player['meta']['tournamentName'].'">'.$player['meta']['name'].'</a></div>
+								<div class="aBotName '.$inGreenroom.'" onClick="greenroomToggle('.$id.')"><div class=" mr-1 " style="height: 32px; 
+																																	padding-top: 6px;
+																																	display: inline-block;
+																																	background-image: url(getBotPic.php?thumb=1&bot='.$playerImage.'&junk='.floor(time()/120).') ; 	
+																																	background-size: contain; background-position: center; background-repeat: no-repeat;
+																																	width: 48px;
+"></div><a class="'.$botClass.' " href="myBot.php?bot_id='.$id.'&bracket='.$player['meta']['tournamentName'].'">'.$player['meta']['name'].'</a></div>
 								<div class="aBotReady '.$readyClass.'">'.$readyText.'<span class="readyCaption">min</span></div>
 							</div>
 							'.$next.'
@@ -1733,6 +2310,18 @@ function allBots($outMode = "allBots"){
 								<div class="aBotWeight">'.$player['next']['order'].'</div>
 								<div class="aBotName '.$inGreenroom.'" onClick="greenroomToggle('.$id.')" style="cursor: pointer;"><span class="'.$botClass.'">'.$player['meta']['name'].'</span></div>
 								<div class="aBotReady '.$readyClass.'">'.$readyText.'<span class="readyCaption">min</span></div>
+							</div>
+							'.$next.'
+						</div>';
+				} else if ($outMode == "photoBooth"){
+					 $playerImage = preg_replace("/[^a-zA-Z0-9]+/", "", str_replace(" ","",strtolower($player['meta']['name'])));
+					 $photoString = "newPic.php?imageString=".$playerImage;
+					
+					$out .= '<div class="aBotBlock '.$botClass.'">
+							<div class="aBot ">
+								
+								<div class="aBotName " onClick="window.location=\''. $photoString.'\'" style="cursor: pointer;"><span class="'.$botClass.'">'.$player['meta']['name'].'</span><img style="float:right" width="32px" src="getBotPic.php?bot='.$playerImage.'&thumb=1"></div>
+								
 							</div>
 							'.$next.'
 						</div>';

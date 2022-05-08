@@ -57,15 +57,36 @@ $challongeURLS = getChallongeTournaments();
 		@font-face {
 		  font-family: Conduit;
 		  src: url('assets/ITC - ConduitITCPro-Medium.otf');
-		  font-weight: 600;
+		  font-weight: 400;
 		}
 		@font-face {
 		  font-family: Conduit;
 		  src: url('assets/ITC - ConduitITCPro-MediumItalic.otf');
-		  font-weight: 600;
+		  font-weight: 400;
 		  font-style: italic;
 		}
-
+		@font-face {
+		  font-family: Conduit;
+		  src: url('assets/ITC - ConduitITCPro-Light.otf');
+		  font-weight: 300;
+		}
+		@font-face {
+		  font-family: Conduit;
+		  src: url('assets/ITC - ConduitITCPro-LightItalic.otf');
+		  font-weight: 300;
+		  font-style: italic;
+		}
+		@font-face {
+		  font-family: Conduit;
+		  src: url('assets/ITC - ConduitITCPro-ExtraLight.otf');
+		  font-weight: 100;
+		}
+		@font-face {
+		  font-family: Conduit;
+		  src: url('assets/ITC - ConduitITCPro-ExtraLightItalic.otf');
+		  font-weight: 100;
+		  font-style: italic;
+		}
 
 		@font-face {
 		  font-family: Billy;
@@ -77,7 +98,7 @@ $challongeURLS = getChallongeTournaments();
 			background: #000000;
 		}
 		.badge-pill::before {
-			content: "Cage ";
+			content: "";
 		}
 		
 		.badge-pill {
@@ -95,7 +116,7 @@ $challongeURLS = getChallongeTournaments();
 		}
 	
 	</style>
-    <title>Next 5</title>
+    <title>Event Status</title>
 	
 	<script type="text/javascript">
 		
@@ -160,9 +181,17 @@ $challongeURLS = getChallongeTournaments();
 	
   </head>
   <body>
-
-
-	 <h1 class="next10Title">Next 10 Matches</h1>
+	<div class="container-flex px-4">
+		<input  type="hidden" name="mode" value="updateCages" >
+		<div class="row" id="cageRow">
+			<?php  
+				populateCageFields(1);
+				populateCageFields(2);
+				populateCageFields(3);
+			?>
+		</div>
+	</div>
+	<h1 class="next10Footer"></h1>
 	<div class="container-flex px-4">
 		<div class="row " id="availableMatches">
 			<div class="d-flex justify-content-center">
@@ -176,17 +205,7 @@ $challongeURLS = getChallongeTournaments();
 	<BR>
 		<BR>
 			<BR>
-	<div class="container-flex px-4">
-		<input  type="hidden" name="mode" value="updateCages" >
-		<div class="row" id="cageRow">
-			<?php  
-				populateCageFields(1);
-				populateCageFields(2);
-				populateCageFields(3);
-			?>
-		</div>
-	</div>
-	<h1 class="next10Footer"></h1>
+
 
 	  
 	  

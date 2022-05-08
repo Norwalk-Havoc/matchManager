@@ -1,6 +1,7 @@
 /* @override 
 	http://50day.dynalias.org/matchManager/onScreen.css
-	http://50day.dynalias.org/matchManager/upNext.css */
+	http://50day.dynalias.org/matchManager/upNext.css
+	https://local.50day.io/matchManager/upNext.css */
 
 
 
@@ -406,7 +407,7 @@ body {
 	font-size: 30px;
 	width: 45px;
 	text-align: center;
-	background-color: #d81a1a;
+	background-color: #FCD900;
 	line-height: 15px;
 	padding-top: 17px;
 }
@@ -431,8 +432,20 @@ body {
 	display: none;
 }
 .readyNow {
-	background-color: #1ec317;
+	background-color: #035397;
 }
+.readyNow .readyCaption {
+	visibility: hidden;
+}
+.readyNow .readyCaption::after {
+	content: "Ready";
+	visibility: visible;
+	display: block;
+	font-size:  10px;
+	margin-top: -11px;
+}
+
+
 .aBotFinished {
 	text-align: center;
 	width: 100%;
@@ -447,7 +460,20 @@ body {
 	display: none;
 }
 .greenroom {
-	background-color: #04660f;
+	background-color: #1C7947;
+}
+
+.greenroom1 {
+	font-weight: bold;
+	background-color: #007f5f;
+}
+.greenroom2 {
+	font-weight: bold;
+	background-color: #3c096c;
+}
+.greenroom1 {
+	font-weight: bold;
+	background-color: #007f5f;
 }
 
 

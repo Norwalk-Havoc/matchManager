@@ -63,6 +63,29 @@ $challongeURLS = getChallongeTournaments();
 		  font-weight: 600;
 		  font-style: italic;
 		}
+		@font-face {
+		  font-family: Conduit;
+		  src: url('assets/ITC - ConduitITCPro-Light.otf');
+		  font-weight: 300;
+		}
+		@font-face {
+		  font-family: Conduit;
+		  src: url('assets/ITC - ConduitITCPro-LightItalic.otf');
+		  font-weight: 300;
+		  font-style: italic;
+		}
+		@font-face {
+		  font-family: Conduit;
+		  src: url('assets/ITC - ConduitITCPro-ExtraLight.otf');
+		  font-weight: 100;
+		}
+		@font-face {
+		  font-family: Conduit;
+		  src: url('assets/ITC - ConduitITCPro-ExtraLightItalic.otf');
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
 
 
 		@font-face {
@@ -144,6 +167,9 @@ $challongeURLS = getChallongeTournaments();
 		  min-width: 100%; 
 		  min-height: 100%;
 		}
+		body::-webkit-scrollbar {
+		  display: none;
+		}
 	
 	</style>
     <title>Next Matches</title>
@@ -199,12 +225,12 @@ $challongeURLS = getChallongeTournaments();
 	
   </head>
   <body>
-	  <video autoplay muted loop id="myVideo">
-	    <source src="assets/next5BG.mp4" type="video/mp4">
+	  <video autoplay muted loop id="myVideo" style="opacity:70%">
+	    <source src="assets/next20BG.mp4" type="video/mp4">
 	  </video>
 	  
 
-	 <h1 class="next10Title glitch">Next 10 Matches</h1>
+	 <h1 class="next10Title glitch">Next 20 Matches</h1>
 	<div class="container-flex px-4">
 		<div class="row " id="availableMatches">
 			<div class="d-flex justify-content-center">

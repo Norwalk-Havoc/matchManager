@@ -3120,5 +3120,5980 @@
                 }
             }
         }
+    },
+    "237653439": {
+        "id": 237653439,
+        "order": 70,
+        "state": "open",
+        "round": -2,
+        "player1": "Sundial",
+        "player2": "Under defined",
+        "player1_id": 146500159,
+        "player1_greenroom": 0,
+        "player1_prereq": 237653356,
+        "player2_id": 146500166,
+        "player2_prereq": 237653423,
+        "player2_greenroom": 0,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648284457,
+        "underway": 1,
+        "player1_lastFought": 1639746057,
+        "player2_lastFought": 1648239993,
+        "tournament": "3lb Bracket",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "1": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "3": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "1": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "3": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "270080920": {
+        "startTime": 1648253556,
+        "stopTime": 1648285384,
+        "endCountdown": 1648253566,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "id": 270080920,
+        "order": 2,
+        "state": "open",
+        "round": 1,
+        "player1": "D(2)rop the beat",
+        "player2": "Boppo",
+        "player1_id": 147740691,
+        "player1_greenroom": 0,
+        "player1_prereq": null,
+        "player2_id": 147740692,
+        "player2_prereq": null,
+        "player2_greenroom": 0,
+        "winner": "Boppo",
+        "loser": "D(2)rop the beat",
+        "updated_at": 1648198215,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "ApiTest30lb",
+        "tournamentKey": "30lb-Bracket",
+        "weightClass": "30lb",
+        "player1image": "d(2)ropthebeat",
+        "player2image": "boppo",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 2 - Winners Bracket Round 1 - 30lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "3": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "3": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710517": {
+        "startTime": 1648307631,
+        "stopTime": 1648307811,
+        "endCountdown": 1648307631,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-9--v.a.c.0.o.m-vs-doctorfrankenpine",
+        "id": 269710517,
+        "order": 9,
+        "state": "open",
+        "round": 1,
+        "player1": "V.A.C.0.O.M",
+        "player2": "Doctor Frankenpine",
+        "player1_id": 166697964,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 166697967,
+        "player2_prereq": null,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648300074,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "v.a.c.0.o.m",
+        "player2image": "doctorfrankenpine",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 9 - Undefeated Bracket Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710520": {
+        "startTime": 1648307935,
+        "stopTime": 1648308115,
+        "endCountdown": 1648307935,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-12--wreckfest-vs-wetax",
+        "id": 269710520,
+        "order": 12,
+        "state": "open",
+        "round": 1,
+        "player1": "Wreckfest",
+        "player2": "Weta X",
+        "player1_id": 166697955,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 166697965,
+        "player2_prereq": null,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648300074,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "wreckfest",
+        "player2image": "wetax",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 12 - Undefeated Bracket Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710516": {
+        "startTime": 1648308251,
+        "stopTime": 1648308431,
+        "endCountdown": 1648308251,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-8--hotpok\u00e9-vs-chubbyunicorn",
+        "id": 269710516,
+        "order": 8,
+        "state": "open",
+        "round": 1,
+        "player1": "Hot Pok\u00e9",
+        "player2": "Chubby Unicorn",
+        "player1_id": 166697953,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 166697977,
+        "player2_prereq": null,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648300074,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "hotpok\u00e9",
+        "player2image": "chubbyunicorn",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 8 - Undefeated Bracket Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 5,
+                    "damage": 4,
+                    "control": 5,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710546": {
+        "startTime": 1648309134,
+        "stopTime": 1648309314,
+        "endCountdown": 1648309134,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-27--zzbot-vs-kalma",
+        "id": 269710546,
+        "order": 27,
+        "state": "open",
+        "round": 2,
+        "player1": "ZZ Bot",
+        "player2": "Kalma",
+        "player1_id": 166697926,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 166697940,
+        "player2_prereq": null,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648300075,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "zzbot",
+        "player2image": "kalma",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 27 - Undefeated Bracket Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 5,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710540": {
+        "startTime": 1648311388,
+        "stopTime": 1648311568,
+        "endCountdown": 1648311388,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-24--stoneforge-vs-pensiveprosciutto",
+        "id": 269710540,
+        "order": 24,
+        "state": "open",
+        "round": 2,
+        "player1": "Stoneforge",
+        "player2": "Pensive Prosciutto",
+        "player1_id": 166697922,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 166697943,
+        "player2_prereq": null,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648300075,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "stoneforge",
+        "player2image": "pensiveprosciutto",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 24 - Undefeated Bracket Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710542": {
+        "startTime": 1648312198,
+        "stopTime": 1648312378,
+        "endCountdown": 1648312198,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-25--fallout-vs-voxelv.1",
+        "id": 269710542,
+        "order": 25,
+        "state": "open",
+        "round": 2,
+        "player1": "Fallout",
+        "player2": "Voxel v.1",
+        "player1_id": 166697931,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 166697934,
+        "player2_prereq": null,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648300075,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "fallout",
+        "player2image": "voxelv.1",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 25 - Undefeated Bracket Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 1,
+                    "damage": 0,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710527": {
+        "startTime": 0,
+        "stopTime": 0,
+        "endCountdown": 0,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-34--jackrabbit-vs-amenbreak",
+        "id": 269710527,
+        "order": 34,
+        "state": "open",
+        "round": 2,
+        "player1": "Jack Rabbit",
+        "player2": "Amen Break",
+        "player1_id": 166697909,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 166697982,
+        "player2_prereq": 269710510,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648306019,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 1648306019,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "jackrabbit",
+        "player2image": "amenbreak",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 34 - Undefeated Bracket Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 1,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710531": {
+        "startTime": 1648313789,
+        "stopTime": 1648313896,
+        "endCountdown": 1648313789,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-36--caldera-vs-denitemare",
+        "id": 269710531,
+        "order": 36,
+        "state": "open",
+        "round": 2,
+        "player1": "Caldera",
+        "player2": "DeNiteMare",
+        "player1_id": 166697911,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 166697974,
+        "player2_prereq": 269710512,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648306473,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 1648306473,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "caldera",
+        "player2image": "denitemare",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 36 - Undefeated Bracket Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 3,
+                    "damage": 1,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 1,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710551": {
+        "startTime": 1648314033,
+        "stopTime": 1648314213,
+        "endCountdown": 1648314033,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-46--silk-vs-phantomiii",
+        "id": 269710551,
+        "order": 46,
+        "state": "open",
+        "round": 2,
+        "player1": "Silk",
+        "player2": "Phantom III",
+        "player1_id": 166697907,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 166697951,
+        "player2_prereq": 269710522,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648307111,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 1648307111,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "silk",
+        "player2image": "phantomiii",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 46 - Undefeated Bracket Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 4,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 2,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710553": {
+        "startTime": 0,
+        "stopTime": 1648315177,
+        "endCountdown": 0,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-47--voxel-vs-harvester",
+        "id": 269710553,
+        "order": 47,
+        "state": "open",
+        "round": 2,
+        "player1": "Voxel",
+        "player2": "Harvester",
+        "player1_id": 166697908,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 166697961,
+        "player2_prereq": 269710523,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648306164,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 1648306149,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "voxel",
+        "player2image": "harvester",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 47 - Undefeated Bracket Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 4,
+                    "damage": 6,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 0,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710555": {
+        "startTime": 1648315972,
+        "stopTime": 1648316152,
+        "endCountdown": 1648315972,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-48--silentspring-vs-narcissist",
+        "id": 269710555,
+        "order": 48,
+        "state": "open",
+        "round": 2,
+        "player1": "Silent Spring",
+        "player2": "Narcissist",
+        "player1_id": 166697905,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 166697975,
+        "player2_prereq": 269710524,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648311070,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 1648311070,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "silentspring",
+        "player2image": "narcissist",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 48 - Undefeated Bracket Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710572": {
+        "startTime": 1648320563,
+        "stopTime": 1648320743,
+        "endCountdown": 1648320563,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-96--silentspring-vs-tothik",
+        "id": 269710572,
+        "order": 96,
+        "state": "open",
+        "round": 3,
+        "player1": "Silent Spring",
+        "player2": "Tothik",
+        "player1_id": 166697905,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710555,
+        "player2_id": 166697923,
+        "player2_prereq": 269710556,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648316223,
+        "underway": 0,
+        "player1_lastFought": 1648316203,
+        "player2_lastFought": 1648306686,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "silentspring",
+        "player2image": "tothik",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 96 - Undefeated Bracket Round 3 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710557": {
+        "startTime": 1648321083,
+        "stopTime": 1648321263,
+        "endCountdown": 1648321083,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-81--rachet-vs-tiefschlag",
+        "id": 269710557,
+        "order": 81,
+        "state": "open",
+        "round": 3,
+        "player1": "Rachet",
+        "player2": "Tiefschlag",
+        "player1_id": 166697966,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710525,
+        "player2_id": 166697932,
+        "player2_prereq": 269710526,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648313041,
+        "underway": 0,
+        "player1_lastFought": 1648313041,
+        "player2_lastFought": 1648307120,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "rachet",
+        "player2image": "tiefschlag",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 81 - Undefeated Bracket Round 3 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 1,
+                    "damage": 0,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "268859978": {
+        "startTime": 1648321540,
+        "stopTime": 1648321720,
+        "endCountdown": 1648321540,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "12lb-5--flamb\u00e9conqueso-vs-minimizer",
+        "id": 268859978,
+        "order": 5,
+        "state": "open",
+        "round": 1,
+        "player1": "Flamb\u00e9 Con Queso",
+        "player2": "Minimizer",
+        "player1_id": 166665404,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 166665407,
+        "player2_prereq": null,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648300106,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_mar22_12lb",
+        "tournamentKey": "12lb-Bracket",
+        "weightClass": "12lb",
+        "player1image": "flamb\u00e9conqueso",
+        "player2image": "minimizer",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 5 - Undefeated Bracket Round 1 - 12lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710562": {
+        "startTime": 1648321793,
+        "stopTime": 1648321973,
+        "endCountdown": 1648321793,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-86--twisty-vs-jackmove",
+        "id": 269710562,
+        "order": 86,
+        "state": "open",
+        "round": 3,
+        "player1": "Twisty",
+        "player2": "Jack Move",
+        "player1_id": 166697952,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710535,
+        "player2_id": 166697921,
+        "player2_prereq": 269710536,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648313439,
+        "underway": 0,
+        "player1_lastFought": 1648313439,
+        "player2_lastFought": 1648308837,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "twisty",
+        "player2image": "jackmove",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 86 - Undefeated Bracket Round 3 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 1,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 5,
+                    "damage": 4,
+                    "control": 5,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710560": {
+        "startTime": 1648322060,
+        "stopTime": 1648322240,
+        "endCountdown": 1648322060,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-84--caldera-vs-wickedwedge",
+        "id": 269710560,
+        "order": 84,
+        "state": "open",
+        "round": 3,
+        "player1": "Caldera",
+        "player2": "Wicked Wedge",
+        "player1_id": 166697911,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710531,
+        "player2_id": 166697925,
+        "player2_prereq": 269710532,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648316972,
+        "underway": 0,
+        "player1_lastFought": 1648316972,
+        "player2_lastFought": 1648310033,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "caldera",
+        "player2image": "wickedwedge",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 84 - Undefeated Bracket Round 3 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 5,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 1,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710558": {
+        "startTime": 1648323227,
+        "stopTime": 1648323407,
+        "endCountdown": 1648323227,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-82--jackrabbit-vs-seadragon'sroar",
+        "id": 269710558,
+        "order": 82,
+        "state": "open",
+        "round": 3,
+        "player1": "Jack Rabbit",
+        "player2": "Sea Dragon's Roar",
+        "player1_id": 166697909,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710527,
+        "player2_id": 166697948,
+        "player2_prereq": 269710528,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648312636,
+        "underway": 0,
+        "player1_lastFought": 1648312635,
+        "player2_lastFought": 1648307517,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "jackrabbit",
+        "player2image": "seadragon'sroar",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 82 - Undefeated Bracket Round 3 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "268859976": {
+        "startTime": 1648323907,
+        "stopTime": 1648324087,
+        "endCountdown": 1648323907,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "12lb-3--smeezus-vs-firebug",
+        "id": 268859976,
+        "order": 3,
+        "state": "open",
+        "round": 1,
+        "player1": "Smeezus",
+        "player2": "Firebug",
+        "player1_id": 166665402,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 166665409,
+        "player2_prereq": null,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648300106,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_mar22_12lb",
+        "tournamentKey": "12lb-Bracket",
+        "weightClass": "12lb",
+        "player1image": "smeezus",
+        "player2image": "firebug",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 3 - Undefeated Bracket Round 1 - 12lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 5,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710564": {
+        "startTime": 1648324331,
+        "stopTime": 1648324511,
+        "endCountdown": 1648324331,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-88--yeschefclassic-vs-stoneforge",
+        "id": 269710564,
+        "order": 88,
+        "state": "open",
+        "round": 3,
+        "player1": "Yes Chef Classic",
+        "player2": "Stoneforge",
+        "player1_id": 166697913,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710539,
+        "player2_id": 166697922,
+        "player2_prereq": 269710540,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648314615,
+        "underway": 0,
+        "player1_lastFought": 1648314615,
+        "player2_lastFought": 1648311601,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "yeschefclassic",
+        "player2image": "stoneforge",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 88 - Undefeated Bracket Round 3 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 5,
+                    "damage": 4,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 6,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "268859746": {
+        "startTime": 1648325458,
+        "stopTime": 1648325638,
+        "endCountdown": 1648325458,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "30lb-10--james-vs-depthcharge",
+        "id": 268859746,
+        "order": 10,
+        "state": "open",
+        "round": 2,
+        "player1": "James",
+        "player2": "Depth Charge",
+        "player1_id": 166666048,
+        "player1_greenroom": 1,
+        "player1_prereq": 268859740,
+        "player2_id": 166666049,
+        "player2_prereq": 268859741,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648318245,
+        "underway": 0,
+        "player1_lastFought": 1648317670,
+        "player2_lastFought": 1648318245,
+        "tournament": "nhrl_mar22_30lb",
+        "tournamentKey": "30lb-Bracket",
+        "weightClass": "30lb",
+        "player1image": "james",
+        "player2image": "depthcharge",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 10 - Undefeated Bracket Round 2 - 30lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710624": {
+        "startTime": 1648326725,
+        "stopTime": 1648326905,
+        "endCountdown": 1648326725,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-100--wickedwedge-vs-blackbird",
+        "id": 269710624,
+        "order": 100,
+        "state": "open",
+        "round": -3,
+        "player1": "Wicked Wedge",
+        "player2": "Blackbird",
+        "player1_id": 166697925,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710560,
+        "player2_id": 166697912,
+        "player2_prereq": 269710608,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648322334,
+        "underway": 0,
+        "player1_lastFought": 1648322334,
+        "player2_lastFought": 1648320130,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "wickedwedge",
+        "player2image": "blackbird",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 100 - Elimination Bracket Round 3 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710571": {
+        "startTime": 1648327058,
+        "stopTime": 1648327238,
+        "endCountdown": 1648327058,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-95--voxel-vs-clyde",
+        "id": 269710571,
+        "order": 95,
+        "state": "open",
+        "round": 3,
+        "player1": "Voxel",
+        "player2": "Clyde",
+        "player1_id": 166697908,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710553,
+        "player2_id": 166697938,
+        "player2_prereq": 269710554,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648315314,
+        "underway": 0,
+        "player1_lastFought": 1648315303,
+        "player2_lastFought": 1648307161,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "voxel",
+        "player2image": "clyde",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 95 - Undefeated Bracket Round 3 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "268859982": {
+        "startTime": 1648327883,
+        "stopTime": 1648328063,
+        "endCountdown": 1648327883,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "12lb-12--milktank-vs-firebug",
+        "id": 268859982,
+        "order": 12,
+        "state": "open",
+        "round": 2,
+        "player1": "MilkTank",
+        "player2": "Firebug",
+        "player1_id": 166665401,
+        "player1_greenroom": 1,
+        "player1_prereq": 268859975,
+        "player2_id": 166665409,
+        "player2_prereq": 268859976,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648324294,
+        "underway": 0,
+        "player1_lastFought": 1648319528,
+        "player2_lastFought": 1648324294,
+        "tournament": "nhrl_mar22_12lb",
+        "tournamentKey": "12lb-Bracket",
+        "weightClass": "12lb",
+        "player1image": "milktank",
+        "player2image": "firebug",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 12 - Undefeated Bracket Round 2 - 12lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 0,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 1,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 6,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 5,
+                    "damage": 4,
+                    "control": 5,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710574": {
+        "startTime": 1648328793,
+        "stopTime": 1648328973,
+        "endCountdown": 1648328793,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-122--starchild-vs-caldera",
+        "id": 269710574,
+        "order": 122,
+        "state": "open",
+        "round": 4,
+        "player1": "Starchild",
+        "player2": "Caldera",
+        "player1_id": 166697910,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710559,
+        "player2_id": 166697911,
+        "player2_prereq": 269710560,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648325296,
+        "underway": 0,
+        "player1_lastFought": 1648325287,
+        "player2_lastFought": 1648322334,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "starchild",
+        "player2image": "caldera",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 122 - Undefeated Bracket Round 4 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 1,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "268859748": {
+        "startTime": 0,
+        "stopTime": 0,
+        "endCountdown": 0,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "30lb-12--warlock-vs-jade",
+        "id": 268859748,
+        "order": 12,
+        "state": "open",
+        "round": 2,
+        "player1": "Warlock",
+        "player2": "Jade",
+        "player1_id": 166666047,
+        "player1_greenroom": 1,
+        "player1_prereq": 268859743,
+        "player2_id": 166666055,
+        "player2_prereq": 268859744,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648323412,
+        "underway": 0,
+        "player1_lastFought": 1648321025,
+        "player2_lastFought": 1648323412,
+        "tournament": "nhrl_mar22_30lb",
+        "tournamentKey": "30lb-Bracket",
+        "weightClass": "30lb",
+        "player1image": "warlock",
+        "player2image": "jade",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 12 - Undefeated Bracket Round 2 - 30lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 4,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 2,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710579": {
+        "startTime": 1648329488,
+        "stopTime": 1648329668,
+        "endCountdown": 1648329488,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-127--fullydefined-vs-silk",
+        "id": 269710579,
+        "order": 127,
+        "state": "open",
+        "round": 4,
+        "player1": "Fully Defined",
+        "player2": "Silk",
+        "player1_id": 166846904,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710569,
+        "player2_id": 166697907,
+        "player2_prereq": 269710570,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648324936,
+        "underway": 0,
+        "player1_lastFought": 1648322962,
+        "player2_lastFought": 1648324936,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "fullydefined",
+        "player2image": "silk",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 127 - Undefeated Bracket Round 4 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710635": {
+        "startTime": 1648329782,
+        "stopTime": 1648329962,
+        "endCountdown": 1648329782,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-105--voxelv.1-vs-hurtcaboose",
+        "id": 269710635,
+        "order": 105,
+        "state": "open",
+        "round": -3,
+        "player1": "Voxel v.1",
+        "player2": "Hurt Caboose",
+        "player1_id": 166697934,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710565,
+        "player2_id": 166697954,
+        "player2_prereq": 269710619,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648324674,
+        "underway": 0,
+        "player1_lastFought": 1648324679,
+        "player2_lastFought": 1648321186,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "voxelv.1",
+        "player2image": "hurtcaboose",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 105 - Elimination Bracket Round 3 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710576": {
+        "startTime": 1648330142,
+        "stopTime": 1648330322,
+        "endCountdown": 1648330142,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-124--sepi01-vs-stoneforge",
+        "id": 269710576,
+        "order": 124,
+        "state": "open",
+        "round": 4,
+        "player1": "Sepi01",
+        "player2": "Stoneforge",
+        "player1_id": 166697915,
+        "player1_greenroom": 0,
+        "player1_prereq": 269710563,
+        "player2_id": 166697922,
+        "player2_prereq": 269710564,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648324560,
+        "underway": 0,
+        "player1_lastFought": 1648323570,
+        "player2_lastFought": 1648324556,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "sepi01",
+        "player2image": "stoneforge",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 124 - Undefeated Bracket Round 4 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 1,
+                    "damage": 0,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710636": {
+        "startTime": 1648331065,
+        "stopTime": 1648331245,
+        "endCountdown": 1648331065,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-116--narcissist-vs-taurine",
+        "id": 269710636,
+        "order": 116,
+        "state": "open",
+        "round": -4,
+        "player1": "Narcissist",
+        "player2": "Taurine",
+        "player1_id": 166697975,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710620,
+        "player2_id": 166697927,
+        "player2_prereq": 269710621,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648327624,
+        "underway": 0,
+        "player1_lastFought": 1648327636,
+        "player2_lastFought": 1648327446,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "narcissist",
+        "player2image": "taurine",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 116 - Elimination Bracket Round 4 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710629": {
+        "startTime": 1648331322,
+        "stopTime": 1648331502,
+        "endCountdown": 1648331322,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-111--voxel-vs-erstingray",
+        "id": 269710629,
+        "order": 111,
+        "state": "open",
+        "round": -3,
+        "player1": "Voxel",
+        "player2": "ER Stingray",
+        "player1_id": 166697908,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710571,
+        "player2_id": 166697937,
+        "player2_prereq": 269710613,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648327303,
+        "underway": 0,
+        "player1_lastFought": 1648327303,
+        "player2_lastFought": 1648319806,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "voxel",
+        "player2image": "erstingray",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 111 - Elimination Bracket Round 3 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710577": {
+        "startTime": 1648332190,
+        "stopTime": 1648332370,
+        "endCountdown": 1648332190,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-125--adrift-vs-shredditbro",
+        "id": 269710577,
+        "order": 125,
+        "state": "open",
+        "round": 4,
+        "player1": "Adrift",
+        "player2": "Shreddit Bro",
+        "player1_id": 166697916,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710565,
+        "player2_id": 166697904,
+        "player2_prereq": 269710566,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648326613,
+        "underway": 0,
+        "player1_lastFought": 1648324679,
+        "player2_lastFought": 1648326605,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "adrift",
+        "player2image": "shredditbro",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 125 - Undefeated Bracket Round 4 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 5,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "268859983": {
+        "startTime": 1648333286,
+        "stopTime": 1648333466,
+        "endCountdown": 1648333286,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "12lb-13--demogorgon-vs-minimizer",
+        "id": 268859983,
+        "order": 13,
+        "state": "open",
+        "round": 2,
+        "player1": "Demogorgon",
+        "player2": "Minimizer",
+        "player1_id": 166665399,
+        "player1_greenroom": 1,
+        "player1_prereq": 268859977,
+        "player2_id": 166665407,
+        "player2_prereq": 268859978,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648321766,
+        "underway": 0,
+        "player1_lastFought": 1648317260,
+        "player2_lastFought": 1648321778,
+        "tournament": "nhrl_mar22_12lb",
+        "tournamentKey": "12lb-Bracket",
+        "weightClass": "12lb",
+        "player1image": "demogorgon",
+        "player2image": "minimizer",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 13 - Undefeated Bracket Round 2 - 12lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 5,
+                    "damage": 4,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710580": {
+        "startTime": 1648333572,
+        "stopTime": 1648333752,
+        "endCountdown": 1648333572,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-128--clyde-vs-tothik",
+        "id": 269710580,
+        "order": 128,
+        "state": "open",
+        "round": 4,
+        "player1": "Clyde",
+        "player2": "Tothik",
+        "player1_id": 166697938,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710571,
+        "player2_id": 166697923,
+        "player2_prereq": 269710572,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648327303,
+        "underway": 0,
+        "player1_lastFought": 1648327303,
+        "player2_lastFought": 1648320851,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "clyde",
+        "player2image": "tothik",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 128 - Undefeated Bracket Round 4 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710581": {
+        "startTime": 1648333897,
+        "stopTime": 1648334077,
+        "endCountdown": 1648333897,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-141--seadragon'sroar-vs-starchild",
+        "id": 269710581,
+        "order": 141,
+        "state": "open",
+        "round": 5,
+        "player1": "Sea Dragons Roar",
+        "player2": "Starchild",
+        "player1_id": 166697948,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710573,
+        "player2_id": 166697910,
+        "player2_prereq": 269710574,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648329049,
+        "underway": 0,
+        "player1_lastFought": 1648327832,
+        "player2_lastFought": 1648329049,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "seadragon'sroar",
+        "player2image": "starchild",
+        "matchTime": "180",
+        "messageOverride": "",
+        "lowerMessage": "Match: 141 - Undefeated Bracket Round 5 - 3lb",
+        "cage": "2",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 5,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710643": {
+        "startTime": 1648335473,
+        "stopTime": 1648335653,
+        "endCountdown": 1648335473,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-117--jetlag-vs-hurtcaboose",
+        "id": 269710643,
+        "order": 117,
+        "state": "open",
+        "round": -4,
+        "player1": "Jet Lag",
+        "player2": "Hurt Caboose",
+        "player1_id": 166697918,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710634,
+        "player2_id": 166697954,
+        "player2_prereq": 269710635,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648333238,
+        "underway": 0,
+        "player1_lastFought": 1648333238,
+        "player2_lastFought": 1648330018,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "jetlag",
+        "player2image": "hurtcaboose",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 117 - Elimination Bracket Round 4 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710644": {
+        "startTime": 1648336055,
+        "stopTime": 1648336235,
+        "endCountdown": 1648336055,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-133--shredditbro-vs-narcissist",
+        "id": 269710644,
+        "order": 133,
+        "state": "open",
+        "round": -5,
+        "player1": "Shreddit Bro",
+        "player2": "Narcissist",
+        "player1_id": 166697904,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710577,
+        "player2_id": 166697975,
+        "player2_prereq": 269710636,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648332403,
+        "underway": 0,
+        "player1_lastFought": 1648332416,
+        "player2_lastFought": 1648331285,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "shredditbro",
+        "player2image": "narcissist",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 133 - Elimination Bracket Round 5 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710649": {
+        "startTime": 1648336580,
+        "stopTime": 1648336760,
+        "endCountdown": 1648336580,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-130--caldera-vs-wreckfest",
+        "id": 269710649,
+        "order": 130,
+        "state": "open",
+        "round": -5,
+        "player1": "Caldera",
+        "player2": "Wreckfest",
+        "player1_id": 166697911,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710574,
+        "player2_id": 166697955,
+        "player2_prereq": 269710641,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648334588,
+        "underway": 0,
+        "player1_lastFought": 1648329049,
+        "player2_lastFought": 1648334588,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "caldera",
+        "player2image": "wreckfest",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 130 - Elimination Bracket Round 5 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710582": {
+        "startTime": 1648336957,
+        "stopTime": 1648337137,
+        "endCountdown": 1648336957,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-142--jackmove-vs-stoneforge",
+        "id": 269710582,
+        "order": 142,
+        "state": "open",
+        "round": 5,
+        "player1": "Jack Move",
+        "player2": "Stoneforge",
+        "player1_id": 166697921,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710575,
+        "player2_id": 166697922,
+        "player2_prereq": 269710576,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648330375,
+        "underway": 0,
+        "player1_lastFought": 1648326456,
+        "player2_lastFought": 1648330376,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "jackmove",
+        "player2image": "stoneforge",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 142 - Undefeated Bracket Round 5 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710642": {
+        "startTime": 1648337220,
+        "stopTime": 1648337400,
+        "endCountdown": 1648337220,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-118--djemso-vs-kalma",
+        "id": 269710642,
+        "order": 118,
+        "state": "open",
+        "round": -4,
+        "player1": "Djem So",
+        "player2": "Kalma",
+        "player1_id": 166697924,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710632,
+        "player2_id": 166697940,
+        "player2_prereq": 269710633,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648332432,
+        "underway": 0,
+        "player1_lastFought": 1648332432,
+        "player2_lastFought": 1648324819,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "djemso",
+        "player2image": "kalma",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 118 - Elimination Bracket Round 4 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710648": {
+        "startTime": 1648338003,
+        "stopTime": 1648338183,
+        "endCountdown": 1648338003,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-129--tiefschlag-vs-silentspring",
+        "id": 269710648,
+        "order": 129,
+        "state": "open",
+        "round": -5,
+        "player1": "Tiefschlag",
+        "player2": "Silent Spring",
+        "player1_id": 166697932,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710573,
+        "player2_id": 166697905,
+        "player2_prereq": 269710640,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648335392,
+        "underway": 0,
+        "player1_lastFought": 1648327832,
+        "player2_lastFought": 1648335392,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "tiefschlag",
+        "player2image": "silentspring",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 129 - Elimination Bracket Round 5 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 0,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 0,
+                    "damage": 1,
+                    "control": 0,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 6,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 6,
+                    "damage": 5,
+                    "control": 6,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710647": {
+        "startTime": 1648340201,
+        "stopTime": 1648340381,
+        "endCountdown": 1648340201,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-136--tothik-vs-jackrabbit",
+        "id": 269710647,
+        "order": 136,
+        "state": "open",
+        "round": -5,
+        "player1": "Tothik",
+        "player2": "Jack Rabbit",
+        "player1_id": 166697923,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710580,
+        "player2_id": 166697909,
+        "player2_prereq": 269710639,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648333829,
+        "underway": 0,
+        "player1_lastFought": 1648333834,
+        "player2_lastFought": 1648333498,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "tothik",
+        "player2image": "jackrabbit",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 136 - Elimination Bracket Round 5 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "268859992": {
+        "startTime": 1648340520,
+        "stopTime": 1648340700,
+        "endCountdown": 1648340520,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "12lb-17--demogorgon-vs-smeezus",
+        "id": 268859992,
+        "order": 17,
+        "state": "open",
+        "round": -2,
+        "player1": "Demogorgon",
+        "player2": "Smeezus",
+        "player1_id": 166665399,
+        "player1_greenroom": 1,
+        "player1_prereq": 268859983,
+        "player2_id": 166665402,
+        "player2_prereq": 268859988,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648336388,
+        "underway": 0,
+        "player1_lastFought": 1648333539,
+        "player2_lastFought": 1648336388,
+        "tournament": "nhrl_mar22_12lb",
+        "tournamentKey": "12lb-Bracket",
+        "weightClass": "12lb",
+        "player1image": "demogorgon",
+        "player2image": "smeezus",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 17 - Elimination Bracket Round 2 - 12lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710650": {
+        "startTime": 1648340954,
+        "stopTime": 1648341134,
+        "endCountdown": 1648340954,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-131--redhawk-vs-djemso",
+        "id": 269710650,
+        "order": 131,
+        "state": "open",
+        "round": -5,
+        "player1": "Red Hawk",
+        "player2": "Djem So",
+        "player1_id": 166697906,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710575,
+        "player2_id": 166697924,
+        "player2_prereq": 269710642,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648337480,
+        "underway": 0,
+        "player1_lastFought": 1648326456,
+        "player2_lastFought": 1648337503,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "redhawk",
+        "player2image": "djemso",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 131 - Elimination Bracket Round 5 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 0,
+                    "damage": 1,
+                    "control": 0,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 6,
+                    "damage": 5,
+                    "control": 6,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710586": {
+        "startTime": 1648341613,
+        "stopTime": 1648341793,
+        "endCountdown": 1648341613,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-152--adrift-vs-silk",
+        "id": 269710586,
+        "order": 152,
+        "state": "open",
+        "round": 6,
+        "player1": "Adrift",
+        "player2": "Silk",
+        "player1_id": 166697916,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710583,
+        "player2_id": 166697907,
+        "player2_prereq": 269710584,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648338845,
+        "underway": 0,
+        "player1_lastFought": 1648336450,
+        "player2_lastFought": 1648338850,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "adrift",
+        "player2image": "silk",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 152 - Undefeated Bracket Round 6 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710656": {
+        "startTime": 1648342658,
+        "stopTime": 1648342838,
+        "endCountdown": 1648342658,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-145--starchild-vs-narcissist",
+        "id": 269710656,
+        "order": 145,
+        "state": "open",
+        "round": -7,
+        "player1": "Starchild",
+        "player2": "Narcissist",
+        "player1_id": 166697910,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710581,
+        "player2_id": 166697975,
+        "player2_prereq": 269710652,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648339728,
+        "underway": 0,
+        "player1_lastFought": 1648334154,
+        "player2_lastFought": 1648339750,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "starchild",
+        "player2image": "narcissist",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 145 - Elimination Bracket Round 7 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710653": {
+        "startTime": 1648343153,
+        "stopTime": 1648343333,
+        "endCountdown": 1648343153,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-140--blackbird-vs-tothik",
+        "id": 269710653,
+        "order": 140,
+        "state": "open",
+        "round": -6,
+        "player1": "Blackbird",
+        "player2": "Tothik",
+        "player1_id": 166697912,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710646,
+        "player2_id": 166697923,
+        "player2_prereq": 269710647,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648340464,
+        "underway": 0,
+        "player1_lastFought": 1648334080,
+        "player2_lastFought": 1648340437,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "blackbird",
+        "player2image": "tothik",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 140 - Elimination Bracket Round 6 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 1,
+                    "damage": 4,
+                    "control": 1,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 5,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710659": {
+        "startTime": 1648344745,
+        "stopTime": 1648344925,
+        "endCountdown": 1648344745,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-148--clyde-vs-sepi01",
+        "id": 269710659,
+        "order": 148,
+        "state": "open",
+        "round": -7,
+        "player1": "Clyde",
+        "player2": "Sepi01",
+        "player1_id": 166697938,
+        "player1_greenroom": 0,
+        "player1_prereq": 269710584,
+        "player2_id": 166697915,
+        "player2_prereq": 269710655,
+        "player2_greenroom": 0,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648343803,
+        "underway": 0,
+        "player1_lastFought": 1648338850,
+        "player2_lastFought": 1648343803,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "clyde",
+        "player2image": "sepi01",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 148 - Elimination Bracket Round 7 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 1,
+                    "damage": 0,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 6,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 4,
+                    "damage": 6,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 0,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710657": {
+        "startTime": 1648345557,
+        "stopTime": 1648345737,
+        "endCountdown": 1648345557,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-146--jackmove-vs-tothik",
+        "id": 269710657,
+        "order": 146,
+        "state": "open",
+        "round": -7,
+        "player1": "Jack Move",
+        "player2": "Tothik",
+        "player1_id": 166697921,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710582,
+        "player2_id": 166697923,
+        "player2_prereq": 269710653,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648343394,
+        "underway": 0,
+        "player1_lastFought": 1648337214,
+        "player2_lastFought": 1648343394,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "jackmove",
+        "player2image": "tothik",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 146 - Elimination Bracket Round 7 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "268859998": {
+        "startTime": 1648345990,
+        "stopTime": 1648346170,
+        "endCountdown": 1648345990,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "12lb-24--minimizer-vs-big-ish",
+        "id": 268859998,
+        "order": 24,
+        "state": "open",
+        "round": -4,
+        "player1": "Minimizer",
+        "player2": "Big-ish",
+        "player1_id": 166665407,
+        "player1_greenroom": 1,
+        "player1_prereq": 268859986,
+        "player2_id": 166665411,
+        "player2_prereq": 268859996,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648342123,
+        "underway": 0,
+        "player1_lastFought": 1648342123,
+        "player2_lastFought": 1648341504,
+        "tournament": "nhrl_mar22_12lb",
+        "tournamentKey": "12lb-Bracket",
+        "weightClass": "12lb",
+        "player1image": "minimizer",
+        "player2image": "big-ish",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 24 - Elimination Bracket Round 4 - 12lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 4,
+                    "damage": 6,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 5,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 1,
+                    "damage": 0,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 0,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710587": {
+        "startTime": 1648346592,
+        "stopTime": 1648346772,
+        "endCountdown": 1648346592,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-156--stoneforge-vs-silk",
+        "id": 269710587,
+        "order": 156,
+        "state": "open",
+        "round": 7,
+        "player1": "Stoneforge",
+        "player2": "Silk",
+        "player1_id": 166697922,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710585,
+        "player2_id": 166697907,
+        "player2_prereq": 269710586,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648341936,
+        "underway": 0,
+        "player1_lastFought": 1648339599,
+        "player2_lastFought": 1648341923,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "stoneforge",
+        "player2image": "silk",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 156 - Undefeated Bracket Round 7 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "268859997": {
+        "startTime": 1648347969,
+        "stopTime": 1648348216,
+        "endCountdown": 1648347969,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "12lb-23--firebug-vs-demogorgon",
+        "id": 268859997,
+        "order": 23,
+        "state": "open",
+        "round": -4,
+        "player1": "Firebug",
+        "player2": "Demogorgon",
+        "player1_id": 166665409,
+        "player1_greenroom": 1,
+        "player1_prereq": 268859985,
+        "player2_id": 166665399,
+        "player2_prereq": 268859995,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648344806,
+        "underway": 0,
+        "player1_lastFought": 1648339672,
+        "player2_lastFought": 1648344806,
+        "tournament": "nhrl_mar22_12lb",
+        "tournamentKey": "12lb-Bracket",
+        "weightClass": "12lb",
+        "player1image": "firebug",
+        "player2image": "demogorgon",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 23 - Elimination Bracket Round 4 - 12lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "269710660": {
+        "startTime": 1648348980,
+        "stopTime": 1648349200,
+        "endCountdown": 1648348980,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-149--narcissist-vs-jackmove",
+        "id": 269710660,
+        "order": 149,
+        "state": "open",
+        "round": -8,
+        "player1": "Narcissist",
+        "player2": "Jack Move",
+        "player1_id": 166697975,
+        "player1_greenroom": 1,
+        "player1_prereq": 269710656,
+        "player2_id": 166697921,
+        "player2_prereq": 269710657,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648345887,
+        "underway": 0,
+        "player1_lastFought": 1648342887,
+        "player2_lastFought": 1648345888,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "narcissist",
+        "player2image": "jackmove",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 149 - Elimination Bracket Round 8 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 6,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 6,
+                    "control": 5,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 1,
+                    "damage": 0,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 0,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "269710667": {
+        "startTime": 1648356304,
+        "stopTime": 1648356484,
+        "endCountdown": 1648356304,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-159--silentspring-vs-stoneforge",
+        "id": 269710667,
+        "order": 159,
+        "state": "open",
+        "round": 8,
+        "player1": "Silent Spring",
+        "player2": "Stoneforge",
+        "player1_id": 166697905,
+        "player1_greenroom": 0,
+        "player1_prereq": 269710666,
+        "player2_id": 166697922,
+        "player2_prereq": 269710666,
+        "player2_greenroom": 0,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648355173,
+        "underway": 0,
+        "player1_lastFought": 1648355176,
+        "player2_lastFought": 1648355176,
+        "tournament": "nhrl_mar22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "silentspring",
+        "player2image": "stoneforge",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 159 - Undefeated Bracket Round 8 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "5": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "5": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 0,
+                    "damage": 1,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "268860002": {
+        "startTime": 1648357999,
+        "stopTime": 1648358179,
+        "endCountdown": 1648357999,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "12lb-29--carmen-vs-pramheda",
+        "id": 268860002,
+        "order": 29,
+        "state": "open",
+        "round": 5,
+        "player1": "Carmen",
+        "player2": "Pramheda",
+        "player1_id": 166665400,
+        "player1_greenroom": 0,
+        "player1_prereq": 268860001,
+        "player2_id": 166665398,
+        "player2_prereq": 268860001,
+        "player2_greenroom": 0,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1648357273,
+        "underway": 0,
+        "player1_lastFought": 1648357245,
+        "player2_lastFought": 1648357245,
+        "tournament": "nhrl_mar22_12lb",
+        "tournamentKey": "12lb-Bracket",
+        "weightClass": "12lb",
+        "player1image": "carmen",
+        "player2image": "pramheda",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Match: 29 - Undefeated Bracket Round 5 - 12lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840142": {
+        "startTime": 1650725981,
+        "stopTime": 1650726161,
+        "endCountdown": 1650725981,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-6--blackbird-vs-shoestring",
+        "state_text": "Match Active",
+        "id": 272840142,
+        "order": 6,
+        "state": "open",
+        "round": 1,
+        "player1": "Blackbird",
+        "player2": "Shoestring",
+        "player1_id": 168819189,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 168819255,
+        "player2_prereq": null,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650716938,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "blackbird",
+        "player2image": "shoestring",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 6,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 0,
+                    "damage": 1,
+                    "control": 0,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "272840146": {
+        "startTime": 1650726570,
+        "stopTime": 1650726750,
+        "endCountdown": 1650726570,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-10--wreckfest-vs-wasabi",
+        "state_text": "Match Active",
+        "id": 272840146,
+        "order": 10,
+        "state": "open",
+        "round": 1,
+        "player1": "Wreckfest",
+        "player2": "Wasabi",
+        "player1_id": 168819230,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 168819243,
+        "player2_prereq": null,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650716938,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "wreckfest",
+        "player2image": "wasabi",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840141": {
+        "startTime": 1650727569,
+        "stopTime": 1650727749,
+        "endCountdown": 1650727569,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-5--zzbot-vs-thechort",
+        "state_text": "Match Active",
+        "id": 272840141,
+        "order": 5,
+        "state": "open",
+        "round": 1,
+        "player1": "ZZ Bot",
+        "player2": "The Chort",
+        "player1_id": 168819223,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 168819238,
+        "player2_prereq": null,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650716938,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "zzbot",
+        "player2image": "thechort",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 5,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 1,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840153": {
+        "startTime": 1650728007,
+        "stopTime": 1650728187,
+        "endCountdown": 1650728007,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-17--clyde-vs-apex",
+        "state_text": "Match Active",
+        "id": 272840153,
+        "order": 17,
+        "state": "open",
+        "round": 1,
+        "player1": "Clyde",
+        "player2": "Apex",
+        "player1_id": 168819209,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 168819229,
+        "player2_prereq": null,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650716938,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "clyde",
+        "player2image": "apex",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "5": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840164": {
+        "startTime": 1650735794,
+        "stopTime": 1650735974,
+        "endCountdown": 1650735794,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-28--drumgodum-vs-michaeltherobot",
+        "state_text": "Match Active",
+        "id": 272840164,
+        "order": 28,
+        "state": "open",
+        "round": 1,
+        "player1": "Drum Go Dum",
+        "player2": "Michael the Robot",
+        "player1_id": 168819220,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 168819241,
+        "player2_prereq": null,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650716938,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "drumgodum",
+        "player2image": "michaeltherobot",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 5,
+                    "damage": 3,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 0,
+                    "damage": 3,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "5": {
+                    "aggression": 1,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "272840150": {
+        "startTime": 1650736242,
+        "stopTime": 1650736422,
+        "endCountdown": 1650736242,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-14--jackmove-vs-sombra",
+        "state_text": "Match Active",
+        "id": 272840150,
+        "order": 14,
+        "state": "open",
+        "round": 1,
+        "player1": "Jack Move",
+        "player2": "Sombra",
+        "player1_id": 168819218,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 168819242,
+        "player2_prereq": null,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650716938,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "jackmove",
+        "player2image": "sombra",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "4": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "4": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840313": {
+        "startTime": 1650739284,
+        "stopTime": 1650739464,
+        "endCountdown": 1650739284,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "30lb-4--dragonprincess-vs-starfather",
+        "state_text": "Match Active",
+        "id": 272840313,
+        "order": 4,
+        "state": "open",
+        "round": 1,
+        "player1": "Dragon Princess",
+        "player2": "Starfather",
+        "player1_id": 168817955,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 168817958,
+        "player2_prereq": null,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650716983,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_apr22_30lb",
+        "tournamentKey": "30lb-Bracket",
+        "weightClass": "30lb",
+        "player1image": "dragonprincess",
+        "player2image": "starfather",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 30lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "4": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840174": {
+        "startTime": 1650740447,
+        "stopTime": 1650740627,
+        "endCountdown": 1650740447,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-50--simplyflawed-vs-apex",
+        "state_text": "Match Active",
+        "id": 272840174,
+        "order": 50,
+        "state": "open",
+        "round": 2,
+        "player1": "Simply Flawed",
+        "player2": "Apex",
+        "player1_id": 168957107,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840152,
+        "player2_id": 168819229,
+        "player2_prereq": 272840153,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650732815,
+        "underway": 0,
+        "player1_lastFought": 1650732756,
+        "player2_lastFought": 1650728262,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "simplyflawed",
+        "player2image": "apex",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840178": {
+        "startTime": 1650740926,
+        "stopTime": 1650741106,
+        "endCountdown": 1650740926,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-54--realsteel-vs-alooco",
+        "state_text": "Match Active",
+        "id": 272840178,
+        "order": 54,
+        "state": "open",
+        "round": 2,
+        "player1": "Real Steel",
+        "player2": "Alooco!",
+        "player1_id": 168819250,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840159,
+        "player2_id": 168819244,
+        "player2_prereq": 272840160,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650729374,
+        "underway": 0,
+        "player1_lastFought": 1650728463,
+        "player2_lastFought": 1650729374,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "realsteel",
+        "player2image": "alooco",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840338": {
+        "startTime": 1650741834,
+        "stopTime": 1650742014,
+        "endCountdown": 1650741834,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "12lb-3--milktank-vs-woodyii",
+        "state_text": "Match Active",
+        "id": 272840338,
+        "order": 3,
+        "state": "open",
+        "round": 2,
+        "player1": "MilkTank",
+        "player2": "Woody II",
+        "player1_id": 168818951,
+        "player1_greenroom": 1,
+        "player1_prereq": null,
+        "player2_id": 168818952,
+        "player2_prereq": null,
+        "player2_greenroom": 1,
+        "winner": "",
+        "loser": "",
+        "updated_at": 1650732479,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_apr22_12lb",
+        "tournamentKey": "12lb-Bracket",
+        "weightClass": "12lb",
+        "player1image": "milktank",
+        "player2image": "woodyii",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Quarterfinals - 12lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840172": {
+        "startTime": 1650742566,
+        "stopTime": 1650742746,
+        "endCountdown": 1650742566,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-48--tothik-vs-sombra",
+        "state_text": "Match Active",
+        "id": 272840172,
+        "order": 48,
+        "state": "open",
+        "round": 2,
+        "player1": "Tothik",
+        "player2": "Sombra",
+        "player1_id": 168819197,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840149,
+        "player2_id": 168819242,
+        "player2_prereq": 272840150,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650736585,
+        "underway": 0,
+        "player1_lastFought": 1650735104,
+        "player2_lastFought": 1650736585,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "tothik",
+        "player2image": "sombra",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "272840180": {
+        "startTime": 1650744275,
+        "stopTime": 1650744455,
+        "endCountdown": 1650744275,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-56--murple-vs-drumgodum",
+        "state_text": "Match Active",
+        "id": 272840180,
+        "order": 56,
+        "state": "open",
+        "round": 2,
+        "player1": "Murple",
+        "player2": "Drum Go Dum",
+        "player1_id": 168819192,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840163,
+        "player2_id": 168819220,
+        "player2_prereq": 272840164,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650737198,
+        "underway": 0,
+        "player1_lastFought": 1650729549,
+        "player2_lastFought": 1650737198,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "murple",
+        "player2image": "drumgodum",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840183": {
+        "startTime": 1650746296,
+        "stopTime": 1650746476,
+        "endCountdown": 1650746296,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-83--sepi01-vs-wasabi",
+        "state_text": "Match Active",
+        "id": 272840183,
+        "order": 83,
+        "state": "open",
+        "round": 3,
+        "player1": "Sepi01",
+        "player2": "Wasabi",
+        "player1_id": 168819184,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840169,
+        "player2_id": 168819243,
+        "player2_prereq": 272840170,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650740850,
+        "underway": 0,
+        "player1_lastFought": 1650740803,
+        "player2_lastFought": 1650739720,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "sepi01",
+        "player2image": "wasabi",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 3 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840317": {
+        "startTime": 1650747472,
+        "stopTime": 1650747652,
+        "endCountdown": 1650747472,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "30lb-9--polyester-vs-dragonprincess",
+        "state_text": "Match Active",
+        "id": 272840317,
+        "order": 9,
+        "state": "open",
+        "round": 2,
+        "player1": "Polyester",
+        "player2": "Dragon Princess",
+        "player1_id": 168817951,
+        "player1_greenroom": 2,
+        "player1_prereq": null,
+        "player2_id": 168817955,
+        "player2_prereq": 272840313,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650739624,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 1650739624,
+        "tournament": "nhrl_apr22_30lb",
+        "tournamentKey": "30lb-Bracket",
+        "weightClass": "30lb",
+        "player1image": "polyester",
+        "player2image": "dragonprincess",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Quarterfinals - 30lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "272840187": {
+        "startTime": 1650750185,
+        "stopTime": 1650750365,
+        "endCountdown": 1650750185,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-87--polywog-vs-alooco",
+        "state_text": "Match Active",
+        "id": 272840187,
+        "order": 87,
+        "state": "open",
+        "round": 3,
+        "player1": "Polywog",
+        "player2": "Alooco!",
+        "player1_id": 168819183,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840177,
+        "player2_id": 168819244,
+        "player2_prereq": 272840178,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650743082,
+        "underway": 0,
+        "player1_lastFought": 1650743142,
+        "player2_lastFought": 1650741668,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "polywog",
+        "player2image": "alooco",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 3 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "272840324": {
+        "startTime": 1650753614,
+        "stopTime": 1650753794,
+        "endCountdown": 1650753614,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "30lb-13--dragonprincess-vs-darkhorse",
+        "state_text": "Match Active",
+        "id": 272840324,
+        "order": 13,
+        "state": "open",
+        "round": -2,
+        "player1": "Dragon Princess",
+        "player2": "Dark Horse",
+        "player1_id": 168817955,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840317,
+        "player2_id": 168817961,
+        "player2_prereq": 272840322,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650747807,
+        "underway": 0,
+        "player1_lastFought": 1650747807,
+        "player2_lastFought": 1650745471,
+        "tournament": "nhrl_apr22_30lb",
+        "tournamentKey": "30lb-Bracket",
+        "weightClass": "30lb",
+        "player1image": "dragonprincess",
+        "player2image": "darkhorse",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 2 - 30lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 5,
+                    "damage": 3,
+                    "control": 6,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 0,
+                    "damage": 3,
+                    "control": 0,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "272840190": {
+        "startTime": 1650754006,
+        "stopTime": 1650754186,
+        "endCountdown": 1650754006,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-102--wasabi-vs-dreadhades",
+        "state_text": "Match Active",
+        "id": 272840190,
+        "order": 102,
+        "state": "open",
+        "round": 4,
+        "player1": "Wasabi",
+        "player2": "Dread Hades",
+        "player1_id": 168819243,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840183,
+        "player2_id": 168819185,
+        "player2_prereq": 272840184,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650747032,
+        "underway": 0,
+        "player1_lastFought": 1650746751,
+        "player2_lastFought": 1650747050,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "wasabi",
+        "player2image": "dreadhades",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Quarterfinals - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "272840189": {
+        "startTime": 1650755081,
+        "stopTime": 1650755261,
+        "endCountdown": 1650755081,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-101--spartan-vs-blackbird",
+        "state_text": "Match Active",
+        "id": 272840189,
+        "order": 101,
+        "state": "open",
+        "round": 4,
+        "player1": "Spartan",
+        "player2": "Blackbird",
+        "player1_id": 168957113,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840181,
+        "player2_id": 168819189,
+        "player2_prereq": 272840182,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650748373,
+        "underway": 0,
+        "player1_lastFought": 1650742308,
+        "player2_lastFought": 1650748373,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "spartan",
+        "player2image": "blackbird",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Quarterfinals - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840240": {
+        "startTime": 1650757933,
+        "stopTime": 1650758113,
+        "endCountdown": 1650757933,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-98--murple-vs-sepi01",
+        "state_text": "Match Active",
+        "id": 272840240,
+        "order": 98,
+        "state": "open",
+        "round": -5,
+        "player1": "Murple",
+        "player2": "Sepi01",
+        "player1_id": 168819192,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840232,
+        "player2_id": 168819184,
+        "player2_prereq": 272840233,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650754307,
+        "underway": 0,
+        "player1_lastFought": 1650754289,
+        "player2_lastFought": 1650753933,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "murple",
+        "player2image": "sepi01",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 5 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 5,
+                    "damage": 3,
+                    "control": 6,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 0,
+                    "damage": 3,
+                    "control": 0,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "272840194": {
+        "startTime": 1650759451,
+        "stopTime": 1650759631,
+        "endCountdown": 1650759451,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-112--apex-vs-caldera",
+        "state_text": "Match Active",
+        "id": 272840194,
+        "order": 112,
+        "state": "open",
+        "round": 5,
+        "player1": "Apex",
+        "player2": "Caldera",
+        "player1_id": 168819229,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840191,
+        "player2_id": 168819186,
+        "player2_prereq": 272840192,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650756791,
+        "underway": 0,
+        "player1_lastFought": 1650754973,
+        "player2_lastFought": 1650756792,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "apex",
+        "player2image": "caldera",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Semifinals - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 1,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840238": {
+        "startTime": 1650759860,
+        "stopTime": 1650760040,
+        "endCountdown": 1650759860,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-94--projectliftoff-vs-hurtcaboose",
+        "state_text": "Match Completed",
+        "id": 272840238,
+        "order": 94,
+        "state": "open",
+        "round": -4,
+        "player1": "Project LiftOff",
+        "player2": "Hurt Caboose",
+        "player1_id": 168819187,
+        "player1_greenroom": 0,
+        "player1_prereq": 272840186,
+        "player2_id": 168819231,
+        "player2_prereq": 272840230,
+        "player2_greenroom": 0,
+        "winner": "Hurt Caboose",
+        "loser": "Project LiftOff",
+        "updated_at": 1650757517,
+        "underway": 0,
+        "player1_lastFought": 1650749967,
+        "player2_lastFought": 1650757517,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "projectliftoff",
+        "player2image": "hurtcaboose",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 4 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 0,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 6,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840328": {
+        "startTime": 1650760905,
+        "stopTime": 1650761085,
+        "endCountdown": 1650760905,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "30lb-15--stophittingyourself-vs-waddles",
+        "state_text": "Match Active",
+        "id": 272840328,
+        "order": 15,
+        "state": "open",
+        "round": -3,
+        "player1": "Stop Hitting Yourself",
+        "player2": "Waddles!",
+        "player1_id": 168817953,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840325,
+        "player2_id": 168817956,
+        "player2_prereq": 272840326,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650756969,
+        "underway": 0,
+        "player1_lastFought": 1650757012,
+        "player2_lastFought": 1650753765,
+        "tournament": "nhrl_apr22_30lb",
+        "tournamentKey": "30lb-Bracket",
+        "weightClass": "30lb",
+        "player1image": "stophittingyourself",
+        "player2image": "waddles",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 3 - 30lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 0,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "272840246": {
+        "startTime": 1650761805,
+        "stopTime": 1650761985,
+        "endCountdown": 1650761805,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-105--spartan-vs-division",
+        "state_text": "Match Active",
+        "id": 272840246,
+        "order": 105,
+        "state": "open",
+        "round": -6,
+        "player1": "Spartan",
+        "player2": "Division",
+        "player1_id": 168957113,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840189,
+        "player2_id": 168819226,
+        "player2_prereq": 272840242,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650758354,
+        "underway": 0,
+        "player1_lastFought": 1650755672,
+        "player2_lastFought": 1650758354,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "spartan",
+        "player2image": "division",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 6 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840193": {
+        "startTime": 1650762591,
+        "stopTime": 1650762771,
+        "endCountdown": 1650762591,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-111--blackbird-vs-wasabi",
+        "state_text": "Match Active",
+        "id": 272840193,
+        "order": 111,
+        "state": "open",
+        "round": 5,
+        "player1": "Blackbird",
+        "player2": "Wasabi",
+        "player1_id": 168819189,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840189,
+        "player2_id": 168819243,
+        "player2_prereq": 272840190,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650755672,
+        "underway": 0,
+        "player1_lastFought": 1650755672,
+        "player2_lastFought": 1650754285,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "blackbird",
+        "player2image": "wasabi",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Semifinals - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 5,
+                    "damage": 4,
+                    "control": 6,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 0,
+                    "damage": 2,
+                    "control": 0,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "272840321": {
+        "startTime": 1650765396,
+        "stopTime": 1650765576,
+        "endCountdown": 1650765396,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "30lb-22--megatron-vs-litterbox",
+        "state_text": "Match Active",
+        "id": 272840321,
+        "order": 22,
+        "state": "open",
+        "round": 4,
+        "player1": "MegatRON",
+        "player2": "Litter Box",
+        "player1_id": 168817950,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840319,
+        "player2_id": 168817952,
+        "player2_prereq": 272840320,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650755458,
+        "underway": 0,
+        "player1_lastFought": 1650754720,
+        "player2_lastFought": 1650755477,
+        "tournament": "nhrl_apr22_30lb",
+        "tournamentKey": "30lb-Bracket",
+        "weightClass": "30lb",
+        "player1image": "megatron",
+        "player2image": "litterbox",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Final - 30lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "272840241": {
+        "startTime": 1650765720,
+        "stopTime": 1650765900,
+        "endCountdown": 1650765720,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-97--shredditbro-vs-crunchrollsupreme",
+        "state_text": "Match Active",
+        "id": 272840241,
+        "order": 97,
+        "state": "open",
+        "round": -5,
+        "player1": "Shreddit Bro",
+        "player2": "Crunch Roll Supreme",
+        "player1_id": 168819195,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840234,
+        "player2_id": 168819245,
+        "player2_prereq": 272840235,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650763326,
+        "underway": 0,
+        "player1_lastFought": 1650754816,
+        "player2_lastFought": 1650763326,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "shredditbro",
+        "player2image": "crunchrollsupreme",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 5 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840195": {
+        "startTime": 1650766526,
+        "stopTime": 1650766706,
+        "endCountdown": 1650766526,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-116--blackbird-vs-caldera",
+        "state_text": "Match Active",
+        "id": 272840195,
+        "order": 116,
+        "state": "open",
+        "round": 6,
+        "player1": "Blackbird",
+        "player2": "Caldera",
+        "player1_id": 168819189,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840193,
+        "player2_id": 168819186,
+        "player2_prereq": 272840194,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650762912,
+        "underway": 0,
+        "player1_lastFought": 1650762911,
+        "player2_lastFought": 1650759851,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "blackbird",
+        "player2image": "caldera",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Final - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "272840329": {
+        "startTime": 1650766866,
+        "stopTime": 1650767046,
+        "endCountdown": 1650766866,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "30lb-19--marathon-vs-dragonprincess",
+        "state_text": "Match Active",
+        "id": 272840329,
+        "order": 19,
+        "state": "open",
+        "round": -4,
+        "player1": "Marathon",
+        "player2": "Dragon Princess",
+        "player1_id": 168817954,
+        "player1_greenroom": 2,
+        "player1_prereq": 272840319,
+        "player2_id": 168817955,
+        "player2_prereq": 272840327,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650764789,
+        "underway": 0,
+        "player1_lastFought": 1650754720,
+        "player2_lastFought": 1650764789,
+        "tournament": "nhrl_apr22_30lb",
+        "tournamentKey": "30lb-Bracket",
+        "weightClass": "30lb",
+        "player1image": "marathon",
+        "player2image": "dragonprincess",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Quarterfinals - 30lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840245": {
+        "startTime": 1650768220,
+        "stopTime": 1650768383,
+        "endCountdown": 1650768220,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-108--polywog-vs-crunchrollsupreme",
+        "state_text": "Match Completed",
+        "id": 272840245,
+        "order": 108,
+        "state": "open",
+        "round": -6,
+        "player1": "Polywog",
+        "player2": "Crunch Roll Supreme",
+        "player1_id": 168819183,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840192,
+        "player2_id": 168819245,
+        "player2_prereq": 272840241,
+        "player2_greenroom": 1,
+        "winner": "",
+        "loser": "",
+        "updated_at": 1650766004,
+        "underway": 0,
+        "player1_lastFought": 1650756792,
+        "player2_lastFought": 1650765985,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "polywog",
+        "player2image": "crunchrollsupreme",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 6 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 5,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "272840248": {
+        "startTime": 1650771256,
+        "stopTime": 1650771436,
+        "endCountdown": 1650771256,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-110--murple-vs-polywog",
+        "state_text": "Match Active",
+        "id": 272840248,
+        "order": 110,
+        "state": "open",
+        "round": -7,
+        "player1": "Murple",
+        "player2": "Polywog",
+        "player1_id": 168819192,
+        "player1_greenroom": 1,
+        "player1_prereq": 272840244,
+        "player2_id": 168819183,
+        "player2_prereq": 272840245,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650768511,
+        "underway": 0,
+        "player1_lastFought": 1650763095,
+        "player2_lastFought": 1650768511,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "murple",
+        "player2image": "polywog",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 7 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 0,
+                    "damage": 3,
+                    "control": 0,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 5,
+                    "damage": 3,
+                    "control": 6,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "272840250": {
+        "startTime": 1650773620,
+        "stopTime": 1650773800,
+        "endCountdown": 1650773620,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-113--wasabi-vs-polywog",
+        "state_text": "Match Active",
+        "id": 272840250,
+        "order": 113,
+        "state": "open",
+        "round": -8,
+        "player1": "Wasabi",
+        "player2": "Polywog",
+        "player1_id": 168819243,
+        "player1_greenroom": 2,
+        "player1_prereq": 272840193,
+        "player2_id": 168819183,
+        "player2_prereq": 272840248,
+        "player2_greenroom": 0,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1650771515,
+        "underway": 0,
+        "player1_lastFought": 1650762911,
+        "player2_lastFought": 1650771471,
+        "tournament": "nhrl_apr22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "wasabi",
+        "player2image": "polywog",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Quarterfinals - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
     }
 }

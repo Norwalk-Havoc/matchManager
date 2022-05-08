@@ -10,7 +10,11 @@ $challongeURLS = getChallongeTournaments();
 // 	echo "Missing Bot Info. - Check your link";
 // 	exit(1);
 // }
-
+if (isset($_GET['room'])){
+	$room = intval($_GET['room']);
+} else {
+	$room = 1;
+}
 
 ?>
 
@@ -36,7 +40,8 @@ $challongeURLS = getChallongeTournaments();
 
 
 	var matchUpdate = setInterval(updateAvailable, 5000);
-	var myBotMd5 = ""
+	var myBotMd5 = "";
+	var room = <?php echo $room; ?>;
 
 	function updateAvailable(){
 		$.get('matchFunctions.php?mode=greenroomMode', function( data ) {
@@ -53,7 +58,7 @@ $challongeURLS = getChallongeTournaments();
 	}
 
 	function greenroomToggle(playerID){
-		$.get('matchFunctions.php?mode=greenroomToggle&playerID='+playerID, function( data ) {
+		$.get('matchFunctions.php?mode=greenroomToggle&playerID='+playerID+"&room="+room, function( data ) {
 			updateAvailable();
 		});
 	}

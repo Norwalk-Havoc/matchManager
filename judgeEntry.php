@@ -33,16 +33,16 @@ if (isset($_GET['judgeID'])){
     <title>Judge Manager</title>
 	
 	<script type="text/javascript">
-		var LAgression = 2.5;
-		var RAgression = 2.5;
-		var LControl = 2.5;
-		var RControl = 2.5;
-		var LDammage = 2.5;
-		var RDammage = 2.5;
-		var LTotal = 2.5;
-		var RTotal = 2.5;
+		var LAgression = 0;
+		var RAgression = 0;
+		var LControl = 0;
+		var RControl = 0;
+		var LDammage = 0;
+		var RDammage = 0;
+		var LTotal = 0;
+		var RTotal = 0;
 		var matchID = -1;
-		
+		var bank = "<?php echo $_GET['bank'] ?>";
 		var matchInterval = setInterval(updateMatchData, 3000);
 		
 		$(document).ready(function(){
@@ -62,23 +62,23 @@ if (isset($_GET['judgeID'])){
 		});
 		
 		function resetMatch(){
-			$("#agression").val(2.5);
-			$("#control").val(2.5);
-			$("#dammage").val(2.5);
-			LAgression = 2.5;
-			RAgression = 2.5;
-			LControl = 2.5;
-			RControl = 2.5;
-			LDammage = 2.5;
-			RDammage = 2.5;
-			LTotal = 2.5;
-			RTotal = 2.5;
+			$("#agression").val(0);
+			$("#control").val(0);
+			$("#dammage").val(0);
+			LAgression = 0;
+			RAgression = 0;
+			LControl = 0;
+			RControl = 0;
+			LDammage = 0;
+			RDammage = 0;
+			LTotal = 0;
+			RTotal = 0;
 			updateScores();
 		}
 		
 		
 		function updateMatchData() {
-  		  $.get('matchFunctions.php?mode=judgeMatchData', function( data ) { 
+  		  $.get('matchFunctions.php?mode=judgeMatchData&bank='+bank, function( data ) { 
   			  var match = jQuery.parseJSON(data);
 			  $("#leftBotName").html(match.player1);
 			  $("#rightBotName").html(match.player2);
@@ -101,7 +101,7 @@ if (isset($_GET['judgeID'])){
 		}
 		
 		function submitScores() {
-  		  $.get('matchFunctions.php?mode=judgeScoreUpload&judgeID=<?php echo $judgeID ?>&LAgression='+LAgression+'&LControl='+LControl+'&LDammage='+LDammage, function( data ) { 
+  		  $.get('matchFunctions.php?mode=judgeScoreUpload&judgeID=<?php echo $judgeID ?>&bank='+bank+'&LAgression='+LAgression+'&LControl='+LControl+'&LDammage='+LDammage, function( data ) { 
 			  $("#winnerName").html('Submitted!');
 		  });
 		}
@@ -109,8 +109,8 @@ if (isset($_GET['judgeID'])){
 		
 		function updateScores(){
 			LAgression = 5 - RAgression;
-			LControl = 5 - RControl;
-			LDammage = 5 - RDammage;
+			LControl = 6 - RControl;
+			LDammage = 6 - RDammage;
 			LTotal = LAgression + LControl + LDammage;
 			RTotal = RAgression + RControl + RDammage;
 			
@@ -162,19 +162,19 @@ if (isset($_GET['judgeID'])){
 		    <div class="form-group">
 			  <label for="agression" class="text-center">Aggression</label>
 			  <div class="numbers"><span id="leftBotAgression" class="font-weight-bold">-</span> <span class="float-right"><span id="rightBotAgression" class="font-weight-bold">-</span></span></div>
-			  <input type="range" class="custom-range" min="0" max="5" value="2.5" id="agression">
+			  <input type="range" class="custom-range" min="0" max="5" value="0" id="agression">
 		    </div>
 		    <div class="form-group">
 			  <label for="control" class="text-center">Control</label>
 			  <div class="numbers"><span id="leftBotControl" class="font-weight-bold">-</span> <span class="float-right"><span id="rightBotControl" class="font-weight-bold">-</span></span></div>
 			  
-			  <input type="range" class="custom-range" min="0" max="5" value="2.5" id="control">
+			  <input type="range" class="custom-range" min="0" max="6" value="0" id="control">
 		    </div>
 		    <div class="form-group">
 			  <label for="dammage" class="text-center">Damage</label>
 			  <div class="numbers"><span id="leftBotDammage" class="font-weight-bold">-</span> <span class="float-right"><span id="rightBotDammage" class="font-weight-bold">-</span></span></div>
 			  
-			  <input type="range" class="custom-range" min="0" max="5" value="2.5" id="dammage">
+			  <input type="range" class="custom-range" min="0" max="6" value="0" id="dammage">
 		    </div>
 		    <br>
 		   <div class="mx-auto text-center"> <div class="btn btn-primary" onClick="submitScores()">Submit Score: <span id="winnerName">-</span> Wins</div></div>

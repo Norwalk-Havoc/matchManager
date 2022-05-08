@@ -17,12 +17,16 @@ $challongeURLS = getChallongeTournaments();
     <link rel="stylesheet" href="bootstrap.min.css" >
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<style>
-		.greenroom {
+		.greenroom1 {
 			font-weight: bold;
 			text-shadow: 2px 2px 12px #00FF00;
 		}
+		.greenroom2 {
+			text-shadow: 2px 2px 12px #7209b7;
+		}
+		
 		.greenroomBoth {
-			background-color: #70cc7c !important;
+			background-color: #80b918 !important;
 		}
 		
 	</style>
@@ -115,13 +119,13 @@ $challongeURLS = getChallongeTournaments();
 	function cageCommand( cage,  command, button){
 		$(button).html('<div class="spinner-border spinner-border-sm" role="status"> <span class="sr-only">Loading...</span></div>');
 		if (command == "player1Wins"){
-			$.get('matchFunctions.php?mode=winner&cage='+cage+'&player=1', function( data ) { 
+			$.get('matchFunctions.php?mode=winner&cage='+cage+'&player=1&winReason=webUI', function( data ) { 
 				 updateCages();	
 				  updateAvailable();			 
 			});
 		}
 		else if (command == "player2Wins"){
-			$.get('matchFunctions.php?mode=winner&cage='+cage+'&player=2', function( data ) { 
+			$.get('matchFunctions.php?mode=winner&cage='+cage+'&player=2&winReason=webUI', function( data ) { 
 				 updateCages();
 				 updateAvailable();
 			});
@@ -192,15 +196,16 @@ $challongeURLS = getChallongeTournaments();
 	
   </head>
   <body>
-	<div class="container-flex px-4">
+	<div class="container-flex px-4 ">
 			<input  type="hidden" name="mode" value="updateCages" >
 		<h1><h4 class="float-right"><span class="btn btn-secondary" id="cageUpdates">Pause Cage Updates</span></h4><p class="h1">Cages</p></h1>
-		<div class="row" id="cageRow">
+		<div class="row " id="cageRow">
 			<?php  
 				populateCageFields(1);
 				populateCageFields(2);
 				populateCageFields(3);
 				populateCageFields(4);
+				populateCageFields(5);
 			?>
 		</div>
 		
@@ -208,15 +213,17 @@ $challongeURLS = getChallongeTournaments();
 	</div>
 
 
-	<div class="container-flex px-4">
+	<div class="container-flex justify-content-center flex-wrap px-4 ">
 		<form id="matchSelectForm">
 			<input  type="hidden" name="mode" value="assignMatch" >
 		<h1>
 				<h3 class="float-right">Assign Match <span id="theMatchInfo"></span> to Cage: 
 					<div class="btn-group btn-group-toggle" data-toggle="buttons">					 
-					  <label class="btn btn-outline-secondary" for="inlineRadio1"> <input class="btn-check" type="radio" name="matchSpot" id="inlineRadio1" value="1">- 1 -</label>
+					  <label class="btn btn-outline-secondary" for="inlineRadio1"> <input class="btn-check" type="radio" name="matchSpot" id="inlineRadio1" value="1">- 1 <span class="text-info h6">(big) -</span></label>
 					  <label class="btn btn-outline-secondary" for="inlineRadio2"><input class="btn-check" type="radio" name="matchSpot" id="inlineRadio2" value="2">- 2 -</label>
-					  <label class="btn btn-outline-secondary" for="inlineRadio3"> <input class="btn-check" type="radio" name="matchSpot" id="inlineRadio3" value="3" >- 3 <span class="text-info h6">(30lb) -</span></label>
+					  <label class="btn btn-outline-secondary" for="inlineRadio3"> <input class="btn-check" type="radio" name="matchSpot" id="inlineRadio3" value="3" >- 3 -</label>
+					  <label class="btn btn-outline-secondary" for="inlineRadio4"> <input class="btn-check" type="radio" name="matchSpot" id="inlineRadio4" value="4" >- 4 <span class="text-info h6">(big) -</span></label>
+					  <label class="btn btn-outline-secondary" for="inlineRadio5"> <input class="btn-check" type="radio" name="matchSpot" id="inlineRadio5" value="5" >- 5 -</label>
 					</div>
 					<button type="button" class="btn btn-primary" id="updateCage">Submit</button>
 				</h3>

@@ -133,13 +133,13 @@ body {
 }
 .matchBar .leftBotImage {
 	float: left;
-	height: 60px;
-	background: url(assets/UnknownBotMagenta.jpg) center rgb(255, 111, 254);
-	background-size: cover;
-	width: 92px;
-	display: none;
-	border-left: 5px solid rgb(255, 111, 254);
-
+	height: 240px;
+	background-size: contain;
+	background-position: center;
+	width: 240px;
+	position: absolute;
+	right: 764px;
+	background-repeat: no-repeat;
 }
 .matchBar .matchClock {
 	text-align: right;

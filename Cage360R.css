@@ -156,16 +156,15 @@ body {
 	max-height: 240px;
 }
 .matchBar .rightBotImage {
-	display: none !important;
-	float: right;
-	height: 60px;
-	background: url(assets/UnknownBotCyan.jpg) center rgb(91, 194, 255);
-	background-size: cover;
-	width: 92px;
-	display: inline-block;
-	transform:scaleX(-1);
-	border-right-style: none;
-	border-left: 5px solid rgb(91, 194, 255);
+	float: left;
+	height: 240px;
+	background-size: contain;
+	background-position: center;
+	width: 240px;
+	position: absolute;
+	right: 904px;
+	background-repeat: no-repeat;
+	z-index: 0;
 }
 
 .matchBar .leftBotName {

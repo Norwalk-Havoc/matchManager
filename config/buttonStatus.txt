@@ -26,7 +26,7 @@
     "e00fce68b31b0738b2c0fced": {
         "cage": 3,
         "player": 2,
-        "ready": 0,
+        "ready": 1,
         "tap": 0
     },
     "e00fce6878cdd7d830c00fad": {

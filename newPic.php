@@ -24,9 +24,8 @@ require_once('matchFunctions.php');
   <body class=" ">
 
 	<div class="container-sm my-4" id="botDetails">
-		<h1>Update your robot photo</h1>
+		<h1>Update robot photo</h1>
 		<h4>Please upload a picture of your robot on a WHITE background. We will use this photo in our broadcast and marketing.</h4>
-		<h4 class="text-white-50">Please don't upload anything else. If you upload something inappropriate or that isn't your bot it's not funny. It's just super super uncool.</h4>
 		<form method="post" enctype="multipart/form-data" action="matchFunctions.php?mode=picUpload">
 		  <input type="hidden" value="<?=$_GET['bot_id']?>" name="bot_id">
 		  <input type="hidden" value="<?=$_GET['imageString']?>" name="imageString">	

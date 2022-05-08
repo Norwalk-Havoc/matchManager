@@ -115,10 +115,10 @@ extract($cageVals);
 			  var cage = jQuery.parseJSON(data);
 			  $('#player1').html(cage.player1);
 			  $('#player1countdown').html(cage.player1);
-			  $(".leftBotImage").css("background-image", "url('robots/" + cage.player1.replaceAll(' ', '').toLowerCase() + ".jpg')");
+			  $(".leftBotImage").css("background-image", "url('getBotPic.php?thumb=1&bot=" + cage.player1.replaceAll(' ', '').toLowerCase() + "')");
 			  $('#player2').html(cage.player2);
 			  $('#player2countdown').html(cage.player2);
-			  $(".rightBotImage").css("background-image", "url('robots/" + cage.player2.replaceAll(' ', '').toLowerCase() + ".jpg')");
+			  $(".rightBotImage").css("background-image", "url('getBotPic.php?thumb=1&bot=" + cage.player2.replaceAll(' ', '').toLowerCase() + "')");
 			  
 			  $('.matchNumber').html(cage.order);
 			  var bracket = "";

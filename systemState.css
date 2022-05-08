@@ -17,19 +17,31 @@
 	background-color: #dc00c8;
 }
 .badge-pill::before {
-	content: "Cage ";
+	content: " ";
 }
 .lower-message {
 	display: none;
 }
 .lower-message-text {
+	display:none;
 	color: #ffffff !important;
 	background-color: #000000;
 	text-align: center;
 	font-weight: bold;
 	font-size: 18px;
 }
+.matchTime {
+	display:  none;
+}
 .col-md.border {
 	background-color: #111111;
 
+}
+.cageBlock {
+	border-style: none !important;
+	border-color: #000000;
+	color: #757575;
+}
+.cageTitle {
+	width:  100%;
 }
