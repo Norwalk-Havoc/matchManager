@@ -37,6 +37,11 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 		$tourn = $_GET['tournament'];
 		$round = $_GET['round'];
 		printUpNext($tourn, $round);
+	} else if ($mode == 'assignRumble'){
+		$cage = $_GET['cage'];
+		$tournament = "special";
+		$matchNumber = "rumble";
+		matchToCage($cage, $tournament, $matchNumber);
 	} else if ($mode == 'assignMatch'){
 		$matchInfo = $_POST['matchSelect'];
 		$cage = $_POST['matchSpot'];
@@ -214,6 +219,11 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 		$outJson['md5'] = md5($outJson['html']);
 		echo json_encode($outJson);
 
+	} else if ($mode == 'photoBooth2'){
+		$outJson['html'] = allBots("photoBooth2");
+		$outJson['md5'] = md5($outJson['html']);
+		echo json_encode($outJson);
+
 	} else if ($mode == 'greenroomMode'){
 		$outJson['html'] = allBots("greenroom");
 		$outJson['md5'] = md5($outJson['html']);
@@ -259,11 +269,6 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 		
 		$setBank = substr($_GET['bank'],0,1); // One character for safety!
 		$state['bank'][$setBank] = $_GET['cage'];
-		
-
-		
-		
-		
 		setProductionState($state);
 		singular("reset".$setBank);
 		echo "Ok - $setBank";
@@ -318,11 +323,11 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 			  if (move_uploaded_file($_FILES["botPicture"]["tmp_name"], $target_file)) {
 				  $targetFileTime = str_replace('.jpg', '-'.time().'.jpg', $target_file);
 				  copy($target_file, $targetFileTime);
-				  shell_exec("removebg --api-key $removeBGKey --reprocess-existing --extra-api-option 'crop=true' --size hd $target_file");
+				  shell_exec("removebg --api-key $removeBGKey --reprocess-existing --extra-api-option 'crop=true' --files $target_file");
 				  shell_exec("convert -resize '300' ".$target_dir.$imageString."-removebg.png /var/www/html/matchManager/robots-thumb/".$imageString.".png");
 				  
 				  if ($id == ''){
-	  			    echo '<html><head><meta http-equiv="refresh" content="2; URL=photoBooth.php" /></head><body><h1>Success</h1></body></html>';
+	  			    echo '<html><head><meta http-equiv="refresh" content="2; URL=photoBooth.php" /></head><body><h1>Successful Bot Upload</h1></body></html>';
 				  	
 				  } else {
 			    	  echo '<html><head><meta http-equiv="refresh" content="2; URL=myBot.php?bot_id='.$id.'&bracket='.$tournament.'" /></head><body><h1>Success</h1></body></html>';
@@ -332,7 +337,59 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 			  }
 		}
 
-	} else if ($mode == 'singular'){
+	} else if ($mode == 'peopleUpload'){
+		$id = $_POST['bot_id'];
+		$tournament = $_POST['tournament'];
+		$imageString = preg_replace("/[^a-zA-Z0-9]+/", "", $_POST['imageString']); 
+		$target_dir = "./people/";
+		$target_file = $target_dir . $imageString . ".jpg";
+		$uploadOk = 1;
+		$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+		// Check if image file is a actual image or fake image
+		if(isset($_POST["submit"])) {
+		  $check = getimagesize($_FILES["botPicture"]["tmp_name"]);
+		  if($check !== false) {
+		    echo "File is an image - " . $check["mime"] . ".";
+		    $uploadOk = 1;
+		  } else {
+		    echo "File is not an image.";
+		    $uploadOk = 0;
+		  }
+		}
+		// Allow certain file formats
+		if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+		&& $imageFileType != "gif" ) {
+		  echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+		  $uploadOk = 0;
+		}
+
+		// Check if $uploadOk is set to 0 by an error
+		if ($uploadOk == 0) {
+		  echo "Sorry, your file was not uploaded.";
+		// if everything is ok, try to upload file
+		} else {
+			if (file_exists($target_file)){
+				unlink($target_file);
+			}
+			  if (move_uploaded_file($_FILES["botPicture"]["tmp_name"], $target_file)) {
+				  $targetFileTime = str_replace('.jpg', '-'.time().'.jpg', $target_file);
+				  copy($target_file, $targetFileTime);
+				  shell_exec("removebg --api-key $removeBGKey --reprocess-existing  --files $target_file");
+				  shell_exec("convert -resize '300' ".$target_dir.$imageString."-removebg.png /var/www/html/matchManager/people-thumb/".$imageString.".png");
+				  
+				  if ($id == ''){
+	  			    echo '<html><head><meta http-equiv="refresh" content="2; URL=photoBoothPeople.php" /></head><body><h1>Successful Driver Upload</h1></body></html>';
+				  	
+				  } else {
+			    	  echo '<html><head><meta http-equiv="refresh" content="2; URL=myBot.php?bot_id='.$id.'&bracket='.$tournament.'" /></head><body><h1>Success</h1></body></html>';
+				   }
+			  } else {
+			    echo "Sorry, there was an error uploading your file ".$_FILES["botPicture"]["tmp_name"]."as ". $target_file;
+			  }
+		}
+
+	}
+	 else if ($mode == 'singular'){
 		singular($_GET['smode']);
 	} else if ($mode == 'dataNibble'){ //This allows companion to populate variables one at a time!
 		$cage = $_GET['cage'];
@@ -395,7 +452,7 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 					shell_exec('curl "http://192.168.10.10:8000/press/bank/40/12"');
 				}
 				else if ($cage == 5){
-					shell_exec('curl "http://192.168.10.10:8000/press/bank/40/113"');
+					shell_exec('curl "http://192.168.10.10:8000/press/bank/40/13"');
 				}
 			}	
 		}
@@ -420,7 +477,7 @@ if (isset($_REQUEST['mode'])){ //We are running a command from the URL
 					shell_exec('curl "http://192.168.10.10:8000/press/bank/40/12"');
 				}
 				else if ($cage == 5){
-					shell_exec('curl "http://192.168.10.10:8000/press/bank/40/113"');
+					shell_exec('curl "http://192.168.10.10:8000/press/bank/40/13"');
 				}
 			}	
 		}
@@ -475,42 +532,65 @@ function getGilRoundString($weightClass, $round){
 }
 
 
-function matchToCage($cage,$tournament, $match){
+function matchToCage($cage,$tournament, $matchNum){
 	clearCageText($cage);
-	$outCage = getCageText($cage);
-	$tournaments = getChallongeTournaments();
-	$matches = getMatches($tournaments[$tournament]);
-	$match = $matches[$match];
-	$match['tournament'] = $tournaments[$tournament];
-	$match['tournamentKey'] = $tournament;
-	$match['weightClass'] = str_replace("-", " ", str_replace("-Bracket","",$tournament));
-	$match['player1image'] = preg_replace("/[^a-zA-Z0-9]+/", "", str_replace(" ","",strtolower($match['player1'])));
-	$match['player2image'] = preg_replace("/[^a-zA-Z0-9]+/", "", str_replace(" ","",strtolower($match['player2'])));
-	$match['matchTime'] = MATCH_TIME;
-	$match['messageOverride'] = '';
-	$match['lowerMessage'] = 'Match: '.$match['order'].' - ';
-	// if ($match['round'] > 0){
-	// 	$match['lowerMessage'] .= "Undefeated Bracket Round ".$match['round'];
-	// } else {
-	// 	$match['lowerMessage'] .= "Elimination Bracket Round ".($match['round'] * -1);
-	// }
-	$match['lowerMessage'] = getGilRoundString($match['weightClass'], $match['round']);
-	$match['lowerMessage'] .= ' - '.$match['weightClass'];
+	$outCage = array();
+	$match = array();
+	if ($tournament == "special"){
+		if ($matchNum == "rumble"){
+			$match = json_decode(file_get_contents("./config/rumble_template.json"), true);
+			$outCage['state_text'] = "Assigned \nRumble";
+		} else {
+			$outCage['state_text'] = "Unknown \nSpecial";
+		}
+	} else {
+		$outCage = getCageText($cage);
+		$tournaments = getChallongeTournaments();
+		$matches = getMatches($tournaments[$tournament]);
+		$match = $matches[$matchNum];
+		$match['tournament'] = $tournaments[$tournament];
+		$match['tournamentKey'] = $tournament;
+		$match['weightClass'] = str_replace("-", " ", str_replace("-Bracket","",$tournament));
+		$match['player1image'] = preg_replace("/[^a-zA-Z0-9]+/", "", str_replace(" ","",strtolower($match['player1'])));
+		$match['player2image'] = preg_replace("/[^a-zA-Z0-9]+/", "", str_replace(" ","",strtolower($match['player2'])));
+		$match['matchTime'] = MATCH_TIME;
+		$match['messageOverride'] = '';
+		$match['lowerMessage'] = 'Match: '.$match['order'].' - ';
+		// if ($match['round'] > 0){
+		// 	$match['lowerMessage'] .= "Undefeated Bracket Round ".$match['round'];
+		// } else {
+		// 	$match['lowerMessage'] .= "Elimination Bracket Round ".($match['round'] * -1);
+		// }
+		$match['lowerMessage'] = getGilRoundString($match['weightClass'], $match['round']);
+		$match['lowerMessage'] .= ' - '.$match['weightClass'];
 	
-	$outCage['startTime'] = 0;
-	$outCage['stopTime'] = 0;
-	$outCage['endCountdown'] = 0;
-	$outCage['matchActive'] = FALSE;
-	$outCage['matchPaused'] = FALSE;
-	$outCage['encore'] = FALSE;
-	$outCage['filePath'] = $match['weightClass']."-".$match['order']."--".$match['player1image']."-vs-".$match['player2image'];
-	$outCage['state_text'] = "Assigned";
+		$outCage['startTime'] = 0;
+		$outCage['stopTime'] = 0;
+		$outCage['endCountdown'] = 0;
+		$outCage['matchActive'] = FALSE;
+		$outCage['matchPaused'] = FALSE;
+		$outCage['encore'] = FALSE;
+		$outCage['filePath'] = $match['weightClass']."-".$match['order']."--".$match['player1image']."-vs-".$match['player2image'];
+		$outCage['state_text'] = "Assigned";
+		
+		
 	
-	
+	}
 	$outCage = array_merge($outCage, $match);
+	
+	
+	
+	
+	
 	setCageText($cage, $outCage);
+	
+	$roundString = str_replace(['+', '-'], '', filter_var($match['weightClass'], FILTER_SANITIZE_NUMBER_INT)).'-'. $match['round'];
+	
 	error_log("This is happenging");
 	shell_exec('curl "http://192.168.10.10:8000/press/bank/10/7"'); //Update Match Variables inside Companion
+	shell_exec('ssh mcwiggin@192.168.5.249 \'php /Users/mcwiggin/Development/audioFactory/clipMaker.php '.$cage.' '.$roundString.' '.$match['player1image'].' '.$match['player2image'].' 192.168.10.26\''); //Send audio
+	error_log('\nssh mcwiggin@192.168.5.249 \'php /Users/mcwiggin/Development/audioFactory/clipMaker.php '.$cage.' '.$roundString.' '.$match['player1image'].' '.$match['player2image'].' 192.168.10.26\'\n');
+	
 	$prod = getProductionState();
 	
 
@@ -677,7 +757,7 @@ function singular($singularMode){
 	--data-raw ['$json']`;
 
 		//Update Vestaboard!
-		$outString = "Up Now Cage ".$XCage." ".$cage1['weightClass']." ".preg_replace("/[^a-zA-Z0-9]+/", "", $cage1['player1'])." vs ".preg_replace("/[^a-zA-Z0-9]+/", "", $cage1['player2']);
+		$outString = "Up Now In Cage ".$XCage." ".$cage1['weightClass']." ".preg_replace("/[^a-zA-Z0-9]+/", "", $cage1['player1'])." vs ".preg_replace("/[^a-zA-Z0-9]+/", "", $cage1['player2']);
 		shell_exec('curl -X POST -H "Content-Type: application/json" -d \'{"value1":"'.$outString.'"}\' https://maker.ifttt.com/trigger/MatchUpdate/with/key/cqz29bXA_bC2eOkhRNfiSk');
 	
 	}
@@ -816,9 +896,12 @@ function singular($singularMode){
 	--header 'Content-Type: application/json' \
 	--data-raw ['$json']`;
 	} else if ($singularMode == "judgesX"){
-		$judge1id = 4; 
-		$judge2id = 5;
-		$judge3id = 6;
+		$judgeID1 = "7";
+		$judgeID2 = "6";
+		$judgeID3 = "8";
+		$judge1id = $judgeID1; 
+		$judge2id = $judgeID2;
+		$judge3id = $judgeID3;
 		
 		
 		$XCage = $prod['bank']['X'];
@@ -1007,9 +1090,9 @@ function submitJudgeScores($scores, $bank){
 	$player1['aggression'] = 0 + $scores['agression'];
 	$player1['damage'] = 0 + $scores['dammage'];
 	$player1['control'] = 0 + $scores['control'];
-	$player2['aggression'] = (MAX_SCORE - 1) - $scores['agression'];
-	$player2['damage'] = MAX_SCORE - $scores['dammage'];
-	$player2['control'] = MAX_SCORE - $scores['control'];
+	$player2['aggression'] = (6 - 1) - $scores['agression'];
+	$player2['damage'] = 6 - $scores['dammage'];
+	$player2['control'] = 6 - $scores['control'];
 	if ($player1['aggression'] + $player1['damage'] + $player1['control'] > $player2['aggression'] + $player2['damage'] + $player2['control'] ) {
 		$player1['winner'] = 'player1';
 		$player2['winner'] = 'player1';
@@ -2315,12 +2398,24 @@ function allBots($outMode = "allBots"){
 						</div>';
 				} else if ($outMode == "photoBooth"){
 					 $playerImage = preg_replace("/[^a-zA-Z0-9]+/", "", str_replace(" ","",strtolower($player['meta']['name'])));
-					 $photoString = "newPic.php?imageString=".$playerImage;
+					 $photoString = "newPic.php?mode=bot&imageString=".$playerImage;
 					
 					$out .= '<div class="aBotBlock '.$botClass.'">
 							<div class="aBot ">
 								
 								<div class="aBotName " onClick="window.location=\''. $photoString.'\'" style="cursor: pointer;"><span class="'.$botClass.'">'.$player['meta']['name'].'</span><img style="float:right" width="32px" src="getBotPic.php?bot='.$playerImage.'&thumb=1"></div>
+								
+							</div>
+							'.$next.'
+						</div>';
+				} else if ($outMode == "photoBooth2"){
+					 $playerImage = preg_replace("/[^a-zA-Z0-9]+/", "", str_replace(" ","",strtolower($player['meta']['name'])));
+					 $photoString = "newPic.php?mode=people&imageString=".$playerImage;
+					
+					$out .= '<div class="aBotBlock '.$botClass.'">
+							<div class="aBot ">
+								
+								<div class="aBotName " onClick="window.location=\''. $photoString.'\'" style="cursor: pointer;"><span class="'.$botClass.'">'.$player['meta']['name'].'</span><img style="float:right" width="32px" src="getBotPic.php?bot='.$playerImage.'&thumb=1&people=1"></div>
 								
 							</div>
 							'.$next.'

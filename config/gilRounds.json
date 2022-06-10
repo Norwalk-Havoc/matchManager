@@ -22,12 +22,7 @@
  {
    "weight_class": "30lb",
    "round": 5,
-   "label": "Grand Final"
- },
- {
-   "weight_class": "30lb",
-   "round": 6,
-   "label": "Grand Final"
+   "label": "Grand Finals"
  },
  {
    "weight_class": "30lb",
@@ -42,21 +37,16 @@
  {
    "weight_class": "30lb",
    "round": -3,
-   "label": "Elimination Round 3"
- },
- {
-   "weight_class": "30lb",
-   "round": -4,
    "label": "Elimination Quarterfinals"
  },
  {
    "weight_class": "30lb",
-   "round": -5,
+   "round": -4,
    "label": "Elimination Semifinal"
  },
  {
    "weight_class": "30lb",
-   "round": -6,
+   "round": -5,
    "label": "Elimination Final"
  },
  {
@@ -82,12 +72,7 @@
  {
    "weight_class": "12lb",
    "round": 5,
-   "label": "Grand Final"
- },
- {
-   "weight_class": "12lb",
-   "round": 6,
-   "label": "Grand Final"
+   "label": "Grand Finals"
  },
  {
    "weight_class": "12lb",
@@ -102,16 +87,21 @@
  {
    "weight_class": "12lb",
    "round": -3,
-   "label": "Elimination Quarterfinals"
+   "label": "Elimination Round 3"
  },
  {
    "weight_class": "12lb",
    "round": -4,
-   "label": "Elimination Semifinal"
+   "label": "Elimination Quarterfinals"
  },
  {
    "weight_class": "12lb",
    "round": -5,
+   "label": "Elimination Semifinal"
+ },
+ {
+   "weight_class": "12lb",
+   "round": -6,
    "label": "Elimination Final"
  },
  {
@@ -147,12 +137,7 @@
  {
    "weight_class": "3lb",
    "round": 7,
-   "label": "Grand Final"
- },
- {
-   "weight_class": "3lb",
-   "round": 8,
-   "label": "Grand Final"
+   "label": "Grand Finals"
  },
  {
    "weight_class": "3lb",

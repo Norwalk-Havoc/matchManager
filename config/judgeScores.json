@@ -9095,5 +9095,3216 @@
                 }
             }
         }
+    },
+    "276013131": {
+        "startTime": 0,
+        "stopTime": 0,
+        "endCountdown": 0,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-7--spicyhugs-vs-killajoule",
+        "state_text": "Assigned",
+        "id": 276013131,
+        "order": 7,
+        "state": "open",
+        "round": 1,
+        "player1": "Spicy Hugs",
+        "player2": "KillaJoule",
+        "player1_id": 171308562,
+        "player1_greenroom": 0,
+        "player1_prereq": null,
+        "player2_id": 171308569,
+        "player2_prereq": null,
+        "player2_greenroom": 0,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652486823,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "apiTest3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "spicyhugs",
+        "player2image": "killajoule",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "8": {
+                    "aggression": 1,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "8": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "276013151": {
+        "startTime": 1652529079,
+        "stopTime": 1652529285,
+        "endCountdown": 1652529079,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-27--osiris-vs-emotionaldamage",
+        "state_text": "Match Completed",
+        "id": 276013151,
+        "order": 27,
+        "state": "open",
+        "round": 2,
+        "player1": "Osiris",
+        "player2": "Emotional Damage",
+        "player1_id": 171306892,
+        "player1_greenroom": 0,
+        "player1_prereq": null,
+        "player2_id": 171306925,
+        "player2_prereq": 276013127,
+        "player2_greenroom": 0,
+        "winner": "Emotional Damage",
+        "loser": "Osiris",
+        "updated_at": 1652486555,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 1652486750,
+        "tournament": "apiTest3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "osiris",
+        "player2image": "emotionaldamage",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "8": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "8": {
+                    "aggression": 1,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240217": {
+        "startTime": 1652537243,
+        "stopTime": 1652537424,
+        "endCountdown": 1652537243,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-24--crashfest-vs-scrappydoo",
+        "state_text": "Match Completed",
+        "id": 275240217,
+        "order": 24,
+        "state": "open",
+        "round": 1,
+        "player1": "Crashfest",
+        "player2": "Scrappy Doo",
+        "player1_id": 170496568,
+        "player1_greenroom": 2,
+        "player1_prereq": null,
+        "player2_id": 170496596,
+        "player2_prereq": null,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652533164,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "crashfest",
+        "player2image": "scrappydoo",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 5,
+                    "damage": 4,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 0,
+                    "damage": 2,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240213": {
+        "startTime": 1652537898,
+        "stopTime": 1652538079,
+        "endCountdown": 1652537898,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-20--killerangel-vs-swoop",
+        "state_text": "Match Completed",
+        "id": 275240213,
+        "order": 20,
+        "state": "open",
+        "round": 1,
+        "player1": "Killer Angel",
+        "player2": "Swoop",
+        "player1_id": 170496559,
+        "player1_greenroom": 2,
+        "player1_prereq": null,
+        "player2_id": 170496606,
+        "player2_prereq": null,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652533164,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "killerangel",
+        "player2image": "swoop",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240197": {
+        "startTime": 1652538243,
+        "stopTime": 1652538425,
+        "endCountdown": 1652538243,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-4--candystriker-vs-omnivore",
+        "state_text": "Match Completed",
+        "id": 275240197,
+        "order": 4,
+        "state": "open",
+        "round": 1,
+        "player1": "Candy Striker",
+        "player2": "Omnivore",
+        "player1_id": 170496556,
+        "player1_greenroom": 2,
+        "player1_prereq": null,
+        "player2_id": 170496608,
+        "player2_prereq": null,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652533163,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "candystriker",
+        "player2image": "omnivore",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "276013134": {
+        "startTime": 0,
+        "stopTime": 0,
+        "endCountdown": 0,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-10--thereddeath-vs-solarplex",
+        "state_text": "Assigned",
+        "id": 276013134,
+        "order": 10,
+        "state": "open",
+        "round": 1,
+        "player1": "The Red Death",
+        "player2": "Solarplex",
+        "player1_id": 171306936,
+        "player1_greenroom": 0,
+        "player1_prereq": null,
+        "player2_id": 171308570,
+        "player2_prereq": null,
+        "player2_greenroom": 0,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652454202,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "apiTest3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "thereddeath",
+        "player2image": "solarplex",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "8": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "8": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240218": {
+        "startTime": 1652539025,
+        "stopTime": 1652539205,
+        "endCountdown": 1652539025,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-25--insidejob-vs-ziptide",
+        "state_text": "Match Active",
+        "id": 275240218,
+        "order": 25,
+        "state": "open",
+        "round": 1,
+        "player1": "Inside Job",
+        "player2": "Zip Tide",
+        "player1_id": 170496554,
+        "player1_greenroom": 2,
+        "player1_prereq": null,
+        "player2_id": 170496610,
+        "player2_prereq": null,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652533164,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "insidejob",
+        "player2image": "ziptide",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "8": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "8": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240215": {
+        "startTime": 0,
+        "stopTime": 0,
+        "endCountdown": 0,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-22--realgenius-vs-atom",
+        "state_text": "Assigned",
+        "id": 275240215,
+        "order": 22,
+        "state": "open",
+        "round": 1,
+        "player1": "Real Genius",
+        "player2": "Atom",
+        "player1_id": 170496579,
+        "player1_greenroom": 2,
+        "player1_prereq": null,
+        "player2_id": 170496584,
+        "player2_prereq": null,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652533164,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "realgenius",
+        "player2image": "atom",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "8": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 0,
+                    "damage": 1,
+                    "control": 0,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "8": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 6,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240206": {
+        "startTime": 1652539965,
+        "stopTime": 1652540146,
+        "endCountdown": 1652539965,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-13--taleofthreehams-vs-walter",
+        "state_text": "Match Completed",
+        "id": 275240206,
+        "order": 13,
+        "state": "open",
+        "round": 1,
+        "player1": "Tale of Three Hams",
+        "player2": "Walter",
+        "player1_id": 170496561,
+        "player1_greenroom": 2,
+        "player1_prereq": null,
+        "player2_id": 170496604,
+        "player2_prereq": null,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652533164,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "taleofthreehams",
+        "player2image": "walter",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player2"
+                },
+                "8": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player2"
+                },
+                "8": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240219": {
+        "startTime": 1652540894,
+        "stopTime": 1652541074,
+        "endCountdown": 1652540894,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-26--wakeandbake-vs-spotlight",
+        "state_text": "Match Active",
+        "id": 275240219,
+        "order": 26,
+        "state": "open",
+        "round": 1,
+        "player1": "Wake and Bake",
+        "player2": "Spotlight",
+        "player1_id": 170496575,
+        "player1_greenroom": 2,
+        "player1_prereq": null,
+        "player2_id": 170496588,
+        "player2_prereq": null,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652533164,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "wakeandbake",
+        "player2image": "spotlight",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 5,
+                    "damage": 4,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 5,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 0,
+                    "damage": 2,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240200": {
+        "startTime": 1652542058,
+        "stopTime": 1652542239,
+        "endCountdown": 1652542058,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-7--t3-vs-rigatoni",
+        "state_text": "Match Completed",
+        "id": 275240200,
+        "order": 7,
+        "state": "open",
+        "round": 1,
+        "player1": "T3",
+        "player2": "Rigatoni",
+        "player1_id": 170496573,
+        "player1_greenroom": 2,
+        "player1_prereq": null,
+        "player2_id": 170496591,
+        "player2_prereq": null,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652533163,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "t3",
+        "player2image": "rigatoni",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 0,
+                    "damage": 5,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "8": {
+                    "aggression": 1,
+                    "damage": 5,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 5,
+                    "damage": 1,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "8": {
+                    "aggression": 4,
+                    "damage": 1,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240211": {
+        "startTime": 1652542605,
+        "stopTime": 1652542786,
+        "endCountdown": 1652542605,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-18--milktankette-vs-qurultay",
+        "state_text": "Match Completed",
+        "id": 275240211,
+        "order": 18,
+        "state": "open",
+        "round": 1,
+        "player1": "MilkTankette",
+        "player2": "Qurultay",
+        "player1_id": 170496555,
+        "player1_greenroom": 2,
+        "player1_prereq": null,
+        "player2_id": 170496609,
+        "player2_prereq": null,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652533164,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "milktankette",
+        "player2image": "qurultay",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "7": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 5,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "7": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 0,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240210": {
+        "startTime": 1652542906,
+        "stopTime": 1652543087,
+        "endCountdown": 1652542906,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-17--scrambled-vs-frenemies",
+        "state_text": "Match Completed",
+        "id": 275240210,
+        "order": 17,
+        "state": "open",
+        "round": 1,
+        "player1": "Scrambled",
+        "player2": "Frenemies",
+        "player1_id": 170496567,
+        "player1_greenroom": 2,
+        "player1_prereq": null,
+        "player2_id": 170496597,
+        "player2_prereq": null,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652533164,
+        "underway": 0,
+        "player1_lastFought": 0,
+        "player2_lastFought": 0,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "scrambled",
+        "player2image": "frenemies",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 1 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "7": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 4,
+                    "damage": 6,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "7": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 1,
+                    "damage": 0,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240229": {
+        "startTime": 1652547177,
+        "stopTime": 1652547358,
+        "endCountdown": 1652547177,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-48--walter-vs-backlashwave",
+        "state_text": "Match Completed",
+        "id": 275240229,
+        "order": 48,
+        "state": "open",
+        "round": 2,
+        "player1": "Walter",
+        "player2": "Backlash Wave",
+        "player1_id": 170496604,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240206,
+        "player2_id": 170496594,
+        "player2_prereq": 275240207,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652540170,
+        "underway": 0,
+        "player1_lastFought": 1652540170,
+        "player2_lastFought": 1652538635,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "walter",
+        "player2image": "backlashwave",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "8": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 5,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "8": {
+                    "aggression": 0,
+                    "damage": 1,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240236": {
+        "startTime": 1652547644,
+        "stopTime": 1652547825,
+        "endCountdown": 1652547644,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-55--insidejob-vs-wakeandbake",
+        "state_text": "Match Completed",
+        "id": 275240236,
+        "order": 55,
+        "state": "open",
+        "round": 2,
+        "player1": "Inside Job",
+        "player2": "Wake and Bake",
+        "player1_id": 170496554,
+        "player1_greenroom": 1,
+        "player1_prereq": 275240218,
+        "player2_id": 170496575,
+        "player2_prereq": 275240219,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652541139,
+        "underway": 0,
+        "player1_lastFought": 1652539271,
+        "player2_lastFought": 1652541139,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "insidejob",
+        "player2image": "wakeandbake",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "8": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "8": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240231": {
+        "startTime": 1652548005,
+        "stopTime": 1652548186,
+        "endCountdown": 1652548005,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-50--komodo-vs-scrambled",
+        "state_text": "Match Completed",
+        "id": 275240231,
+        "order": 50,
+        "state": "open",
+        "round": 2,
+        "player1": "Komodo",
+        "player2": "Scrambled",
+        "player1_id": 170496564,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240209,
+        "player2_id": 170496567,
+        "player2_prereq": 275240210,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652543026,
+        "underway": 0,
+        "player1_lastFought": 1652533320,
+        "player2_lastFought": 1652543026,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "komodo",
+        "player2image": "scrambled",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 3,
+                    "damage": 1,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 6,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 2,
+                    "damage": 5,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 0,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240244": {
+        "startTime": 1652548361,
+        "stopTime": 1652548542,
+        "endCountdown": 1652548361,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-87--ablation-vs-crashfest",
+        "state_text": "Match Completed",
+        "id": 275240244,
+        "order": 87,
+        "state": "open",
+        "round": 3,
+        "player1": "Ablation",
+        "player2": "Crashfest",
+        "player1_id": 170496550,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240234,
+        "player2_id": 170496568,
+        "player2_prereq": 275240235,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652542457,
+        "underway": 0,
+        "player1_lastFought": 1652542377,
+        "player2_lastFought": 1652537646,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "ablation",
+        "player2image": "crashfest",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 3 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "8": {
+                    "aggression": 2,
+                    "damage": 5,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 5,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "8": {
+                    "aggression": 3,
+                    "damage": 1,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 1,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240272": {
+        "startTime": 1652549785,
+        "stopTime": 1652549966,
+        "endCountdown": 1652549785,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-65--hypetrain-vs-taleofthreehams",
+        "state_text": "Match Completed",
+        "id": 275240272,
+        "order": 65,
+        "state": "open",
+        "round": -2,
+        "player1": "Hype Train",
+        "player2": "Tale of Three Hams",
+        "player1_id": 170496590,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240230,
+        "player2_id": 170496561,
+        "player2_prereq": 275240258,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652546800,
+        "underway": 0,
+        "player1_lastFought": 1652546800,
+        "player2_lastFought": 1652545008,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "hypetrain",
+        "player2image": "taleofthreehams",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "8": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 1,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "8": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240268": {
+        "startTime": 1652550408,
+        "stopTime": 1652550589,
+        "endCountdown": 1652550408,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-69--atom-vs-t3",
+        "state_text": "Match Completed",
+        "id": 275240268,
+        "order": 69,
+        "state": "open",
+        "round": -2,
+        "player1": "Atom",
+        "player2": "T3",
+        "player1_id": 170496584,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240234,
+        "player2_id": 170496573,
+        "player2_prereq": 275240255,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652544433,
+        "underway": 0,
+        "player1_lastFought": 1652542377,
+        "player2_lastFought": 1652544514,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "atom",
+        "player2image": "t3",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "8": {
+                    "aggression": 0,
+                    "damage": 1,
+                    "control": 0,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "8": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 6,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240266": {
+        "startTime": 1652551164,
+        "stopTime": 1652551345,
+        "endCountdown": 1652551164,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-71--insidejob-vs-tryangles",
+        "state_text": "Match Completed",
+        "id": 275240266,
+        "order": 71,
+        "state": "open",
+        "round": -2,
+        "player1": "Inside Job",
+        "player2": "Tryangles",
+        "player1_id": 170496554,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240236,
+        "player2_id": 170496566,
+        "player2_prereq": 275240253,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652549035,
+        "underway": 0,
+        "player1_lastFought": 1652547709,
+        "player2_lastFought": 1652549035,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "insidejob",
+        "player2image": "tryangles",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "8": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 5,
+                    "damage": 3,
+                    "control": 6,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "8": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 0,
+                    "damage": 3,
+                    "control": 0,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240274": {
+        "startTime": 1652551712,
+        "stopTime": 1652551893,
+        "endCountdown": 1652551712,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-63--polarvortex-vs-frenemies",
+        "state_text": "Match Completed",
+        "id": 275240274,
+        "order": 63,
+        "state": "open",
+        "round": -2,
+        "player1": "Polar Vortex",
+        "player2": "Frenemies",
+        "player1_id": 170496576,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240228,
+        "player2_id": 170496597,
+        "player2_prereq": 275240259,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652545646,
+        "underway": 0,
+        "player1_lastFought": 1652545646,
+        "player2_lastFought": 1652543229,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "polarvortex",
+        "player2image": "frenemies",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 2 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 1,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 1,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240284": {
+        "startTime": 1652553996,
+        "stopTime": 1652554177,
+        "endCountdown": 1652553996,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-77--scrambled-vs-taleofthreehams",
+        "state_text": "Match Completed",
+        "id": 275240284,
+        "order": 77,
+        "state": "open",
+        "round": -3,
+        "player1": "Scrambled",
+        "player2": "Tale of Three Hams",
+        "player1_id": 170496567,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240271,
+        "player2_id": 170496561,
+        "player2_prereq": 275240272,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652549820,
+        "underway": 0,
+        "player1_lastFought": 1652549428,
+        "player2_lastFought": 1652549820,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "scrambled",
+        "player2image": "taleofthreehams",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 3 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 5,
+                    "damage": 2,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 5,
+                    "damage": 1,
+                    "control": 6,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 0,
+                    "damage": 4,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 0,
+                    "damage": 5,
+                    "control": 0,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240240": {
+        "startTime": 1652554499,
+        "stopTime": 1652554680,
+        "endCountdown": 1652554499,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-83--offkillter-vs-spitfire",
+        "state_text": "Match Completed",
+        "id": 275240240,
+        "order": 83,
+        "state": "open",
+        "round": 3,
+        "player1": "Off Killter",
+        "player2": "Spitfire",
+        "player1_id": 170496586,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240226,
+        "player2_id": 170496553,
+        "player2_prereq": 275240227,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652541804,
+        "underway": 0,
+        "player1_lastFought": 1652541021,
+        "player2_lastFought": 1652541981,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "offkillter",
+        "player2image": "spitfire",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Round 3 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "8": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "8": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240249": {
+        "startTime": 1652555949,
+        "stopTime": 1652556130,
+        "endCountdown": 1652555949,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-104--crashfest-vs-wakeandbake",
+        "state_text": "Match Completed",
+        "id": 275240249,
+        "order": 104,
+        "state": "open",
+        "round": 4,
+        "player1": "Crashfest",
+        "player2": "Wake and Bake",
+        "player1_id": 170496568,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240244,
+        "player2_id": 170496575,
+        "player2_prereq": 275240245,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652553339,
+        "underway": 0,
+        "player1_lastFought": 1652548385,
+        "player2_lastFought": 1652553339,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "crashfest",
+        "player2image": "wakeandbake",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Quarterfinals - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "7": {
+                    "aggression": 1,
+                    "damage": 4,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 1,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "7": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 5,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240283": {
+        "startTime": 1652557870,
+        "stopTime": 1652558051,
+        "endCountdown": 1652557870,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-78--firstdrinkoftheday-vs-milktankette",
+        "state_text": "Match Completed",
+        "id": 275240283,
+        "order": 78,
+        "state": "open",
+        "round": -3,
+        "player1": "First Drink of the Day",
+        "player2": "MilkTankette",
+        "player1_id": 170496578,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240269,
+        "player2_id": 170496555,
+        "player2_prereq": 275240270,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652552328,
+        "underway": 0,
+        "player1_lastFought": 1652548993,
+        "player2_lastFought": 1652552328,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "firstdrinkoftheday",
+        "player2image": "milktankette",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 3 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "7": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 6,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "7": {
+                    "aggression": 1,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 1,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 0,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240292": {
+        "startTime": 1652559394,
+        "stopTime": 1652559576,
+        "endCountdown": 1652559394,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-89--argonlights-vs-scrambled",
+        "state_text": "Match Completed",
+        "id": 275240292,
+        "order": 89,
+        "state": "open",
+        "round": -4,
+        "player1": "Argon Lights",
+        "player2": "Scrambled",
+        "player1_id": 170496598,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240238,
+        "player2_id": 170496567,
+        "player2_prereq": 275240284,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652554217,
+        "underway": 0,
+        "player1_lastFought": 1652549287,
+        "player2_lastFought": 1652554217,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "argonlights",
+        "player2image": "scrambled",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 4 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "8": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "8": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240296": {
+        "startTime": 1652560448,
+        "stopTime": 1652560629,
+        "endCountdown": 1652560448,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-93--graveyardgoddess-vs-thewumpus",
+        "state_text": "Match Completed",
+        "id": 275240296,
+        "order": 93,
+        "state": "open",
+        "round": -4,
+        "player1": "Graveyard Goddess",
+        "player2": "The Wumpus",
+        "player1_id": 170496580,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240242,
+        "player2_id": 170496560,
+        "player2_prereq": 275240288,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652556076,
+        "underway": 0,
+        "player1_lastFought": 1652553144,
+        "player2_lastFought": 1652555958,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "graveyardgoddess",
+        "player2image": "thewumpus",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 4 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 5,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 1,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240251": {
+        "startTime": 1652561284,
+        "stopTime": 1652561465,
+        "endCountdown": 1652561284,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-112--komodo-vs-crashfest",
+        "state_text": "Match Completed",
+        "id": 275240251,
+        "order": 112,
+        "state": "open",
+        "round": 5,
+        "player1": "Komodo",
+        "player2": "Crashfest",
+        "player1_id": 170496564,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240248,
+        "player2_id": 170496568,
+        "player2_prereq": 275240249,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652559015,
+        "underway": 0,
+        "player1_lastFought": 1652559119,
+        "player2_lastFought": 1652556107,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "komodo",
+        "player2image": "crashfest",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Semifinals - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "7": {
+                    "aggression": 1,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 0,
+                    "damage": 5,
+                    "control": 0,
+                    "winner": "player2"
+                },
+                "8": {
+                    "aggression": 1,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "7": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 5,
+                    "damage": 1,
+                    "control": 6,
+                    "winner": "player2"
+                },
+                "8": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240290": {
+        "startTime": 1652562619,
+        "stopTime": 1652562800,
+        "endCountdown": 1652562619,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-91--offkillter-vs-datacollector",
+        "state_text": "Match Completed",
+        "id": 275240290,
+        "order": 91,
+        "state": "open",
+        "round": -4,
+        "player1": "Off Killter",
+        "player2": "Data Collector",
+        "player1_id": 170496586,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240240,
+        "player2_id": 170496577,
+        "player2_prereq": 275240282,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652554661,
+        "underway": 0,
+        "player1_lastFought": 1652554661,
+        "player2_lastFought": 1652554379,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "offkillter",
+        "player2image": "datacollector",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 4 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "8": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "8": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240298": {
+        "startTime": 1652563529,
+        "stopTime": 1652563710,
+        "endCountdown": 1652563529,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-97--firstdrinkoftheday-vs-scrambled",
+        "state_text": "Match Completed",
+        "id": 275240298,
+        "order": 97,
+        "state": "open",
+        "round": -5,
+        "player1": "First Drink of the Day",
+        "player2": "Scrambled",
+        "player1_id": 170496578,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240291,
+        "player2_id": 170496567,
+        "player2_prereq": 275240292,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652560722,
+        "underway": 0,
+        "player1_lastFought": 1652560722,
+        "player2_lastFought": 1652559533,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "firstdrinkoftheday",
+        "player2image": "scrambled",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 5 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "7": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 4,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 0,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "7": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 1,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 6,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240250": {
+        "startTime": 1652564702,
+        "stopTime": 1652564882,
+        "endCountdown": 1652564702,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-111--sawloser2saw2lose-vs-walter",
+        "state_text": "Match Active",
+        "id": 275240250,
+        "order": 111,
+        "state": "open",
+        "round": 5,
+        "player1": "Saw Loser: 2 Saw 2 Lose",
+        "player2": "Walter",
+        "player1_id": 170496549,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240246,
+        "player2_id": 170496604,
+        "player2_prereq": 275240247,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652561725,
+        "underway": 0,
+        "player1_lastFought": 1652556105,
+        "player2_lastFought": 1652561603,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "sawloser2saw2lose",
+        "player2image": "walter",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Semifinals - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "7": {
+                    "aggression": 5,
+                    "damage": 3,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 4,
+                    "damage": 4,
+                    "control": 5,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "7": {
+                    "aggression": 0,
+                    "damage": 3,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 1,
+                    "damage": 2,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240302": {
+        "startTime": 1652567028,
+        "stopTime": 1652567208,
+        "endCountdown": 1652567028,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-108--wakeandbake-vs-firstdrinkoftheday",
+        "state_text": "Match Active",
+        "id": 275240302,
+        "order": 108,
+        "state": "open",
+        "round": -6,
+        "player1": "Wake and Bake",
+        "player2": "First Drink of the Day",
+        "player1_id": 170496575,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240249,
+        "player2_id": 170496578,
+        "player2_prereq": 275240298,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652563577,
+        "underway": 0,
+        "player1_lastFought": 1652556107,
+        "player2_lastFought": 1652563577,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "wakeandbake",
+        "player2image": "firstdrinkoftheday",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 6 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "7": {
+                    "aggression": 5,
+                    "damage": 4,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 4,
+                    "damage": 6,
+                    "control": 5,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "7": {
+                    "aggression": 0,
+                    "damage": 2,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 1,
+                    "damage": 0,
+                    "control": 1,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240305": {
+        "startTime": 1652570560,
+        "stopTime": 1652570741,
+        "endCountdown": 1652570560,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-110--insidejob-vs-wakeandbake",
+        "state_text": "Match Completed",
+        "id": 275240305,
+        "order": 110,
+        "state": "open",
+        "round": -7,
+        "player1": "Inside Job",
+        "player2": "Wake and Bake",
+        "player1_id": 170496554,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240301,
+        "player2_id": 170496575,
+        "player2_prereq": 275240302,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652567732,
+        "underway": 0,
+        "player1_lastFought": 1652567731,
+        "player2_lastFought": 1652567278,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "insidejob",
+        "player2image": "wakeandbake",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 7 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 1,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "8": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 5,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "8": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 3,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240252": {
+        "startTime": 1652571561,
+        "stopTime": 1652571742,
+        "endCountdown": 1652571561,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-116--sawloser2saw2lose-vs-crashfest",
+        "state_text": "Match Completed",
+        "id": 275240252,
+        "order": 116,
+        "state": "open",
+        "round": 6,
+        "player1": "Saw Loser: 2 Saw 2 Lose",
+        "player2": "Crashfest",
+        "player1_id": 170496549,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240250,
+        "player2_id": 170496568,
+        "player2_prereq": 275240251,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652564854,
+        "underway": 0,
+        "player1_lastFought": 1652564854,
+        "player2_lastFought": 1652561521,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "sawloser2saw2lose",
+        "player2image": "crashfest",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Undefeated Final - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 2,
+                    "damage": 6,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 2,
+                    "damage": 5,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 3,
+                    "damage": 0,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 3,
+                    "damage": 1,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 1,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240304": {
+        "startTime": 1652572553,
+        "stopTime": 1652572734,
+        "endCountdown": 1652572553,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-106--spitfire-vs-gallo12",
+        "state_text": "Match Completed",
+        "id": 275240304,
+        "order": 106,
+        "state": "open",
+        "round": -6,
+        "player1": "Spitfire",
+        "player2": "Gallo 12",
+        "player1_id": 170496553,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240247,
+        "player2_id": 170496551,
+        "player2_prereq": 275240300,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652571002,
+        "underway": 0,
+        "player1_lastFought": 1652561603,
+        "player2_lastFought": 1652566614,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "spitfire",
+        "player2image": "gallo12",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Round 6 - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "7": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 4,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 4,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "7": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 2,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 2,
+                    "control": 3,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240309": {
+        "startTime": 1652578383,
+        "stopTime": 1652578563,
+        "endCountdown": 1652578383,
+        "matchActive": true,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-115--wakeandbake-vs-komodo",
+        "state_text": "Match Active",
+        "id": 275240309,
+        "order": 115,
+        "state": "open",
+        "round": -9,
+        "player1": "Wake and Bake",
+        "player2": "Komodo",
+        "player1_id": 170496575,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240307,
+        "player2_id": 170496564,
+        "player2_prereq": 275240308,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652576852,
+        "underway": 0,
+        "player1_lastFought": 1652570884,
+        "player2_lastFought": 1652576651,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "wakeandbake",
+        "player2image": "komodo",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Semifinal - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "7": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 0,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "8": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "7": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 6,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "8": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240340": {
+        "startTime": 1652579180,
+        "stopTime": 1652579361,
+        "endCountdown": 1652579180,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "12lb-27--bottomfeeder-vs-yobgnol",
+        "state_text": "Match Completed",
+        "id": 275240340,
+        "order": 27,
+        "state": "open",
+        "round": -5,
+        "player1": "Bottom Feeder",
+        "player2": "YOB GNOL",
+        "player1_id": 170496379,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240338,
+        "player2_id": 170496381,
+        "player2_prereq": 275240339,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652579098,
+        "underway": 0,
+        "player1_lastFought": 1652577059,
+        "player2_lastFought": 1652574103,
+        "tournament": "nhrl_may22_12lb",
+        "tournamentKey": "12lb-Bracket",
+        "weightClass": "12lb",
+        "player1image": "bottomfeeder",
+        "player2image": "yobgnol",
+        "matchTime": "180",
+        "messageOverride": "",
+        "lowerMessage": "Elimination Semifinal - 12lb",
+        "cage": "1",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 1,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player2"
+                },
+                "8": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 5,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player2"
+                },
+                "8": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240310": {
+        "startTime": 1652580624,
+        "stopTime": 1652580805,
+        "endCountdown": 1652580624,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-117--crashfest-vs-komodo",
+        "state_text": "Match Completed",
+        "id": 275240310,
+        "order": 117,
+        "state": "open",
+        "round": -10,
+        "player1": "Crashfest",
+        "player2": "Komodo",
+        "player1_id": 170496568,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240252,
+        "player2_id": 170496564,
+        "player2_prereq": 275240309,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652578602,
+        "underway": 0,
+        "player1_lastFought": 1652571728,
+        "player2_lastFought": 1652578602,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "crashfest",
+        "player2image": "komodo",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Final - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "7": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 3,
+                    "damage": 1,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 2,
+                    "damage": 1,
+                    "control": 4,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "7": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 2,
+                    "damage": 5,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 3,
+                    "damage": 5,
+                    "control": 2,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240362": {
+        "startTime": 1652581407,
+        "stopTime": 1652581588,
+        "endCountdown": 1652581407,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "30lb-19--george-vs-stf",
+        "state_text": "Match Completed",
+        "id": 275240362,
+        "order": 19,
+        "state": "open",
+        "round": -5,
+        "player1": "George",
+        "player2": "STF",
+        "player1_id": 170496083,
+        "player1_greenroom": 0,
+        "player1_prereq": 275240353,
+        "player2_id": 170496089,
+        "player2_prereq": 275240361,
+        "player2_greenroom": 1,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652574072,
+        "underway": 0,
+        "player1_lastFought": 1652573872,
+        "player2_lastFought": 1652573170,
+        "tournament": "nhrl_may22_30lb",
+        "tournamentKey": "30lb-Bracket",
+        "weightClass": "30lb",
+        "player1image": "george",
+        "player2image": "stf",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Elimination Final - 30lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "7": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 6,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "7": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 0,
+                    "damage": 1,
+                    "control": 0,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240311": {
+        "startTime": 1652582589,
+        "stopTime": 1652582770,
+        "endCountdown": 1652582589,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-118--sawloser2saw2lose-vs-crashfest",
+        "state_text": "Match Completed",
+        "id": 275240311,
+        "order": 118,
+        "state": "open",
+        "round": 7,
+        "player1": "Saw Loser: 2 Saw 2 Lose",
+        "player2": "Crashfest",
+        "player1_id": 170496549,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240252,
+        "player2_id": 170496568,
+        "player2_prereq": 275240310,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652580880,
+        "underway": 0,
+        "player1_lastFought": 1652571728,
+        "player2_lastFought": 1652580880,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "sawloser2saw2lose",
+        "player2image": "crashfest",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Grand Finals - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "8": {
+                    "aggression": 0,
+                    "damage": 1,
+                    "control": 0,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 3,
+                    "damage": 2,
+                    "control": 0,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 1,
+                    "damage": 5,
+                    "control": 1,
+                    "winner": "player2"
+                }
+            },
+            "player2": {
+                "8": {
+                    "aggression": 5,
+                    "damage": 5,
+                    "control": 6,
+                    "winner": "player2"
+                },
+                "7": {
+                    "aggression": 2,
+                    "damage": 4,
+                    "control": 6,
+                    "winner": "player2"
+                },
+                "6": {
+                    "aggression": 4,
+                    "damage": 1,
+                    "control": 5,
+                    "winner": "player2"
+                }
+            }
+        }
+    },
+    "275240312": {
+        "startTime": 1652584477,
+        "stopTime": 1652584658,
+        "endCountdown": 1652584477,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "3lb-119--crashfest-vs-sawloser2saw2lose",
+        "state_text": "Match Completed",
+        "id": 275240312,
+        "order": 119,
+        "state": "open",
+        "round": 7,
+        "player1": "Crashfest",
+        "player2": "Saw Loser: 2 Saw 2 Lose",
+        "player1_id": 170496568,
+        "player1_greenroom": 2,
+        "player1_prereq": 275240311,
+        "player2_id": 170496549,
+        "player2_prereq": 275240311,
+        "player2_greenroom": 2,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652582977,
+        "underway": 0,
+        "player1_lastFought": 1652582977,
+        "player2_lastFought": 1652582977,
+        "tournament": "nhrl_may22_3lb",
+        "tournamentKey": "3lb-Bracket",
+        "weightClass": "3lb",
+        "player1image": "crashfest",
+        "player2image": "sawloser2saw2lose",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Grand Finals - 3lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 4,
+                    "damage": 3,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 3,
+                    "damage": 6,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 3,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 1,
+                    "damage": 3,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 2,
+                    "damage": 0,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 2,
+                    "damage": 3,
+                    "control": 3,
+                    "winner": "player1"
+                }
+            }
+        }
+    },
+    "275240343": {
+        "startTime": 1652587206,
+        "stopTime": 1652587387,
+        "endCountdown": 1652587206,
+        "matchActive": false,
+        "matchPaused": false,
+        "encore": false,
+        "filePath": "12lb-31--yobgnol-vs-dropkick",
+        "state_text": "Match Completed",
+        "id": 275240343,
+        "order": 31,
+        "state": "open",
+        "round": 5,
+        "player1": "YOB GNOL",
+        "player2": "Drop Kick",
+        "player1_id": 170496381,
+        "player1_greenroom": 0,
+        "player1_prereq": 275240342,
+        "player2_id": 170496369,
+        "player2_prereq": 275240342,
+        "player2_greenroom": 0,
+        "winner": null,
+        "loser": null,
+        "updated_at": 1652585157,
+        "underway": 0,
+        "player1_lastFought": 1652585051,
+        "player2_lastFought": 1652585051,
+        "tournament": "nhrl_may22_12lb",
+        "tournamentKey": "12lb-Bracket",
+        "weightClass": "12lb",
+        "player1image": "yobgnol",
+        "player2image": "dropkick",
+        "matchTime": 180,
+        "messageOverride": "",
+        "lowerMessage": "Grand Finals - 12lb",
+        "loadStage": 0,
+        "judge_scores": {
+            "player1": {
+                "6": {
+                    "aggression": 4,
+                    "damage": 5,
+                    "control": 5,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 4,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 5,
+                    "damage": 6,
+                    "control": 6,
+                    "winner": "player1"
+                }
+            },
+            "player2": {
+                "6": {
+                    "aggression": 1,
+                    "damage": 1,
+                    "control": 1,
+                    "winner": "player1"
+                },
+                "8": {
+                    "aggression": 1,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player1"
+                },
+                "7": {
+                    "aggression": 0,
+                    "damage": 0,
+                    "control": 0,
+                    "winner": "player1"
+                }
+            }
+        }
     }
 }

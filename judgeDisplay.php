@@ -2,6 +2,7 @@
 require_once('matchFunctions.php');
 
 
+
 ?>
 
 
@@ -31,6 +32,10 @@ require_once('matchFunctions.php');
 	
 		
 		var matchInterval = setInterval(updateMatchData, 1000);
+		var judge1 = <?php echo $judgeID1; ?>;
+		var judge2 = <?php echo $judgeID2; ?>;
+		var judge3 = <?php echo $judgeID3; ?>;
+		
 		
 		$(document).ready(function(){
 
@@ -90,164 +95,164 @@ require_once('matchFunctions.php');
 			  $("#player1").html(match.player1);
 			  $("#player2").html(match.player2);
 			  
-			  if (isset(() => match.judge_scores.player1["1"].winner)) {
-				  if (match.judge_scores.player1["1"].winner == 'player1') {
+			  if (isset(() => match.judge_scores.player1[judge1].winner)) {
+				  if (match.judge_scores.player1[judge1].winner == 'player1') {
 				  	 $("#j1w").html(match.player1);
-				  } else if (match.judge_scores.player1["1"].winner == 'player2') {
+				  } else if (match.judge_scores.player1[judge1].winner == 'player2') {
 				  	 $("#j1w").html(match.player2);
 				  }
 			  }
-			  if (isset(() => match.judge_scores.player1["2"].winner)) {
-				  if (match.judge_scores.player1["2"].winner == 'player1') {
+			  if (isset(() => match.judge_scores.player1[judge2].winner)) {
+				  if (match.judge_scores.player1[judge2].winner == 'player1') {
 				  	 $("#j2w").html(match.player1);
-				  } else if (match.judge_scores.player1["2"].winner == 'player2') {
+				  } else if (match.judge_scores.player1[judge2].winner == 'player2') {
 				  	 $("#j2w").html(match.player2);
 				  }
 			  }
-			  if (isset(() => match.judge_scores.player1["3"].winner)) {
-				  if (match.judge_scores.player1["3"].winner == 'player1') {
+			  if (isset(() => match.judge_scores.player1[judge3].winner)) {
+				  if (match.judge_scores.player1[judge3].winner == 'player1') {
 				  	 $("#j3w").html(match.player1);
-				  } else if (match.judge_scores.player1["3"].winner == 'player2') {
+				  } else if (match.judge_scores.player1[judge3].winner == 'player2') {
 				  	 $("#j3w").html(match.player2);
 				  }
 			  }
 			  
 			  
 			  //Judge 1 Player 1
-			  if (isset(() => match.judge_scores.player1["1"].damage)) {
-				  $("#j1b1d").html(match.judge_scores.player1["1"].damage)  ;	  
+			  if (isset(() => match.judge_scores.player1[judge1].damage)) {
+				  $("#j1b1d").html(match.judge_scores.player1[judge1].damage)  ;	  
 			  } else {
 				  $("#j1b1d").html("-");
 			  }
-			  if (isset(() => match.judge_scores.player1["1"].aggression)) {
-				  $("#j1b1a").html(match.judge_scores.player1["1"].aggression)  ;	  
+			  if (isset(() => match.judge_scores.player1[judge1].aggression)) {
+				  $("#j1b1a").html(match.judge_scores.player1[judge1].aggression)  ;	  
 			  } else {
 				  $("#j1b1a").html("-");
 			  }
-			  if (isset(() => match.judge_scores.player1["1"].control)) {
-				  $("#j1b1c").html(match.judge_scores.player1["1"].control)  ;	  
+			  if (isset(() => match.judge_scores.player1[judge1].control)) {
+				  $("#j1b1c").html(match.judge_scores.player1[judge1].control)  ;	  
 			  } else {
 				  $("#j1b1c").html("-");
 			  }
 			  
 			  //Judge 1 Player 2
-			  if (isset(() => match.judge_scores.player2["1"].damage)) {
-				  $("#j1b2d").html(match.judge_scores.player2["1"].damage)  ;	  
+			  if (isset(() => match.judge_scores.player2[judge1].damage)) {
+				  $("#j1b2d").html(match.judge_scores.player2[judge1].damage)  ;	  
 			  } else {
 				  $("#j1b2d").html("-");
 			  }
-			  if (isset(() => match.judge_scores.player2["1"].aggression)) {
-				  $("#j1b2a").html(match.judge_scores.player2["1"].aggression)  ;	  
+			  if (isset(() => match.judge_scores.player2[judge1].aggression)) {
+				  $("#j1b2a").html(match.judge_scores.player2[judge1].aggression)  ;	  
 			  } else {
 				  $("#j1b2a").html("-");
 			  }
-			  if (isset(() => match.judge_scores.player2["1"].control)) {
-				  $("#j1b2c").html(match.judge_scores.player2["1"].control)  ;	  
+			  if (isset(() => match.judge_scores.player2[judge1].control)) {
+				  $("#j1b2c").html(match.judge_scores.player2[judge1].control)  ;	  
 			  } else {
 				  $("#j1b2c").html("-");
 			  }
 			  
 			  //Judge 2 Player 1
-			  if (isset(() => match.judge_scores.player1["2"].damage)) {
-				  $("#j2b1d").html(match.judge_scores.player1["2"].damage)  ;	  
+			  if (isset(() => match.judge_scores.player1[judge2].damage)) {
+				  $("#j2b1d").html(match.judge_scores.player1[judge2].damage)  ;	  
 			  } else {
 				  $("#j2b1d").html("-");
 			  }
-			  if (isset(() => match.judge_scores.player1["2"].aggression)) {
-				  $("#j2b1a").html(match.judge_scores.player1["2"].aggression)  ;	  
+			  if (isset(() => match.judge_scores.player1[judge2].aggression)) {
+				  $("#j2b1a").html(match.judge_scores.player1[judge2].aggression)  ;	  
 			  } else {
 				  $("#j2b1a").html("-");
 			  }
-			  if (isset(() => match.judge_scores.player1["2"].control)) {
-				  $("#j2b1c").html(match.judge_scores.player1["2"].control)  ;	  
+			  if (isset(() => match.judge_scores.player1[judge2].control)) {
+				  $("#j2b1c").html(match.judge_scores.player1[judge2].control)  ;	  
 			  } else {
 				  $("#j2b1c").html("-");
 			  }
 			  
 			  //Judge 2 Player 2
-			  if (isset(() => match.judge_scores.player2["2"].damage)) {
-				  $("#j2b2d").html(match.judge_scores.player2["2"].damage)  ;	  
+			  if (isset(() => match.judge_scores.player2[judge2].damage)) {
+				  $("#j2b2d").html(match.judge_scores.player2[judge2].damage)  ;	  
 			  } else {
 				  $("#j2b2d").html("-");
 			  }
-			  if (isset(() => match.judge_scores.player2["2"].aggression)) {
-				  $("#j2b2a").html(match.judge_scores.player2["2"].aggression)  ;	  
+			  if (isset(() => match.judge_scores.player2[judge2].aggression)) {
+				  $("#j2b2a").html(match.judge_scores.player2[judge2].aggression)  ;	  
 			  } else {
 				  $("#j2b2a").html("-");
 			  }
-			  if (isset(() => match.judge_scores.player2["2"].control)) {
-				  $("#j2b2c").html(match.judge_scores.player2["2"].control)  ;	  
+			  if (isset(() => match.judge_scores.player2[judge2].control)) {
+				  $("#j2b2c").html(match.judge_scores.player2[judge2].control)  ;	  
 			  } else {
 				  $("#j2b2c").html("-");
 			  }
 			  
 			  //Judge 3 Player 1
-			  if (isset(() => match.judge_scores.player1["3"].damage)) {
-				  $("#j3b1d").html(match.judge_scores.player1["3"].damage)  ;	  
+			  if (isset(() => match.judge_scores.player1[judge3].damage)) {
+				  $("#j3b1d").html(match.judge_scores.player1[judge3].damage)  ;	  
 			  } else {
 				  $("#j3b1d").html("-");
 			  }
-			  if (isset(() => match.judge_scores.player1["3"].aggression)) {
-				  $("#j3b1a").html(match.judge_scores.player1["3"].aggression)  ;	  
+			  if (isset(() => match.judge_scores.player1[judge3].aggression)) {
+				  $("#j3b1a").html(match.judge_scores.player1[judge3].aggression)  ;	  
 			  } else {
 				  $("#j3b1a").html("-");
 			  }
-			  if (isset(() => match.judge_scores.player1["3"].control)) {
-				  $("#j3b1c").html(match.judge_scores.player1["3"].control)  ;	  
+			  if (isset(() => match.judge_scores.player1[judge3].control)) {
+				  $("#j3b1c").html(match.judge_scores.player1[judge3].control)  ;	  
 			  } else {
 				  $("#j3b1c").html("-");
 			  }
 			  
 			  //Judge 3 Player 2
-			  if (isset(() => match.judge_scores.player2["3"].damage)) {
-				  $("#j3b2d").html(match.judge_scores.player2["3"].damage)  ;	  
+			  if (isset(() => match.judge_scores.player2[judge3].damage)) {
+				  $("#j3b2d").html(match.judge_scores.player2[judge3].damage)  ;	  
 			  } else {
 				  $("#j3b2d").html("-");
 			  }
-			  if (isset(() => match.judge_scores.player2["3"].aggression)) {
-				  $("#j3b2a").html(match.judge_scores.player2["3"].aggression)  ;	  
+			  if (isset(() => match.judge_scores.player2[judge3].aggression)) {
+				  $("#j3b2a").html(match.judge_scores.player2[judge3].aggression)  ;	  
 			  } else {
 				  $("#j3b2a").html("-");
 			  }
-			  if (isset(() => match.judge_scores.player2["3"].control)) {
-				  $("#j3b2c").html(match.judge_scores.player2["3"].control)  ;	  
+			  if (isset(() => match.judge_scores.player2[judge3].control)) {
+				  $("#j3b2c").html(match.judge_scores.player2[judge3].control)  ;	  
 			  } else {
 				  $("#j3b2c").html("-");
 			  }
 			  
 			  
-			  if (isset(() => match.loadStage)){
-				  if (match.loadStage == 0){
-				  	$(".damageScore").css({ 'opacity' : 0.0 });
-					$(".aggressionScore").css({ 'opacity' : 0.0 });
-					$(".controlScore").css({ 'opacity' : 0.0 });
-					$(".winnerName").css({ 'opacity' : 0.0 });
-				  }
-				  if (match.loadStage == 1){
-				  	$(".damageScore").css({ 'opacity' : 1.0 });
-					$(".aggressionScore").css({ 'opacity' : 0.0 });
-					$(".controlScore").css({ 'opacity' : 0.0 });
-					$(".winnerName").css({ 'opacity' : 0.0 });
-				  }
-				  if (match.loadStage == 2){
-				  	$(".damageScore").css({ 'opacity' : 1.0 });
-					$(".aggressionScore").css({ 'opacity' : 1.0 });
-					$(".controlScore").css({ 'opacity' : 0.0 });
-					$(".winnerName").css({ 'opacity' : 0.0 });
-				  }
-				  if (match.loadStage == 3){
-				  	$(".damageScore").css({ 'opacity' : 1.0 });
-					$(".aggressionScore").css({ 'opacity' : 1.0 });
-					$(".controlScore").css({ 'opacity' : 1.0 });
-					$(".winnerName").css({ 'opacity' : 0.0 });
-				  }
-				  if (match.loadStage == 4){
-				  	$(".damageScore").css({ 'opacity' : 1.0 });
-					$(".aggressionScore").css({ 'opacity' : 1.0 });
-					$(".controlScore").css({ 'opacity' : 1.0 });
-					$(".winnerName").css({ 'opacity' : 1.0 });
-				  }
-			  }
+			  // if (isset(() => match.loadStage)){
+ // 				  if (match.loadStage == 0){
+ // 				  	$(".damageScore").css({ 'opacity' : 0.0 });
+ // 					$(".aggressionScore").css({ 'opacity' : 0.0 });
+ // 					$(".controlScore").css({ 'opacity' : 0.0 });
+ // 					$(".winnerName").css({ 'opacity' : 0.0 });
+ // 				  }
+ // 				  if (match.loadStage == 1){
+ // 				  	$(".damageScore").css({ 'opacity' : 1.0 });
+ // 					$(".aggressionScore").css({ 'opacity' : 0.0 });
+ // 					$(".controlScore").css({ 'opacity' : 0.0 });
+ // 					$(".winnerName").css({ 'opacity' : 0.0 });
+ // 				  }
+ // 				  if (match.loadStage == 2){
+ // 				  	$(".damageScore").css({ 'opacity' : 1.0 });
+ // 					$(".aggressionScore").css({ 'opacity' : 1.0 });
+ // 					$(".controlScore").css({ 'opacity' : 0.0 });
+ // 					$(".winnerName").css({ 'opacity' : 0.0 });
+ // 				  }
+ // 				  if (match.loadStage == 3){
+ // 				  	$(".damageScore").css({ 'opacity' : 1.0 });
+ // 					$(".aggressionScore").css({ 'opacity' : 1.0 });
+ // 					$(".controlScore").css({ 'opacity' : 1.0 });
+ // 					$(".winnerName").css({ 'opacity' : 0.0 });
+ // 				  }
+ // 				  if (match.loadStage == 4){
+ // 				  	$(".damageScore").css({ 'opacity' : 1.0 });
+ // 					$(".aggressionScore").css({ 'opacity' : 1.0 });
+ // 					$(".controlScore").css({ 'opacity' : 1.0 });
+ // 					$(".winnerName").css({ 'opacity' : 1.0 });
+ // 				  }
+ // 			  }
 			  
 			  
 			  
@@ -279,7 +284,7 @@ require_once('matchFunctions.php');
 					</div>
 				</div>
 				<div class="judgeBox " >
-					<div class="judgeName" id="judge1name"><?php echo $judgeNames[1]; ?></div>
+					<div class="judgeName" id="judge1name"><?php echo $judgeNames[$judgeID1]; ?></div>
 					<div class="judgeVideo videoBox"></div>
 					<div class="scores">
 						<div class="labelRow judgeRow">
@@ -303,7 +308,7 @@ require_once('matchFunctions.php');
 					</div>
 				</div>
 				<div class="judgeBox " >
-					<div class="judgeName" id="judge2name"><?php echo $judgeNames[2]; ?></div>
+					<div class="judgeName" id="judge2name"><?php echo $judgeNames[$judgeID2]; ?></div>
 					<div class="judgeVideo videoBox"></div>
 					<div class="scores">
 						<div class="labelRow judgeRow">
@@ -327,7 +332,7 @@ require_once('matchFunctions.php');
 					</div>
 				</div>
 				<div class="judgeBox" >
-					<div class="judgeName " id="judge3name"><?php echo $judgeNames[3]; ?></div>
+					<div class="judgeName " id="judge3name"><?php echo $judgeNames[$judgeID3]; ?></div>
 					<div class="judgeVideo videoBox"></div>
 					<div class="scores">
 						<div class="labelRow judgeRow">

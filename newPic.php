@@ -2,6 +2,15 @@
 error_reporting(E_ALL ^ E_NOTICE);
 require_once('matchFunctions.php');
 
+if ($_GET['picKind'] == 'people'){
+	$picKind = 'peopleUpload';
+	$typeString = "Driver";
+} else {
+	$picKind = 'picUpload';
+	$typeString = "Robot";
+}
+
+
 ?>
 
 
@@ -24,15 +33,15 @@ require_once('matchFunctions.php');
   <body class=" ">
 
 	<div class="container-sm my-4" id="botDetails">
-		<h1>Update robot photo</h1>
-		<h4>Please upload a picture of your robot on a WHITE background. We will use this photo in our broadcast and marketing.</h4>
-		<form method="post" enctype="multipart/form-data" action="matchFunctions.php?mode=picUpload">
+		<h1>Update <?php echo $typeString; ?> Photo</h1>
+		<h4>Please upload a picture on a WHITE background. We will use this photo in our broadcast and marketing.</h4>
+		<form method="post" enctype="multipart/form-data" action="matchFunctions.php?mode=<?php echo $picKind; ?>">
 		  <input type="hidden" value="<?=$_GET['bot_id']?>" name="bot_id">
 		  <input type="hidden" value="<?=$_GET['imageString']?>" name="imageString">	
 		   <input type="hidden" value="<?=$_GET['tournament']?>" name="tournament">	
 		  <div class="form-group">
 		    <label for="exampleFormControlFile1">Upload new photo</label>
-		    <input type="file" class="form-control-file" name="botPicture" accept="image/*" capture="environment" id="exampleFormControlFile1">
+		    <input type="file" class="form-control-file" name="botPicture" accept="image/jpeg image/*" capture="environment" id="exampleFormControlFile1">
 		  </div>
 		  <button type="submit" class="btn btn-primary">Upload</button>
 		</form>
